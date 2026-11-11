@@ -25,7 +25,7 @@ public final class SerializeUtils {
             }
             return item;
         } catch (RuntimeException e) {
-            Debug.trace(e, "反序列化物品 base64 失败");
+            Debug.trace(e, "Failed to deserialize item from base64");
             return null;
         }
     }

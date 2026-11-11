@@ -18,7 +18,7 @@ public class PersistenceCleanupListener implements Listener {
         try {
             EnderChannelController.getInstance().flushAndClose();
         } catch (Throwable t) {
-            Debug.trace(t, "元件网络关服清理失败");
+            Debug.trace(t, "Cell network shutdown cleanup failed");
         }
     }
 }

@@ -209,7 +209,7 @@ public class CellVirtualCache extends QuantumCache {
                 caches.remove(dummy);
             }
         } catch (Throwable e) {
-            com.balugaq.netex.utils.Debug.trace(e, "预热 LogiTech2 量子代理反射解析");
+            com.balugaq.netex.utils.Debug.trace(e, "warming up LogiTech2 quantum proxy reflection lookup");
         }
     }
 

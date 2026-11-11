@@ -98,6 +98,7 @@ public class SetupUtil {
             ExpansionItems.ADVANCED_TRANSFER_BEST_PUSHER.registerThis());
         ExpansionItemsMenus.SUB_MENU_CARGO.addTo(
             ExpansionItems.WHITELISTED_TRANSFER_GRABBER.registerThis(),
+            ExpansionItems.BETTER_GRABBER.registerThis(),
             ExpansionItems.WHITELISTED_LINE_TRANSFER_GRABBER.registerThis(),
             ExpansionItems.WHITELISTED_TRANSFER_VANILLA_GRABBER.registerThis(),
             ExpansionItems.WHITELISTED_LINE_TRANSFER_VANILLA_GRABBER.registerThis(),
@@ -208,7 +209,7 @@ public class SetupUtil {
             ExpansionItems.NETWORK_BRIDGE_MAGENTA.registerThis(),
             ExpansionItems.NETWORK_BRIDGE_PINK.registerThis());
 
-        ExpansionItemsMenus.SUB_MENU_DEPRECATED.addTo(
+        ExpansionItemsMenus.SUB_MENU_BLUEPRINT.addTo(
             ExpansionItems.MAGIC_WORKBENCH_BLUEPRINT.registerThis(),
             ExpansionItems.ARMOR_FORGE_BLUEPRINT.registerThis(),
             ExpansionItems.SMELTERY_BLUEPRINT.registerThis(),
@@ -219,7 +220,9 @@ public class SetupUtil {
             ExpansionItems.GRIND_STONE_BLUEPRINT.registerThis(),
             ExpansionItems.JUICER_BLUEPRINT.registerThis(),
             ExpansionItems.ORE_CRUSHER_BLUEPRINT.registerThis(),
-            ExpansionItems.PRESSURE_CHAMBER_BLUEPRINT.registerThis(),
+            ExpansionItems.PRESSURE_CHAMBER_BLUEPRINT.registerThis());
+
+        ExpansionItemsMenus.SUB_MENU_CORE_MACHINE.addTo(
             ExpansionItems.MAGIC_WORKBENCH_RECIPE_ENCODER.registerThis(),
             ExpansionItems.ARMOR_FORGE_RECIPE_ENCODER.registerThis(),
             ExpansionItems.SMELTERY_RECIPE_ENCODER.registerThis(),
@@ -274,8 +277,7 @@ public class SetupUtil {
             ExpansionItems.ADVANCED_AUTO_GRIND_STONE_WITHHOLDING.registerThis(),
             ExpansionItems.ADVANCED_AUTO_JUICER_WITHHOLDING.registerThis(),
             ExpansionItems.ADVANCED_AUTO_ORE_CRUSHER_WITHHOLDING.registerThis(),
-            ExpansionItems.ADVANCED_AUTO_PRESSURE_CHAMBER_WITHHOLDING.registerThis(),
-            ExpansionItems.BETTER_GRABBER.registerThis());
+            ExpansionItems.ADVANCED_AUTO_PRESSURE_CHAMBER_WITHHOLDING.registerThis());
 
         /* authors */
         ExpansionItemsMenus.SUB_MENU_AUTHOR.addTo(
@@ -343,9 +345,6 @@ public class SetupUtil {
             ExpansionItemsMenus.SUB_MENU_ANNOUNCE);
         ExpansionItemsMenus.MAIN_MENU_TROPHY.addFrom(
             ExpansionItemsMenus.SUB_MENU_AUTHOR, ExpansionItemsMenus.SUB_MENU_ANNOUNCE);
-
-        ExpansionItemsMenus.MAIN_ITEM_GROUP.addTo(
-            ExpansionItemsMenus.SUB_MENU_DEPRECATED);
 
         ExpansionItemsMenus.MAIN_ITEM_GROUP.setTier(0);
         ExpansionItemsMenus.MAIN_ITEM_GROUP.register(networks);

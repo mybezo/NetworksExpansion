@@ -1,6 +1,8 @@
 package com.ytdd9527.networksexpansion.implementation;
 
 import com.ytdd9527.networksexpansion.api.cell.CellTier;
+import io.github.sefiraat.networks.slimefun.NetworkSlimefunItems;
+import io.github.sefiraat.networks.slimefun.NetworksSlimefunItemStacks;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
@@ -849,9 +851,9 @@ public class ExpansionRecipes {
 
     @Deprecated
     public static final ItemStack[] BETTER_GRABBER = new ItemStack[]{
-        OPTIC_STAR.getItem(), NETWORK_PUSHER.getItem(), OPTIC_STAR.getItem(),
-        NETWORK_PUSHER.getItem(), NETWORK_GRABBER.getItem(), NETWORK_PUSHER.getItem(),
-        OPTIC_STAR.getItem(), NETWORK_PUSHER.getItem(), OPTIC_STAR.getItem()
+        OPTIC_CABLE.getItem(), NETWORK_GRABBER.getItem(), OPTIC_CABLE.getItem(),
+        NETWORK_GRABBER.getItem(), OPTIC_STAR.getItem(), NETWORK_GRABBER.getItem(),
+        OPTIC_CABLE.getItem(), NETWORK_GRABBER.getItem(), OPTIC_CABLE.getItem()
     };
     public static final ItemStack[] NETWORK_CRAFTING_GRID_NEW_STYLE = new ItemStack[]{
         NETWORK_BRIDGE.getItem(), NETWORK_CRAFTING_GRID.getItem(), NETWORK_BRIDGE.getItem(),
@@ -1170,5 +1172,798 @@ public class ExpansionRecipes {
         OPTIC_GLASS.getItem(), OPTIC_GLASS.getItem(), OPTIC_GLASS.getItem(),
         OPTIC_GLASS.getItem(), NETWORK_GRID.getItem(), OPTIC_GLASS.getItem(),
         OPTIC_GLASS.getItem(), OPTIC_GLASS.getItem(), OPTIC_GLASS.getItem()
+    };
+
+    // Legacy type-specific auto crafters, blueprints and encoders (recipes restored from v2.1.85)
+    public static final ItemStack[] ADVANCED_AUTO_ANCIENT_ALTAR = {
+        ExpansionItemStacks.AUTO_ANCIENT_ALTAR,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_ANCIENT_ALTAR,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        NetworkSlimefunItems.INTERDIMENSIONAL_PRESENCE.getItem(),
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_ANCIENT_ALTAR,
+        ExpansionItemStacks.ANCIENT_ALTAR_RECIPE_ENCODER,
+        ExpansionItemStacks.AUTO_ANCIENT_ALTAR
+    };
+
+    public static final ItemStack[] ADVANCED_AUTO_ANCIENT_ALTAR_WITHHOLDING = {
+        ExpansionItemStacks.AUTO_ANCIENT_ALTAR_WITHHOLDING,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_ANCIENT_ALTAR_WITHHOLDING,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        NetworkSlimefunItems.INTERDIMENSIONAL_PRESENCE.getItem(),
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_ANCIENT_ALTAR_WITHHOLDING,
+        ExpansionItemStacks.ANCIENT_ALTAR_RECIPE_ENCODER,
+        ExpansionItemStacks.AUTO_ANCIENT_ALTAR_WITHHOLDING
+    };
+
+    public static final ItemStack[] ADVANCED_AUTO_ARMOR_FORGE = {
+        ExpansionItemStacks.AUTO_ARMOR_FORGE,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_ARMOR_FORGE,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        NetworkSlimefunItems.INTERDIMENSIONAL_PRESENCE.getItem(),
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_ARMOR_FORGE,
+        ExpansionItemStacks.ARMOR_FORGE_RECIPE_ENCODER,
+        ExpansionItemStacks.AUTO_ARMOR_FORGE
+    };
+
+    public static final ItemStack[] ADVANCED_AUTO_ARMOR_FORGE_WITHHOLDING = {
+        ExpansionItemStacks.AUTO_ARMOR_FORGE_WITHHOLDING,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_ARMOR_FORGE_WITHHOLDING,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        NetworkSlimefunItems.INTERDIMENSIONAL_PRESENCE.getItem(),
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_ARMOR_FORGE_WITHHOLDING,
+        ExpansionItemStacks.ARMOR_FORGE_RECIPE_ENCODER,
+        ExpansionItemStacks.AUTO_ARMOR_FORGE_WITHHOLDING
+    };
+
+    public static final ItemStack[] ADVANCED_AUTO_COMPRESSOR = {
+        ExpansionItemStacks.AUTO_COMPRESSOR,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_COMPRESSOR,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        NetworkSlimefunItems.INTERDIMENSIONAL_PRESENCE.getItem(),
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_COMPRESSOR,
+        ExpansionItemStacks.COMPRESSOR_RECIPE_ENCODER,
+        ExpansionItemStacks.AUTO_COMPRESSOR
+    };
+
+    public static final ItemStack[] ADVANCED_AUTO_COMPRESSOR_WITHHOLDING = {
+        ExpansionItemStacks.AUTO_COMPRESSOR_WITHHOLDING,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_COMPRESSOR_WITHHOLDING,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        NetworkSlimefunItems.INTERDIMENSIONAL_PRESENCE.getItem(),
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_COMPRESSOR_WITHHOLDING,
+        ExpansionItemStacks.COMPRESSOR_RECIPE_ENCODER,
+        ExpansionItemStacks.AUTO_COMPRESSOR_WITHHOLDING
+    };
+
+    public static final ItemStack[] ADVANCED_AUTO_EXPANSION_WORKBENCH = {
+        ExpansionItemStacks.AUTO_EXPANSION_WORKBENCH,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_EXPANSION_WORKBENCH,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        NetworkSlimefunItems.INTERDIMENSIONAL_PRESENCE.getItem(),
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_EXPANSION_WORKBENCH,
+        ExpansionItemStacks.EXPANSION_WORKBENCH_RECIPE_ENCODER,
+        ExpansionItemStacks.AUTO_EXPANSION_WORKBENCH
+    };
+
+    public static final ItemStack[] ADVANCED_AUTO_EXPANSION_WORKBENCH_WITHHOLDING = {
+        ExpansionItemStacks.AUTO_EXPANSION_WORKBENCH_WITHHOLDING,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_EXPANSION_WORKBENCH_WITHHOLDING,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        NetworkSlimefunItems.INTERDIMENSIONAL_PRESENCE.getItem(),
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_EXPANSION_WORKBENCH_WITHHOLDING,
+        ExpansionItemStacks.EXPANSION_WORKBENCH_RECIPE_ENCODER,
+        ExpansionItemStacks.AUTO_EXPANSION_WORKBENCH_WITHHOLDING
+    };
+
+    public static final ItemStack[] ADVANCED_AUTO_GRIND_STONE = {
+        ExpansionItemStacks.AUTO_GRIND_STONE,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_GRIND_STONE,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        NetworkSlimefunItems.INTERDIMENSIONAL_PRESENCE.getItem(),
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_GRIND_STONE,
+        ExpansionItemStacks.GRIND_STONE_RECIPE_ENCODER,
+        ExpansionItemStacks.AUTO_GRIND_STONE
+    };
+
+    public static final ItemStack[] ADVANCED_AUTO_GRIND_STONE_WITHHOLDING = {
+        ExpansionItemStacks.AUTO_GRIND_STONE_WITHHOLDING,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_GRIND_STONE_WITHHOLDING,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        NetworkSlimefunItems.INTERDIMENSIONAL_PRESENCE.getItem(),
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_GRIND_STONE_WITHHOLDING,
+        ExpansionItemStacks.GRIND_STONE_RECIPE_ENCODER,
+        ExpansionItemStacks.AUTO_GRIND_STONE_WITHHOLDING
+    };
+
+    public static final ItemStack[] ADVANCED_AUTO_JUICER = {
+        ExpansionItemStacks.AUTO_JUICER,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_JUICER,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        NetworkSlimefunItems.INTERDIMENSIONAL_PRESENCE.getItem(),
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_JUICER,
+        ExpansionItemStacks.JUICER_RECIPE_ENCODER,
+        ExpansionItemStacks.AUTO_JUICER
+    };
+
+    public static final ItemStack[] ADVANCED_AUTO_JUICER_WITHHOLDING = {
+        ExpansionItemStacks.AUTO_JUICER_WITHHOLDING,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_JUICER_WITHHOLDING,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        NetworkSlimefunItems.INTERDIMENSIONAL_PRESENCE.getItem(),
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_JUICER_WITHHOLDING,
+        ExpansionItemStacks.JUICER_RECIPE_ENCODER,
+        ExpansionItemStacks.AUTO_JUICER_WITHHOLDING
+    };
+
+    public static final ItemStack[] ADVANCED_AUTO_MAGIC_WORKBENCH = {
+        ExpansionItemStacks.AUTO_MAGIC_WORKBENCH,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_MAGIC_WORKBENCH,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        NetworkSlimefunItems.INTERDIMENSIONAL_PRESENCE.getItem(),
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_MAGIC_WORKBENCH,
+        ExpansionItemStacks.MAGIC_WORKBENCH_RECIPE_ENCODER,
+        ExpansionItemStacks.AUTO_MAGIC_WORKBENCH
+    };
+
+    public static final ItemStack[] ADVANCED_AUTO_MAGIC_WORKBENCH_WITHHOLDING = {
+        ExpansionItemStacks.AUTO_MAGIC_WORKBENCH_WITHHOLDING,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_MAGIC_WORKBENCH_WITHHOLDING,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        NetworkSlimefunItems.INTERDIMENSIONAL_PRESENCE.getItem(),
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_MAGIC_WORKBENCH_WITHHOLDING,
+        ExpansionItemStacks.MAGIC_WORKBENCH_RECIPE_ENCODER,
+        ExpansionItemStacks.AUTO_MAGIC_WORKBENCH_WITHHOLDING
+    };
+
+    public static final ItemStack[] ADVANCED_AUTO_ORE_CRUSHER = {
+        ExpansionItemStacks.AUTO_ORE_CRUSHER,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_ORE_CRUSHER,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        NetworkSlimefunItems.INTERDIMENSIONAL_PRESENCE.getItem(),
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_ORE_CRUSHER,
+        ExpansionItemStacks.ORE_CRUSHER_RECIPE_ENCODER,
+        ExpansionItemStacks.AUTO_ORE_CRUSHER
+    };
+
+    public static final ItemStack[] ADVANCED_AUTO_ORE_CRUSHER_WITHHOLDING = {
+        ExpansionItemStacks.AUTO_ORE_CRUSHER_WITHHOLDING,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_ORE_CRUSHER_WITHHOLDING,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        NetworkSlimefunItems.INTERDIMENSIONAL_PRESENCE.getItem(),
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_ORE_CRUSHER_WITHHOLDING,
+        ExpansionItemStacks.ORE_CRUSHER_RECIPE_ENCODER,
+        ExpansionItemStacks.AUTO_ORE_CRUSHER_WITHHOLDING
+    };
+
+    public static final ItemStack[] ADVANCED_AUTO_PRESSURE_CHAMBER = {
+        ExpansionItemStacks.AUTO_PRESSURE_CHAMBER,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_PRESSURE_CHAMBER,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        NetworkSlimefunItems.INTERDIMENSIONAL_PRESENCE.getItem(),
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_PRESSURE_CHAMBER,
+        ExpansionItemStacks.PRESSURE_CHAMBER_RECIPE_ENCODER,
+        ExpansionItemStacks.AUTO_PRESSURE_CHAMBER
+    };
+
+    public static final ItemStack[] ADVANCED_AUTO_PRESSURE_CHAMBER_WITHHOLDING = {
+        ExpansionItemStacks.AUTO_PRESSURE_CHAMBER_WITHHOLDING,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_PRESSURE_CHAMBER_WITHHOLDING,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        NetworkSlimefunItems.INTERDIMENSIONAL_PRESENCE.getItem(),
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_PRESSURE_CHAMBER_WITHHOLDING,
+        ExpansionItemStacks.PRESSURE_CHAMBER_RECIPE_ENCODER,
+        ExpansionItemStacks.AUTO_PRESSURE_CHAMBER_WITHHOLDING
+    };
+
+    public static final ItemStack[] ADVANCED_AUTO_QUANTUM_WORKBENCH = {
+        ExpansionItemStacks.AUTO_QUANTUM_WORKBENCH,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_QUANTUM_WORKBENCH,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        NetworkSlimefunItems.INTERDIMENSIONAL_PRESENCE.getItem(),
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_QUANTUM_WORKBENCH,
+        ExpansionItemStacks.QUANTUM_WORKBENCH_RECIPE_ENCODER,
+        ExpansionItemStacks.AUTO_QUANTUM_WORKBENCH
+    };
+
+    public static final ItemStack[] ADVANCED_AUTO_QUANTUM_WORKBENCH_WITHHOLDING = {
+        ExpansionItemStacks.AUTO_QUANTUM_WORKBENCH_WITHHOLDING,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_QUANTUM_WORKBENCH_WITHHOLDING,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        NetworkSlimefunItems.INTERDIMENSIONAL_PRESENCE.getItem(),
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_QUANTUM_WORKBENCH_WITHHOLDING,
+        ExpansionItemStacks.QUANTUM_WORKBENCH_RECIPE_ENCODER,
+        ExpansionItemStacks.AUTO_QUANTUM_WORKBENCH_WITHHOLDING
+    };
+
+    public static final ItemStack[] ADVANCED_AUTO_SMELTERY = {
+        ExpansionItemStacks.AUTO_SMELTERY,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_SMELTERY,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        NetworkSlimefunItems.INTERDIMENSIONAL_PRESENCE.getItem(),
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_SMELTERY,
+        ExpansionItemStacks.SMELTERY_RECIPE_ENCODER,
+        ExpansionItemStacks.AUTO_SMELTERY
+    };
+
+    public static final ItemStack[] ADVANCED_AUTO_SMELTERY_WITHHOLDING = {
+        ExpansionItemStacks.AUTO_SMELTERY_WITHHOLDING,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_SMELTERY_WITHHOLDING,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        NetworkSlimefunItems.INTERDIMENSIONAL_PRESENCE.getItem(),
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_SMELTERY_WITHHOLDING,
+        ExpansionItemStacks.SMELTERY_RECIPE_ENCODER,
+        ExpansionItemStacks.AUTO_SMELTERY_WITHHOLDING
+    };
+
+    public static final ItemStack[] ANCIENT_ALTAR_BLUEPRINT = {
+        SlimefunItems.ANCIENT_PEDESTAL,
+        SlimefunItems.ANCIENT_PEDESTAL,
+        SlimefunItems.ANCIENT_PEDESTAL,
+        NetworkSlimefunItems.CRAFTING_BLUEPRINT.getItem(),
+        SlimefunItems.ANCIENT_ALTAR,
+        NetworkSlimefunItems.CRAFTING_BLUEPRINT.getItem(),
+        SlimefunItems.ANCIENT_PEDESTAL,
+        SlimefunItems.ANCIENT_PEDESTAL,
+        SlimefunItems.ANCIENT_PEDESTAL
+    };
+
+    public static final ItemStack[] ANCIENT_ALTAR_RECIPE_ENCODER = {
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        SlimefunItems.ANDROID_MEMORY_CORE,
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        ExpansionItemStacks.ANCIENT_ALTAR_BLUEPRINT,
+        ExpansionItemStacks.AUTO_ANCIENT_ALTAR,
+        ExpansionItemStacks.ANCIENT_ALTAR_BLUEPRINT,
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        SlimefunItems.CARGO_MOTOR,
+        SlimefunItems.BASIC_CIRCUIT_BOARD
+    };
+
+    public static final ItemStack[] ARMOR_FORGE_BLUEPRINT = {
+        NetworkSlimefunItems.OPTIC_CABLE.getItem(),
+        NetworkSlimefunItems.OPTIC_CABLE.getItem(),
+        NetworkSlimefunItems.OPTIC_CABLE.getItem(),
+        NetworkSlimefunItems.CRAFTING_BLUEPRINT.getItem(),
+        new ItemStack(Material.ANVIL),
+        NetworkSlimefunItems.CRAFTING_BLUEPRINT.getItem(),
+        NetworkSlimefunItems.OPTIC_CABLE.getItem(),
+        new ItemStack(Material.DISPENSER),
+        NetworkSlimefunItems.OPTIC_CABLE.getItem()
+    };
+
+    public static final ItemStack[] ARMOR_FORGE_RECIPE_ENCODER = {
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        SlimefunItems.ANDROID_MEMORY_CORE,
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        ExpansionItemStacks.ARMOR_FORGE_BLUEPRINT,
+        ExpansionItemStacks.AUTO_ARMOR_FORGE,
+        ExpansionItemStacks.ARMOR_FORGE_BLUEPRINT,
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        SlimefunItems.CARGO_MOTOR,
+        SlimefunItems.BASIC_CIRCUIT_BOARD
+    };
+
+    public static final ItemStack[] AUTO_ANCIENT_ALTAR = {
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        SlimefunItems.CRAFTER_SMART_PORT,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        ExpansionItemStacks.ANCIENT_ALTAR_BLUEPRINT,
+        NetworkSlimefunItems.SIMPLE_NANOBOTS.getItem(),
+        ExpansionItemStacks.ANCIENT_ALTAR_BLUEPRINT,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        NetworkSlimefunItems.NETWORK_AUTO_CRAFTER.getItem(),
+        NetworkSlimefunItems.OPTIC_GLASS.getItem()
+    };
+
+    public static final ItemStack[] AUTO_ANCIENT_ALTAR_WITHHOLDING = {
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        SlimefunItems.CRAFTER_SMART_PORT,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        ExpansionItemStacks.AUTO_ANCIENT_ALTAR,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_ANCIENT_ALTAR,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        NetworkSlimefunItems.NETWORK_AUTO_CRAFTER_WITHHOLDING.getItem(),
+        NetworkSlimefunItems.OPTIC_GLASS.getItem()
+    };
+
+    public static final ItemStack[] AUTO_ARMOR_FORGE = {
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        SlimefunItems.ARMOR_AUTO_CRAFTER,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        ExpansionItemStacks.ARMOR_FORGE_BLUEPRINT,
+        NetworkSlimefunItems.SIMPLE_NANOBOTS.getItem(),
+        ExpansionItemStacks.ARMOR_FORGE_BLUEPRINT,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        NetworkSlimefunItems.NETWORK_AUTO_CRAFTER.getItem(),
+        NetworkSlimefunItems.OPTIC_GLASS.getItem()
+    };
+
+    public static final ItemStack[] AUTO_ARMOR_FORGE_WITHHOLDING = {
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        SlimefunItems.CRAFTER_SMART_PORT,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        ExpansionItemStacks.AUTO_ARMOR_FORGE,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_ARMOR_FORGE,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        NetworkSlimefunItems.NETWORK_AUTO_CRAFTER_WITHHOLDING.getItem(),
+        NetworkSlimefunItems.OPTIC_GLASS.getItem()
+    };
+
+    public static final ItemStack[] AUTO_COMPRESSOR = {
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        SlimefunItems.CRAFTER_SMART_PORT,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        ExpansionItemStacks.COMPRESSOR_BLUEPRINT,
+        NetworkSlimefunItems.SIMPLE_NANOBOTS.getItem(),
+        ExpansionItemStacks.COMPRESSOR_BLUEPRINT,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        NetworkSlimefunItems.NETWORK_AUTO_CRAFTER.getItem(),
+        NetworkSlimefunItems.OPTIC_GLASS.getItem()
+    };
+
+    public static final ItemStack[] AUTO_COMPRESSOR_WITHHOLDING = {
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        SlimefunItems.CRAFTER_SMART_PORT,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        ExpansionItemStacks.AUTO_COMPRESSOR,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_COMPRESSOR,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        NetworkSlimefunItems.NETWORK_AUTO_CRAFTER_WITHHOLDING.getItem(),
+        NetworkSlimefunItems.OPTIC_GLASS.getItem()
+    };
+
+    public static final ItemStack[] AUTO_EXPANSION_WORKBENCH = {
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        SlimefunItems.CRAFTER_SMART_PORT,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        ExpansionItemStacks.EXPANSION_WORKBENCH_BLUEPRINT,
+        NetworkSlimefunItems.SIMPLE_NANOBOTS.getItem(),
+        ExpansionItemStacks.EXPANSION_WORKBENCH_BLUEPRINT,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        NetworkSlimefunItems.NETWORK_AUTO_CRAFTER.getItem(),
+        NetworkSlimefunItems.OPTIC_GLASS.getItem()
+    };
+
+    public static final ItemStack[] AUTO_EXPANSION_WORKBENCH_WITHHOLDING = {
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        SlimefunItems.CRAFTER_SMART_PORT,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        ExpansionItemStacks.AUTO_EXPANSION_WORKBENCH,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_EXPANSION_WORKBENCH,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        NetworkSlimefunItems.NETWORK_AUTO_CRAFTER_WITHHOLDING.getItem(),
+        NetworkSlimefunItems.OPTIC_GLASS.getItem()
+    };
+
+    public static final ItemStack[] AUTO_GRIND_STONE = {
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        SlimefunItems.CRAFTER_SMART_PORT,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        ExpansionItemStacks.GRIND_STONE_BLUEPRINT,
+        NetworkSlimefunItems.SIMPLE_NANOBOTS.getItem(),
+        ExpansionItemStacks.GRIND_STONE_BLUEPRINT,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        NetworkSlimefunItems.NETWORK_AUTO_CRAFTER.getItem(),
+        NetworkSlimefunItems.OPTIC_GLASS.getItem()
+    };
+
+    public static final ItemStack[] AUTO_GRIND_STONE_WITHHOLDING = {
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        SlimefunItems.CRAFTER_SMART_PORT,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        ExpansionItemStacks.AUTO_GRIND_STONE,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_GRIND_STONE,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        NetworkSlimefunItems.NETWORK_AUTO_CRAFTER_WITHHOLDING.getItem(),
+        NetworkSlimefunItems.OPTIC_GLASS.getItem()
+    };
+
+    public static final ItemStack[] AUTO_JUICER = {
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        SlimefunItems.CRAFTER_SMART_PORT,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        ExpansionItemStacks.JUICER_BLUEPRINT,
+        NetworkSlimefunItems.SIMPLE_NANOBOTS.getItem(),
+        ExpansionItemStacks.JUICER_BLUEPRINT,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        NetworkSlimefunItems.NETWORK_AUTO_CRAFTER.getItem(),
+        NetworkSlimefunItems.OPTIC_GLASS.getItem()
+    };
+
+    public static final ItemStack[] AUTO_JUICER_WITHHOLDING = {
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        SlimefunItems.CRAFTER_SMART_PORT,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        ExpansionItemStacks.AUTO_JUICER,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_JUICER,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        NetworkSlimefunItems.NETWORK_AUTO_CRAFTER_WITHHOLDING.getItem(),
+        NetworkSlimefunItems.OPTIC_GLASS.getItem()
+    };
+
+    public static final ItemStack[] AUTO_MAGIC_WORKBENCH = {
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        NetworkSlimefunItems.OPTIC_CABLE.getItem(),
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        ExpansionItemStacks.MAGIC_WORKBENCH_BLUEPRINT,
+        NetworkSlimefunItems.SIMPLE_NANOBOTS.getItem(),
+        ExpansionItemStacks.MAGIC_WORKBENCH_BLUEPRINT,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        NetworkSlimefunItems.NETWORK_AUTO_CRAFTER.getItem(),
+        NetworkSlimefunItems.OPTIC_GLASS.getItem()
+    };
+
+    public static final ItemStack[] AUTO_MAGIC_WORKBENCH_WITHHOLDING = {
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        SlimefunItems.CRAFTER_SMART_PORT,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        ExpansionItemStacks.AUTO_MAGIC_WORKBENCH,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_MAGIC_WORKBENCH,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        NetworkSlimefunItems.NETWORK_AUTO_CRAFTER_WITHHOLDING.getItem(),
+        NetworkSlimefunItems.OPTIC_GLASS.getItem()
+    };
+
+    public static final ItemStack[] AUTO_ORE_CRUSHER = {
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        SlimefunItems.CRAFTER_SMART_PORT,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        ExpansionItemStacks.ORE_CRUSHER_BLUEPRINT,
+        NetworkSlimefunItems.SIMPLE_NANOBOTS.getItem(),
+        ExpansionItemStacks.ORE_CRUSHER_BLUEPRINT,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        NetworkSlimefunItems.NETWORK_AUTO_CRAFTER.getItem(),
+        NetworkSlimefunItems.OPTIC_GLASS.getItem()
+    };
+
+    public static final ItemStack[] AUTO_ORE_CRUSHER_WITHHOLDING = {
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        SlimefunItems.CRAFTER_SMART_PORT,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        ExpansionItemStacks.AUTO_ORE_CRUSHER,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_ORE_CRUSHER,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        NetworkSlimefunItems.NETWORK_AUTO_CRAFTER_WITHHOLDING.getItem(),
+        NetworkSlimefunItems.OPTIC_GLASS.getItem()
+    };
+
+    public static final ItemStack[] AUTO_PRESSURE_CHAMBER = {
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        SlimefunItems.CRAFTER_SMART_PORT,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        ExpansionItemStacks.PRESSURE_CHAMBER_BLUEPRINT,
+        NetworkSlimefunItems.SIMPLE_NANOBOTS.getItem(),
+        ExpansionItemStacks.PRESSURE_CHAMBER_BLUEPRINT,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        NetworkSlimefunItems.NETWORK_AUTO_CRAFTER.getItem(),
+        NetworkSlimefunItems.OPTIC_GLASS.getItem()
+    };
+
+    public static final ItemStack[] AUTO_PRESSURE_CHAMBER_WITHHOLDING = {
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        SlimefunItems.CRAFTER_SMART_PORT,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        ExpansionItemStacks.AUTO_PRESSURE_CHAMBER,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_PRESSURE_CHAMBER,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        NetworkSlimefunItems.NETWORK_AUTO_CRAFTER_WITHHOLDING.getItem(),
+        NetworkSlimefunItems.OPTIC_GLASS.getItem()
+    };
+
+    public static final ItemStack[] AUTO_QUANTUM_WORKBENCH = {
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        NetworkSlimefunItems.NETWORK_QUANTUM_WORKBENCH.getItem(),
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        ExpansionItemStacks.QUANTUM_WORKBENCH_BLUEPRINT,
+        NetworkSlimefunItems.SIMPLE_NANOBOTS.getItem(),
+        ExpansionItemStacks.QUANTUM_WORKBENCH_BLUEPRINT,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        NetworkSlimefunItems.NETWORK_AUTO_CRAFTER.getItem(),
+        NetworkSlimefunItems.OPTIC_GLASS.getItem()
+    };
+
+    public static final ItemStack[] AUTO_QUANTUM_WORKBENCH_WITHHOLDING = {
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        SlimefunItems.CRAFTER_SMART_PORT,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        ExpansionItemStacks.AUTO_QUANTUM_WORKBENCH,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_QUANTUM_WORKBENCH,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        NetworkSlimefunItems.NETWORK_AUTO_CRAFTER_WITHHOLDING.getItem(),
+        NetworkSlimefunItems.OPTIC_GLASS.getItem()
+    };
+
+    public static final ItemStack[] AUTO_SMELTERY = {
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        ExpansionItemStacks.SMELTERY_BLUEPRINT,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        SlimefunItems.ELECTRIC_SMELTERY_2,
+        NetworkSlimefunItems.SIMPLE_NANOBOTS.getItem(),
+        SlimefunItems.ELECTRIC_SMELTERY_2,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        NetworkSlimefunItems.NETWORK_AUTO_CRAFTER.getItem(),
+        NetworkSlimefunItems.OPTIC_GLASS.getItem()
+    };
+
+    public static final ItemStack[] AUTO_SMELTERY_WITHHOLDING = {
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        SlimefunItems.CRAFTER_SMART_PORT,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        ExpansionItemStacks.AUTO_SMELTERY,
+        NetworkSlimefunItems.ADVANCED_NANOBOTS.getItem(),
+        ExpansionItemStacks.AUTO_SMELTERY,
+        NetworkSlimefunItems.OPTIC_GLASS.getItem(),
+        NetworkSlimefunItems.NETWORK_AUTO_CRAFTER_WITHHOLDING.getItem(),
+        NetworkSlimefunItems.OPTIC_GLASS.getItem()
+    };
+
+    public static final ItemStack[] COMPRESSOR_BLUEPRINT = {
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        SlimefunItems.ANDROID_MEMORY_CORE,
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        SlimefunItems.CARBON_CHUNK,
+        SlimefunItems.CARBON_PRESS,
+        SlimefunItems.CARBON_CHUNK,
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        SlimefunItems.CARGO_MOTOR,
+        SlimefunItems.BASIC_CIRCUIT_BOARD
+    };
+
+    public static final ItemStack[] COMPRESSOR_RECIPE_ENCODER = {
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        SlimefunItems.ANDROID_MEMORY_CORE,
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        ExpansionItemStacks.COMPRESSOR_BLUEPRINT,
+        ExpansionItemStacks.AUTO_COMPRESSOR,
+        ExpansionItemStacks.COMPRESSOR_BLUEPRINT,
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        SlimefunItems.CARGO_MOTOR,
+        SlimefunItems.BASIC_CIRCUIT_BOARD
+    };
+
+    public static final ItemStack[] EXPANSION_WORKBENCH_BLUEPRINT = {
+        NetworksSlimefunItemStacks.NETWORK_BRIDGE,
+        SlimefunItems.ANCIENT_PEDESTAL,
+        NetworksSlimefunItemStacks.NETWORK_BRIDGE,
+        NetworkSlimefunItems.CRAFTING_BLUEPRINT.getItem(),
+        ExpansionItemStacks.NETWORKS_EXPANSION_WORKBENCH,
+        NetworkSlimefunItems.CRAFTING_BLUEPRINT.getItem(),
+        NetworksSlimefunItemStacks.NETWORK_BRIDGE,
+        SlimefunItems.ANCIENT_PEDESTAL,
+        NetworksSlimefunItemStacks.NETWORK_BRIDGE
+    };
+
+    public static final ItemStack[] EXPANSION_WORKBENCH_RECIPE_ENCODER = {
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        SlimefunItems.ANDROID_MEMORY_CORE,
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        ExpansionItemStacks.EXPANSION_WORKBENCH_BLUEPRINT,
+        ExpansionItemStacks.AUTO_EXPANSION_WORKBENCH,
+        ExpansionItemStacks.EXPANSION_WORKBENCH_BLUEPRINT,
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        SlimefunItems.CARGO_MOTOR,
+        SlimefunItems.BASIC_CIRCUIT_BOARD
+    };
+
+    public static final ItemStack[] GRIND_STONE_BLUEPRINT = {
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        new ItemStack(Material.OAK_FENCE),
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        NetworkSlimefunItems.CRAFTING_BLUEPRINT.getItem(),
+        new ItemStack(Material.DISPENSER),
+        NetworkSlimefunItems.CRAFTING_BLUEPRINT.getItem(),
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        NetworkSlimefunItems.CRAFTING_BLUEPRINT.getItem(),
+        SlimefunItems.BASIC_CIRCUIT_BOARD
+    };
+
+    public static final ItemStack[] GRIND_STONE_RECIPE_ENCODER = {
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        SlimefunItems.ANDROID_MEMORY_CORE,
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        ExpansionItemStacks.GRIND_STONE_BLUEPRINT,
+        ExpansionItemStacks.AUTO_GRIND_STONE,
+        ExpansionItemStacks.GRIND_STONE_BLUEPRINT,
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        SlimefunItems.CARGO_MOTOR,
+        SlimefunItems.BASIC_CIRCUIT_BOARD
+    };
+
+    public static final ItemStack[] JUICER_BLUEPRINT = {
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        new ItemStack(Material.GLASS),
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        NetworkSlimefunItems.CRAFTING_BLUEPRINT.getItem(),
+        new ItemStack(Material.NETHER_BRICK_FENCE),
+        NetworkSlimefunItems.CRAFTING_BLUEPRINT.getItem(),
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        new ItemStack(Material.DISPENSER),
+        SlimefunItems.BASIC_CIRCUIT_BOARD
+    };
+
+    public static final ItemStack[] JUICER_RECIPE_ENCODER = {
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        SlimefunItems.ANDROID_MEMORY_CORE,
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        ExpansionItemStacks.JUICER_BLUEPRINT,
+        ExpansionItemStacks.AUTO_JUICER,
+        ExpansionItemStacks.JUICER_BLUEPRINT,
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        SlimefunItems.CARGO_MOTOR,
+        SlimefunItems.BASIC_CIRCUIT_BOARD
+    };
+
+    public static final ItemStack[] MAGIC_WORKBENCH_BLUEPRINT = {
+        NetworkSlimefunItems.OPTIC_CABLE.getItem(),
+        NetworkSlimefunItems.OPTIC_CABLE.getItem(),
+        NetworkSlimefunItems.OPTIC_CABLE.getItem(),
+        NetworkSlimefunItems.OPTIC_CABLE.getItem(),
+        NetworkSlimefunItems.CRAFTING_BLUEPRINT.getItem(),
+        NetworkSlimefunItems.OPTIC_CABLE.getItem(),
+        new ItemStack(Material.BOOKSHELF),
+        new ItemStack(Material.CRAFTING_TABLE),
+        new ItemStack(Material.DISPENSER)
+    };
+
+    public static final ItemStack[] MAGIC_WORKBENCH_RECIPE_ENCODER = {
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        SlimefunItems.ANDROID_MEMORY_CORE,
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        ExpansionItemStacks.MAGIC_WORKBENCH_BLUEPRINT,
+        ExpansionItemStacks.AUTO_MAGIC_WORKBENCH,
+        ExpansionItemStacks.MAGIC_WORKBENCH_BLUEPRINT,
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        SlimefunItems.CARGO_MOTOR,
+        SlimefunItems.BASIC_CIRCUIT_BOARD
+    };
+
+    public static final ItemStack[] ORE_CRUSHER_BLUEPRINT = {
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        new ItemStack(Material.NETHER_BRICK_FENCE),
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        new ItemStack(Material.IRON_BARS),
+        new ItemStack(Material.DISPENSER),
+        new ItemStack(Material.IRON_BARS),
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        NetworkSlimefunItems.CRAFTING_BLUEPRINT.getItem(),
+        SlimefunItems.BASIC_CIRCUIT_BOARD
+    };
+
+    public static final ItemStack[] ORE_CRUSHER_RECIPE_ENCODER = {
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        SlimefunItems.ANDROID_MEMORY_CORE,
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        ExpansionItemStacks.ORE_CRUSHER_BLUEPRINT,
+        ExpansionItemStacks.AUTO_ORE_CRUSHER,
+        ExpansionItemStacks.ORE_CRUSHER_BLUEPRINT,
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        SlimefunItems.CARGO_MOTOR,
+        SlimefunItems.BASIC_CIRCUIT_BOARD
+    };
+
+    public static final ItemStack[] PRESSURE_CHAMBER_BLUEPRINT = {
+        NetworkSlimefunItems.CRAFTING_BLUEPRINT.getItem(),
+        new ItemStack(Material.DISPENSER),
+        NetworkSlimefunItems.CRAFTING_BLUEPRINT.getItem(),
+        new ItemStack(Material.PISTON),
+        new ItemStack(Material.GLASS),
+        new ItemStack(Material.PISTON),
+        new ItemStack(Material.PISTON),
+        new ItemStack(Material.CAULDRON),
+        new ItemStack(Material.PISTON)
+    };
+
+    public static final ItemStack[] PRESSURE_CHAMBER_RECIPE_ENCODER = {
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        SlimefunItems.ANDROID_MEMORY_CORE,
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        ExpansionItemStacks.PRESSURE_CHAMBER_BLUEPRINT,
+        ExpansionItemStacks.AUTO_PRESSURE_CHAMBER,
+        ExpansionItemStacks.PRESSURE_CHAMBER_BLUEPRINT,
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        SlimefunItems.CARGO_MOTOR,
+        SlimefunItems.BASIC_CIRCUIT_BOARD
+    };
+
+    public static final ItemStack[] QUANTUM_WORKBENCH_BLUEPRINT = {
+        NetworkSlimefunItems.OPTIC_CABLE.getItem(),
+        SlimefunItems.ADVANCED_CIRCUIT_BOARD,
+        NetworkSlimefunItems.OPTIC_CABLE.getItem(),
+        NetworkSlimefunItems.OPTIC_CABLE.getItem(),
+        NetworkSlimefunItems.CRAFTING_BLUEPRINT.getItem(),
+        NetworkSlimefunItems.OPTIC_CABLE.getItem(),
+        NetworkSlimefunItems.OPTIC_CABLE.getItem(),
+        SlimefunItems.ADVANCED_CIRCUIT_BOARD,
+        NetworkSlimefunItems.OPTIC_CABLE.getItem()
+    };
+
+    public static final ItemStack[] QUANTUM_WORKBENCH_RECIPE_ENCODER = {
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        SlimefunItems.ANDROID_MEMORY_CORE,
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        ExpansionItemStacks.QUANTUM_WORKBENCH_BLUEPRINT,
+        ExpansionItemStacks.AUTO_QUANTUM_WORKBENCH,
+        ExpansionItemStacks.QUANTUM_WORKBENCH_BLUEPRINT,
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        SlimefunItems.CARGO_MOTOR,
+        SlimefunItems.BASIC_CIRCUIT_BOARD
+    };
+
+    public static final ItemStack[] SMELTERY_BLUEPRINT = {
+        NetworkSlimefunItems.CRAFTING_BLUEPRINT.getItem(),
+        new ItemStack(Material.NETHER_BRICK_FENCE),
+        NetworkSlimefunItems.CRAFTING_BLUEPRINT.getItem(),
+        new ItemStack(Material.NETHER_BRICKS),
+        new ItemStack(Material.DISPENSER),
+        new ItemStack(Material.NETHER_BRICKS),
+        NetworkSlimefunItems.CRAFTING_BLUEPRINT.getItem(),
+        SlimefunItems.IGNITION_CHAMBER,
+        NetworkSlimefunItems.CRAFTING_BLUEPRINT.getItem()
+    };
+
+    public static final ItemStack[] SMELTERY_RECIPE_ENCODER = {
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        SlimefunItems.ANDROID_MEMORY_CORE,
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        ExpansionItemStacks.SMELTERY_BLUEPRINT,
+        ExpansionItemStacks.AUTO_SMELTERY,
+        ExpansionItemStacks.SMELTERY_BLUEPRINT,
+        SlimefunItems.BASIC_CIRCUIT_BOARD,
+        SlimefunItems.CARGO_MOTOR,
+        SlimefunItems.BASIC_CIRCUIT_BOARD
     };
 }

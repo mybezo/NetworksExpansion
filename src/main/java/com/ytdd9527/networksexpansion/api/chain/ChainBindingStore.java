@@ -86,7 +86,7 @@ public final class ChainBindingStore {
                 }
                 result.put(distance, list);
             } catch (RuntimeException e) {
-                Debug.trace(e, "解析链式绑定表条目失败，已跳过: " + entry);
+                Debug.trace(e, "Failed to parse chain binding table entry, skipped: " + entry);
             }
         }
         return result;
@@ -132,7 +132,7 @@ public final class ChainBindingStore {
                         continue;
                     }
                     if (CellAcceptRules.isNbtOversized(sample)) {
-                        Debug.debug("链式绑定物品 NBT 超限，已跳过该物品: " + sample.getType());
+                        Debug.debug("Chain binding item NBT exceeds limit, item skipped: " + sample.getType());
                         continue;
                     }
                     ItemStack normalized = sample.clone();
@@ -150,7 +150,7 @@ public final class ChainBindingStore {
                 builder.append(distance).append(DISTANCE_SEPARATOR).append(itemsBuilder);
             }
         } catch (RuntimeException e) {
-            Debug.trace(e, "序列化链式绑定表失败，已拒存");
+            Debug.trace(e, "Failed to serialize chain binding table, save rejected");
             return null;
         }
         return firstEntry ? "" : builder.toString();
@@ -174,7 +174,7 @@ public final class ChainBindingStore {
         try {
             return TransportMode.valueOf(raw);
         } catch (IllegalArgumentException e) {
-            Debug.debug("非法方向模式覆盖，按跟随整机处理: " + raw);
+            Debug.debug("Invalid direction mode override, treated as follow machine: " + raw);
             return null;
         }
     }

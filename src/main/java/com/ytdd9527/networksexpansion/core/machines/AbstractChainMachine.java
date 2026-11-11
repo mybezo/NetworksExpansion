@@ -783,7 +783,7 @@ public abstract class AbstractChainMachine extends NetworkObject {
                 try {
                     state.directions.add(BlockFace.valueOf(name));
                 } catch (IllegalArgumentException e) {
-                    Debug.debug("多方向记录非法，跳过: " + name);
+                    Debug.debug("Invalid multi-direction record, skipped: " + name);
                 }
             }
         }
@@ -1059,7 +1059,7 @@ public abstract class AbstractChainMachine extends NetworkObject {
                 menu.replaceExistingItem(slot,
                     ChainBindingMenu.directionPane(menu.getLocation(), face, selected));
             } catch (Exception e) {
-                Debug.trace(e, "刷新方向面板失败: " + face);
+                Debug.trace(e, "Failed to refresh direction panel: " + face);
                 menu.replaceExistingItem(slot, fallbackDirectionPane(face));
             }
         }

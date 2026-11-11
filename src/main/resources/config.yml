@@ -2,7 +2,7 @@
 auto-update: true
 
 # Language
-language: zh-CN
+language: en
 
 # Do not change this value unless you know what you are doing.
 config-version: 2.1.68
@@ -22,18 +22,21 @@ disable-profile-check: false
 
 fast-interact-quantum: true
 
-# 拼音搜索开关：关闭后物品搜索仅匹配原文名，不再做拼音/拼音首字母匹配（省去 pinyin 库的运行时开销）。
+# Show the Slimefun item ID as the first lore line in the Networks Expansion guide menus.
+guide-show-item-id: false
+
+# Pinyin search toggle: when disabled, item search only matches the original name, without pinyin / pinyin-initial matching (saves the runtime cost of the pinyin library).
 enable-pinyin-search: true
 
-# 元件网络设置
+# Cell network settings
 cellnet:
-  # 元件可升级到的物品种类上限。新元件初始1种,每个量子储存+1,直至此上限。
+  # Max item types a cell can be upgraded to. New cells start with 1 type, +1 per Quantum Storage, up to this limit.
   max-item-types: 64
-  # 装配驱动器批量取料：开启后一轮短缺材料合并为一次网络走查（扣货来源顺序可能与旧版不同，取料总量不变）。
-  # 关闭则走旧的逐材料路径，异常时可随时关闭回滚。
+  # Assembly Drive batch fetch: when enabled, all missing materials of a round are fetched in one network walk (the order of source storages may differ from older versions, the total amount fetched is the same).
+  # When disabled, the old per-material path is used; you can disable it at any time to roll back if something goes wrong.
   assembly-batch-fetch: true
 
-# 元件网络持久化 (SQLite)
+# Cell network persistence (SQLite)
 cellnet-storage:
   wal-mode: true
   busy-timeout: 5000
@@ -46,7 +49,7 @@ cellnet-storage:
   checkpoint-threshold: 5000
   backup-enabled: true
   backup-interval-hours: 24
-  # 备份保留份数，超出后从最旧开始删除；<= 0 表示不清理
+  # Number of backups to keep; the oldest are deleted beyond this; <= 0 means never clean up
   backup-keep: 10
 
 rpg-fix:
@@ -62,10 +65,10 @@ speed-down:
   transport-miss-threshold: 120
   reduce-ms: 8000
 
-# 链式传输框架: base-distance 基础距离(格), distance-per-module 距离模块加成,
-# max-distance 距离硬上限, cache-ttl-ticks 目标缓存存活(SF Tick), idle-ttl-ticks 空线休眠存活
-# 模板槽固定: 基础 3 格, 扩容模块每片 +3 格, 最多 9 格(不可配置)
-# work-interval-seconds 工作间隔(秒)。0=满效率(默认); 填 1~60 则每 N 秒工作一次
+# Chain transfer framework: base-distance base distance (blocks), distance-per-module bonus per Distance Module,
+# max-distance hard distance limit, cache-ttl-ticks target cache lifetime (SF Tick), idle-ttl-ticks idle line sleep lifetime
+# Template slots are fixed: base 3 slots, +3 per Capacity Module, max 9 slots (not configurable)
+# work-interval-seconds work interval (seconds). 0 = full efficiency (default); 1~60 = work once every N seconds
 chain:
   base-distance: 16
   distance-per-module: 16
@@ -74,7 +77,7 @@ chain:
   idle-ttl-ticks: 200
   work-interval-seconds: 0
 
-# 网络符文[收纳]: 用符文合成后的武器工具打怪挖矿，掉落物收进绑定的网络
+# Network Rune [Collect]: weapons/tools combined with the rune send drops from kills and mining into the bound network
 collect-rune:
   enabled: true
 

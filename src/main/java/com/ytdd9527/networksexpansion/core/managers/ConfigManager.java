@@ -68,7 +68,7 @@ public class ConfigManager {
     }
 
     public @NotNull String getLanguage() {
-        return Networks.getInstance().getConfig().getString("language", "zh-CN");
+        return Networks.getInstance().getConfig().getString("language", "en");
     }
 
     public boolean isForceCheckLore() {
@@ -169,6 +169,13 @@ public class ConfigManager {
 
     public boolean isDisableProfileCheck() {
         return Networks.getInstance().getConfig().getBoolean("disable-profile-check", false);
+    }
+
+    /**
+     * Whether the item ID is shown as the first lore line in the Networks Expansion guide menus.
+     */
+    public boolean isGuideShowItemId() {
+        return getBoolean("guide-show-item-id", false);
     }
 
     public boolean isFastInteractQuantum() {

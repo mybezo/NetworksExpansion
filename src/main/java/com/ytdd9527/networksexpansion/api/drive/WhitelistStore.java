@@ -126,7 +126,7 @@ public final class WhitelistStore {
                 Files.move(temp.toPath(), file.toPath(), StandardCopyOption.REPLACE_EXISTING);
             }
         } catch (IOException e) {
-            Debug.trace(e, "保存 元件驱动器白名单失败");
+            Debug.trace(e, "Failed to save Cell Drive whitelist");
         } finally {
             temp.delete();
         }

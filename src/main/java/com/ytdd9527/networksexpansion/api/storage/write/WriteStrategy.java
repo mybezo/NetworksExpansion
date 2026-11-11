@@ -29,27 +29,27 @@ public class WriteStrategy {
             return future.get(timeoutSeconds, TimeUnit.SECONDS);
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
-            throw new IllegalStateException("网拓元件网络写操作被中断", e);
+            throw new IllegalStateException("NetworksExpansion cell network write operation was interrupted", e);
         } catch (ExecutionException e) {
             Throwable cause = e.getCause();
             if (cause instanceof RuntimeException re) {
                 throw re;
             }
-            throw new IllegalStateException("网拓元件网络写操作失败", cause);
+            throw new IllegalStateException("NetworksExpansion cell network write operation failed", cause);
         } catch (TimeoutException e) {
             try {
                 return future.get(timeoutSeconds, TimeUnit.SECONDS);
             } catch (InterruptedException ie) {
                 Thread.currentThread().interrupt();
-                throw new IllegalStateException("网拓元件网络写操作被中断", ie);
+                throw new IllegalStateException("NetworksExpansion cell network write operation was interrupted", ie);
             } catch (TimeoutException te) {
-                throw new IllegalStateException("网拓元件网络写操作超时，任务仍在后台运行", te);
+                throw new IllegalStateException("NetworksExpansion cell network write operation timed out, the task is still running in the background", te);
             } catch (ExecutionException ee) {
                 Throwable cause = ee.getCause();
                 if (cause instanceof RuntimeException re) {
                     throw re;
                 }
-                throw new IllegalStateException("网拓元件网络写操作失败", cause);
+                throw new IllegalStateException("NetworksExpansion cell network write operation failed", cause);
             }
         }
     }
