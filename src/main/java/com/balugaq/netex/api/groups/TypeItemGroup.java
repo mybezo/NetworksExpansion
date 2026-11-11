@@ -185,7 +185,9 @@ public class TypeItemGroup extends FlexItemGroup {
                 Research research = slimefunItem.getResearch();
                 if (playerProfile.hasUnlocked(research)) {
                     ItemStack itemStack = ItemStackUtil.cloneWithoutNBT(slimefunItem.getItem());
-                    ItemStackUtil.addLoreToFirst(itemStack, "§7" + slimefunItem.getId());
+                    if (Networks.getConfigManager().isGuideShowItemId()) {
+                        ItemStackUtil.addLoreToFirst(itemStack, "§7" + slimefunItem.getId());
+                    }
                     chestMenu.addItem(MAIN_CONTENT[i], ItemStackUtil.getCleanItem(itemStack));
                     chestMenu.addMenuClickHandler(MAIN_CONTENT[i], (p, slot, item, action) -> {
                         RecipeItemGroup recipeItemGroup = RecipeItemGroup.getByItemStack(

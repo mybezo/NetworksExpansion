@@ -22,6 +22,9 @@ disable-profile-check: false
 
 fast-interact-quantum: true
 
+# Show the Slimefun item ID as the first lore line in the Networks Expansion guide menus.
+guide-show-item-id: false
+
 # Pinyin search toggle: when disabled, item search only matches the original name, without pinyin / pinyin-initial matching (saves the runtime cost of the pinyin library).
 enable-pinyin-search: true
 

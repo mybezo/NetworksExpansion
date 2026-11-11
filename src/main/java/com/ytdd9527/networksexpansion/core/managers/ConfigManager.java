@@ -171,6 +171,13 @@ public class ConfigManager {
         return Networks.getInstance().getConfig().getBoolean("disable-profile-check", false);
     }
 
+    /**
+     * Whether the item ID is shown as the first lore line in the Networks Expansion guide menus.
+     */
+    public boolean isGuideShowItemId() {
+        return getBoolean("guide-show-item-id", false);
+    }
+
     public boolean isFastInteractQuantum() {
         return Networks.getInstance().getConfig().getBoolean("fast-interact-quantum", false);
     }
