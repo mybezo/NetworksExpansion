@@ -62,7 +62,7 @@ public final class LinkBindingStore {
                 injector.accept(sample);
                 injected++;
             } catch (Throwable e) {
-                Debug.debug("纠缠绑定记录损坏，跳过: " + e.getMessage());
+                Debug.debug("Corrupted entanglement binding record, skipped: " + e.getMessage());
             }
         }
         return injected;
@@ -180,7 +180,7 @@ public final class LinkBindingStore {
         try {
             yaml.save(indexFile());
         } catch (IOException e) {
-            Networks.getInstance().getLogger().log(Level.WARNING, "保存量子纠缠绑定索引失败", e);
+            Networks.getInstance().getLogger().log(Level.WARNING, "Failed to save quantum entanglement binding index", e);
         }
     }
 

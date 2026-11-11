@@ -523,7 +523,7 @@ public class LinkerGrid extends NetworkObject {
             try {
                 return GridCache.SortOrder.valueOf(s);
             } catch (IllegalArgumentException e) {
-                Debug.debug("排序记录非法，回退默认: " + s);
+                Debug.debug("Invalid sort record, falling back to default: " + s);
             }
         }
         return GridCache.SortOrder.ALPHABETICAL;

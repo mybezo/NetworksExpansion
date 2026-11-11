@@ -122,7 +122,7 @@ public class DriveStorage {
             try {
                 remoteUuid = UUID.fromString(uuidString);
             } catch (IllegalArgumentException e) {
-                Debug.debug("末影频道成员 uuid 非法，跳过: " + uuidString);
+                Debug.debug("Invalid Ender channel member uuid, skipped: " + uuidString);
                 continue;
             }
             if (!seen.add(remoteUuid)) {

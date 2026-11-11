@@ -25,7 +25,7 @@ public class CellnetExplosiveToolListener implements Listener {
             final SlimefunItem item = StorageCacheUtils.getSfItem(location);
             if (item instanceof CellDrive || item instanceof CellCleaner) {
                 blocksToRemove.add(block);
-                Debug.debug("已阻止爆破工具破坏元件网络方块: " + location);
+                Debug.debug("Blocked an explosive tool from breaking a cell network block: " + location);
             }
         }
         event.getAdditionalBlocks().removeAll(blocksToRemove);

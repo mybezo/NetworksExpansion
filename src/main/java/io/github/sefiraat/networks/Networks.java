@@ -57,7 +57,7 @@ import java.util.Set;
 import java.util.logging.Level;
 
 public class Networks extends JavaPlugin implements SlimefunAddon {
-    private static final String DEFAULT_LANGUAGE = "zh-CN";
+    private static final String DEFAULT_LANGUAGE = "en";
     private static Networks instance;
 
     @Getter
@@ -366,7 +366,7 @@ public class Networks extends JavaPlugin implements SlimefunAddon {
         LibraryManager libraryManager = new BukkitLibraryManager(this);
         libraryManager.addMavenCentral();
 
-        getLogger().info("正在加载 Pinyin");
+        getLogger().info("Loading Pinyin");
         Library pinyin = Library.builder()
             .groupId("com{}github{}houbb")
             .artifactId("pinyin")
@@ -374,7 +374,7 @@ public class Networks extends JavaPlugin implements SlimefunAddon {
             .build();
         libraryManager.loadLibrary(pinyin);
 
-        getLogger().info("正在加载 opencc4j");
+        getLogger().info("Loading opencc4j");
         Library opencc4j = Library.builder()
             .groupId("com{}github{}houbb")
             .artifactId("opencc4j")
@@ -382,7 +382,7 @@ public class Networks extends JavaPlugin implements SlimefunAddon {
             .build();
         libraryManager.loadLibrary(opencc4j);
 
-        getLogger().info("正在加载 heaven");
+        getLogger().info("Loading heaven");
         Library heaven = Library.builder()
             .groupId("com{}github{}houbb")
             .artifactId("heaven")
@@ -390,7 +390,7 @@ public class Networks extends JavaPlugin implements SlimefunAddon {
             .build();
         libraryManager.loadLibrary(heaven);
 
-        getLogger().info("正在加载 nlp-common");
+        getLogger().info("Loading nlp-common");
         Library nlp = Library.builder()
             .groupId("com{}github{}houbb")
             .artifactId("nlp-common")

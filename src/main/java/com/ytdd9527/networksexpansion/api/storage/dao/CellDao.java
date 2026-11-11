@@ -175,7 +175,7 @@ public class CellDao {
                         whitelist.add(item);
                     }
                 } catch (RuntimeException e) {
-                    Debug.trace(e, "白名单条目反序列化失败");
+                    Debug.trace(e, "Failed to deserialize whitelist entry");
                 }
             }
         } catch (IOException e) {

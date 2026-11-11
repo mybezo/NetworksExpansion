@@ -91,7 +91,7 @@ public final class EnderChannelController {
              PreparedStatement ps = conn.prepareStatement("PRAGMA wal_checkpoint(TRUNCATE)")) {
             ps.execute();
         } catch (SQLException e) {
-            Debug.trace(e, "EnderChannelController 关服落盘失败");
+            Debug.trace(e, "EnderChannelController failed to flush data on shutdown");
         }
     }
 
@@ -102,8 +102,8 @@ public final class EnderChannelController {
         try (var stat = conn.createStatement()) {
             stat.execute("PRAGMA busy_timeout=5000");
         } catch (SQLException e) {
-            Networks.getInstance().getLogger().warning("设置 ender_channels 连接 PRAGMA 失败");
-            Debug.trace(e, "设置 ender_channels 连接 PRAGMA 失败");
+            Networks.getInstance().getLogger().warning("Failed to set PRAGMA on ender_channels connection");
+            Debug.trace(e, "Failed to set PRAGMA on ender_channels connection");
         }
         return conn;
     }
@@ -116,7 +116,7 @@ public final class EnderChannelController {
                 return service.getString(key);
             }
         } catch (Throwable e) {
-            Debug.trace(e, "EnderChannelController 读取文案失败: " + key);
+            Debug.trace(e, "EnderChannelController failed to read localized text: " + key);
         }
         return fallback;
     }
@@ -130,7 +130,7 @@ public final class EnderChannelController {
             stat.execute(TABLE_CREATE_SQL);
             stat.execute(INDEX_CELL_UNIQUE_SQL);
         } catch (SQLException e) {
-            Networks.getInstance().getLogger().warning(message(CellnetText.ENDER_TABLE_CREATE_FAILED, "末影频道数据库建表失败"));
+            Networks.getInstance().getLogger().warning(message(CellnetText.ENDER_TABLE_CREATE_FAILED, "Failed to create Ender channel database table"));
             throw e;
         }
         tableReady.set(true);
@@ -153,8 +153,8 @@ public final class EnderChannelController {
             ps.executeUpdate();
             return true;
         } catch (SQLException e) {
-            Networks.getInstance().getLogger().warning(message(CellnetText.ENDER_WRITE_FAILED, "末影频道数据写入失败: {0}").replace("{0}", e.getMessage()));
-            Debug.trace(e, "EnderChannelController 写失败: " + sql);
+            Networks.getInstance().getLogger().warning(message(CellnetText.ENDER_WRITE_FAILED, "Failed to write Ender channel data: {0}").replace("{0}", e.getMessage()));
+            Debug.trace(e, "EnderChannelController write failed: " + sql);
             return false;
         }
     }
@@ -176,8 +176,8 @@ public final class EnderChannelController {
                 return null;
             }
         } catch (SQLException e) {
-            Networks.getInstance().getLogger().warning(message(CellnetText.ENDER_READ_FAILED, "末影频道数据读取失败: {0}").replace("{0}", e.getMessage()));
-            Debug.trace(e, "EnderChannelController 查询失败: " + sql);
+            Networks.getInstance().getLogger().warning(message(CellnetText.ENDER_READ_FAILED, "Failed to read Ender channel data: {0}").replace("{0}", e.getMessage()));
+            Debug.trace(e, "EnderChannelController query failed: " + sql);
             return null;
         }
     }
@@ -194,8 +194,8 @@ public final class EnderChannelController {
                 }
             }
         } catch (SQLException e) {
-            Networks.getInstance().getLogger().warning(message(CellnetText.ENDER_READ_FAILED, "末影频道数据读取失败: {0}").replace("{0}", e.getMessage()));
-            Debug.trace(e, "EnderChannelController 遍历查询失败: " + sql);
+            Networks.getInstance().getLogger().warning(message(CellnetText.ENDER_READ_FAILED, "Failed to read Ender channel data: {0}").replace("{0}", e.getMessage()));
+            Debug.trace(e, "EnderChannelController iteration query failed: " + sql);
         }
     }
 }

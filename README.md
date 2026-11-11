@@ -1,29 +1,29 @@
 ![](https://cdn.jsdelivr.net/gh/SlimefunGuguProject/Networks@master/images/logo/logo_large.png)
 
-[网络拓展](https://github.com/balugaq/NetworksExpansion)是一个[Slimefun](https://github.com/SlimefunGuguProject/Slimefun4)附属插件，基于[网络](https://github.com/SlimefunGuguProject/Networks)进行再开发以及 bug 修复，可以创建一个简单有效的物品存储与运输系统，并可以与货运系统交互。
+[NetworksExpansion](https://github.com/balugaq/NetworksExpansion) is a [Slimefun](https://github.com/SlimefunGuguProject/Slimefun4) addon, a redevelopment and bug-fix of [Networks](https://github.com/SlimefunGuguProject/Networks). It lets you build a simple yet effective item storage and transport system that can also interact with the Cargo system.
 
 ![](https://cdn.jsdelivr.net/gh/SlimefunGuguProject/Networks@master/images/wiki/setup.png)
 
 > [!IMPORTANT]
-> [网络拓展](https://github.com/balugaq/NetworksExpansion)不需要[网络](https://github.com/SlimefunGuguProject/Networks)作为前置
+> [NetworksExpansion](https://github.com/balugaq/NetworksExpansion) does not require [Networks](https://github.com/SlimefunGuguProject/Networks) as a dependency
 
-## 下载
+## Download
 
-[![构建状态](https://builds.guizhanss.com/api/badge/ytdd9527/NetworksExpansion/master/latest)](https://builds.guizhanss.com/ytdd9527/NetworksExpansion/master)
+[![Build Status](https://builds.guizhanss.com/api/badge/ytdd9527/NetworksExpansion/master/latest)](https://builds.guizhanss.com/ytdd9527/NetworksExpansion/master)
 
-## Wiki / 文档
+## Wiki / Documentation
 
-你可以在这里查看[网络](https://github.com/SlimefunGuguProject/Networks)所有物品的功能：[点击查看](https://slimefun-addons-wiki.guizhanss.cn/networks/)
+You can see what every item of [Networks](https://github.com/SlimefunGuguProject/Networks) does here: [Click to view](https://slimefun-addons-wiki.guizhanss.cn/networks/)
 
-## 感谢
+## Thanks
 
-感谢 Boomer, Cai 以及 Lucky 帮忙测试并完善插件。
+Thanks to Boomer, Cai and Lucky for helping test and improve the plugin.
 
-感谢 **mct.tantrum.org** 的服主提供的测试环境。
+Thanks to the owner of **mct.tantrum.org** for providing a test environment.
 
-另外，感谢 **mc.talosmp.net** 的 **[GentlemanCheesy](https://github.com/GentlemanCheesy)** 成为[本人](https://github.com/Sefiraat)的首位赞助者！每个月能多喝一杯咖啡让我能有动力更好地编写插件。
+Also, thanks to **[GentlemanCheesy](https://github.com/GentlemanCheesy)** of **mc.talosmp.net** for becoming [my](https://github.com/Sefiraat) first sponsor! An extra coffee every month keeps me motivated to write better plugins.
 
-感谢 [m1919810 / matl114](https://github.com/m1919810) — 帮助[我](https://github.com/balugaq)找到了一些[网络拓展](https://github.com/balugaq/NetworksExpansion)的 bug
+Thanks to [m1919810 / matl114](https://github.com/m1919810) for helping [me](https://github.com/balugaq) find several bugs in [NetworksExpansion](https://github.com/balugaq/NetworksExpansion)
 
-如果你觉得这个附属不错，可以请[作者](https://github.com/balugaq)喝一杯奶茶喵~
+If you like this addon, you can buy the [author](https://github.com/balugaq) a cup of milk tea~
 <img width="657" height="657" alt="cd7ab045e33de6267ee2c167f1e63e9c" src="https://github.com/user-attachments/assets/cdcd8276-a24a-4614-a156-41dfbc328219" />

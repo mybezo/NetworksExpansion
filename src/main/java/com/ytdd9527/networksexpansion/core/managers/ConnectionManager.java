@@ -22,7 +22,7 @@ public class ConnectionManager {
                  Statement stat = conn.createStatement()) {
                 stat.execute("PRAGMA journal_mode=WAL");
             } catch (SQLException e) {
-                Debug.trace(e, "设置 WAL 模式失败");
+                Debug.trace(e, "Failed to set WAL mode");
             }
         }
     }
@@ -37,7 +37,7 @@ public class ConnectionManager {
                 stat.execute("PRAGMA journal_mode=WAL");
             }
         } catch (SQLException e) {
-            Debug.trace(e, "设置连接级 PRAGMA 失败");
+            Debug.trace(e, "Failed to set connection-level PRAGMA");
         }
         return conn;
     }
