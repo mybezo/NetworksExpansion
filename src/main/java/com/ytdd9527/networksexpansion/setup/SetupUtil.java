@@ -208,7 +208,7 @@ public class SetupUtil {
             ExpansionItems.NETWORK_BRIDGE_MAGENTA.registerThis(),
             ExpansionItems.NETWORK_BRIDGE_PINK.registerThis());
 
-        ExpansionItemsMenus.SUB_MENU_DEPRECATED.addTo(
+        ExpansionItemsMenus.SUB_MENU_BLUEPRINT.addTo(
             ExpansionItems.MAGIC_WORKBENCH_BLUEPRINT.registerThis(),
             ExpansionItems.ARMOR_FORGE_BLUEPRINT.registerThis(),
             ExpansionItems.SMELTERY_BLUEPRINT.registerThis(),
@@ -219,7 +219,9 @@ public class SetupUtil {
             ExpansionItems.GRIND_STONE_BLUEPRINT.registerThis(),
             ExpansionItems.JUICER_BLUEPRINT.registerThis(),
             ExpansionItems.ORE_CRUSHER_BLUEPRINT.registerThis(),
-            ExpansionItems.PRESSURE_CHAMBER_BLUEPRINT.registerThis(),
+            ExpansionItems.PRESSURE_CHAMBER_BLUEPRINT.registerThis());
+
+        ExpansionItemsMenus.SUB_MENU_CORE_MACHINE.addTo(
             ExpansionItems.MAGIC_WORKBENCH_RECIPE_ENCODER.registerThis(),
             ExpansionItems.ARMOR_FORGE_RECIPE_ENCODER.registerThis(),
             ExpansionItems.SMELTERY_RECIPE_ENCODER.registerThis(),
@@ -274,7 +276,9 @@ public class SetupUtil {
             ExpansionItems.ADVANCED_AUTO_GRIND_STONE_WITHHOLDING.registerThis(),
             ExpansionItems.ADVANCED_AUTO_JUICER_WITHHOLDING.registerThis(),
             ExpansionItems.ADVANCED_AUTO_ORE_CRUSHER_WITHHOLDING.registerThis(),
-            ExpansionItems.ADVANCED_AUTO_PRESSURE_CHAMBER_WITHHOLDING.registerThis(),
+            ExpansionItems.ADVANCED_AUTO_PRESSURE_CHAMBER_WITHHOLDING.registerThis());
+
+        ExpansionItemsMenus.SUB_MENU_DEPRECATED.addTo(
             ExpansionItems.BETTER_GRABBER.registerThis());
 
         /* authors */
