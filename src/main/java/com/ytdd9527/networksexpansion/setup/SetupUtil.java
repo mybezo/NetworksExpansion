@@ -98,6 +98,7 @@ public class SetupUtil {
             ExpansionItems.ADVANCED_TRANSFER_BEST_PUSHER.registerThis());
         ExpansionItemsMenus.SUB_MENU_CARGO.addTo(
             ExpansionItems.WHITELISTED_TRANSFER_GRABBER.registerThis(),
+            ExpansionItems.BETTER_GRABBER.registerThis(),
             ExpansionItems.WHITELISTED_LINE_TRANSFER_GRABBER.registerThis(),
             ExpansionItems.WHITELISTED_TRANSFER_VANILLA_GRABBER.registerThis(),
             ExpansionItems.WHITELISTED_LINE_TRANSFER_VANILLA_GRABBER.registerThis(),
@@ -278,9 +279,6 @@ public class SetupUtil {
             ExpansionItems.ADVANCED_AUTO_ORE_CRUSHER_WITHHOLDING.registerThis(),
             ExpansionItems.ADVANCED_AUTO_PRESSURE_CHAMBER_WITHHOLDING.registerThis());
 
-        ExpansionItemsMenus.SUB_MENU_DEPRECATED.addTo(
-            ExpansionItems.BETTER_GRABBER.registerThis());
-
         /* authors */
         ExpansionItemsMenus.SUB_MENU_AUTHOR.addTo(
             ExpansionItems.AUTHOR_SEFIRAAT.registerThis(),
@@ -347,9 +345,6 @@ public class SetupUtil {
             ExpansionItemsMenus.SUB_MENU_ANNOUNCE);
         ExpansionItemsMenus.MAIN_MENU_TROPHY.addFrom(
             ExpansionItemsMenus.SUB_MENU_AUTHOR, ExpansionItemsMenus.SUB_MENU_ANNOUNCE);
-
-        ExpansionItemsMenus.MAIN_ITEM_GROUP.addTo(
-            ExpansionItemsMenus.SUB_MENU_DEPRECATED);
 
         ExpansionItemsMenus.MAIN_ITEM_GROUP.setTier(0);
         ExpansionItemsMenus.MAIN_ITEM_GROUP.register(networks);

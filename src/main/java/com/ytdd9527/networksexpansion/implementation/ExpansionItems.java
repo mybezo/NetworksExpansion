@@ -1368,12 +1368,11 @@ public class ExpansionItems {
         ExpansionWorkbench.TYPE,
         ExpansionRecipes.OFFSETTER);
 
-    @Deprecated
     public static final WhitelistedTransferGrabber BETTER_GRABBER = new WhitelistedTransferGrabber(
         ExpansionItemsMenus.MENU_FUNCTIONAL_MACHINE,
         ExpansionItemStacks.BETTER_GRABBER,
-        RecipeType.NULL,
-        ExpansionRecipes.NULL);
+        ExpansionWorkbench.TYPE,
+        ExpansionRecipes.BETTER_GRABBER);
 
     public static final UnusableSlimefunItem NTW_EXPANSION_ANNOUNCE_1 = new UnusableSlimefunItem(
         ExpansionItemsMenus.MENU_TROPHY,

@@ -851,9 +851,9 @@ public class ExpansionRecipes {
 
     @Deprecated
     public static final ItemStack[] BETTER_GRABBER = new ItemStack[]{
-        OPTIC_STAR.getItem(), NETWORK_PUSHER.getItem(), OPTIC_STAR.getItem(),
-        NETWORK_PUSHER.getItem(), NETWORK_GRABBER.getItem(), NETWORK_PUSHER.getItem(),
-        OPTIC_STAR.getItem(), NETWORK_PUSHER.getItem(), OPTIC_STAR.getItem()
+        OPTIC_CABLE.getItem(), NETWORK_GRABBER.getItem(), OPTIC_CABLE.getItem(),
+        NETWORK_GRABBER.getItem(), OPTIC_STAR.getItem(), NETWORK_GRABBER.getItem(),
+        OPTIC_CABLE.getItem(), NETWORK_GRABBER.getItem(), OPTIC_CABLE.getItem()
     };
     public static final ItemStack[] NETWORK_CRAFTING_GRID_NEW_STYLE = new ItemStack[]{
         NETWORK_BRIDGE.getItem(), NETWORK_CRAFTING_GRID.getItem(), NETWORK_BRIDGE.getItem(),

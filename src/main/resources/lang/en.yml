@@ -3808,7 +3808,8 @@ items:
   NTW_EXPANSION_BETTER_GRABBER:
     name: "Better Network Grabber"
     lore:
-      - "Grabs the first item from the facing machine"
+      - "Grabs whitelisted items from the facing machine"
+      - "&7Put the items to grab in the template slots"
 
   NTW_SYNTHETIC_EMERALD_SHARD:
     name: "Synthetic Emerald Shard"
