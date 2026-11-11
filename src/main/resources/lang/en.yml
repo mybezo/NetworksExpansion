@@ -1998,1775 +1998,1405 @@ items:
   NTW_EXPANSION_WORKBENCH:
     name: "Networks Expansion Workbench"
     lore:
-      - "Used to craft various materials and machines for Networks Expansion"
+      - "Crafts Networks Expansion materials and machines"
 
   NTW_EXPANSION_INFO_TOOL:
     name: "Network Info Tool"
     lore:
-      - "Admin Only"
-      - "Right click to view detailed info of items in the network"
+      - "<error>Admin only"
+      - "Right Click to see item details in the network"
 
   NTW_EXPANSION_ADVANCED_IMPORT:
     name: "Advanced Network Import"
     lore:
-      - "Advanced Network Import sends items inside it into the network"
-      - "Can transfer up to 54 stacks per SF tick"
-      - "Can receive items from Cargo Networks"
+      - "Sends its items into the network"
+      - "Up to 54 stacks per SF tick"
+      - "Accepts items from Cargo"
 
   NTW_EXPANSION_ADVANCED_EXPORT:
     name: "Advanced Network Export"
     lore:
-      - "Advanced Network Export can be configured to"
-      - "Continuously send a specified amount of items out of the network"
-      - "Cargo Networks can extract items from it"
+      - "Keeps exporting a set amount of an item"
+      - "from the network"
+      - "Cargo can pull items from it"
 
   NTW_EXPANSION_ADVANCED_PURGER:
     name: "Advanced Network Purger"
     lore:
-      - "Advanced Network Purger will continuously"
-      - "remove specified items from the network"
-      - "Purged items disappear immediately, use with caution!"
+      - "Keeps deleting the set item from the network"
+      - "&cDeleted items are gone forever!"
 
   NTW_EXPANSION_ADVANCED_GREEDY_BLOCK:
     name: "Advanced Network Greedy Block"
     lore:
-      - "Advanced Network Greedy Block can set an item,"
-      - "and then collect the specified item from various network inputs,"
-      - "up to 9 stacks."
-      - "Once full, it will block the transmission of that item in the network,"
-      - "and no other network blocks will receive that item."
+      - "Collects up to 9 stacks of the set item"
+      - "When full, blocks that item"
+      - "from going anywhere else in the network"
 
   NTW_EXPANSION_CAPACITOR_5:
     name: "Network Capacitor (5)"
     lore:
-      - "Network Capacitor can receive power from"
-      - "the Energy Network and store it"
-      - "for use by other network devices"
+      - "Stores power from the Energy Network"
+      - "for network devices"
       - ""
       - "<click_info>Capacity: &7100,000,000"
 
   NTW_EXPANSION_CAPACITOR_6:
     name: "Network Capacitor (6)"
     lore:
-      - "Network Capacitor can receive power from"
-      - "the Energy Network and store it"
-      - "for use by other network devices"
+      - "Stores power from the Energy Network"
+      - "for network devices"
       - ""
       - "<click_info>Capacity: &72,147,483,647"
 
   NTW_INPUT_ONLY_MONITOR:
     name: "Network Monitor (Input Only)"
     lore:
-      - "Network Monitor can interact with nearby blocks"
-      - "Allowing specified blocks to access the network"
-      - "Specified blocks can only receive input items"
+      - "Connects an adjacent storage to the network"
+      - "&eInput only"
       - ""
-      - "Currently supports:"
-      - "Infinity Expansion - Storage Unit"
-      - "Fluffy Machines - Silo"
-      - "Networks - Quantum Storage"
-      - "<random_color>Networks Expansion - Network Drawer"
+      - "Supports:"
+      - "InfinityExpansion Storage Unit"
+      - "FluffyMachines Barrel"
+      - "Networks Quantum Storage"
+      - "<random_color>Network Drawer"
 
   NTW_OUTPUT_ONLY_MONITOR:
     name: "Network Monitor (Output Only)"
     lore:
-      - "Network Monitor can interact with nearby blocks"
-      - "Allowing specified blocks to access the network"
-      - "Specified blocks can only output items"
+      - "Connects an adjacent storage to the network"
+      - "&eOutput only"
       - ""
-      - "Currently supports:"
-      - "Infinity Expansion - Storage Unit"
-      - "Fluffy Machines - Silo"
-      - "Networks - Quantum Storage"
-      - "<random_color>Networks Expansion - Network Drawer"
+      - "Supports:"
+      - "InfinityExpansion Storage Unit"
+      - "FluffyMachines Barrel"
+      - "Networks Quantum Storage"
+      - "<random_color>Network Drawer"
 
   NTW_EXPANSION_LINE_TRANSFER_PUSHER:
     name: "Line Transfer [Push]"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&6Transfer Range: 32 blocks"
-      - "&7Default Mode: &6First Stop"
-      - "&cMode cannot be adjusted"
-      - "&7Default Amount: &664"
-      - "&cAmount cannot be adjusted"
-      - "&eUnlike the Line Transfer from Disorder Craft, this machine&c only continuously pushes"
-      - "&cNot continuously transferring items!"
-      - "&7Mode Explanation: "
-      - "&6First Stop&7: &eOnly pushes to the first available slot"
+      - "&cSlimefun containers only"
+      - "&6Range: 32 blocks"
+      - "&7Mode: &6First Stop &8(fixed)"
+      - "&7Amount: &664 &8(fixed)"
+      - "&ePushes items along a line"
 
   NTW_EXPANSION_LINE_TRANSFER_MORE_PUSHER:
     name: "Line Transfer [V2 Push]"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&6Transfer Range: 32 blocks"
-      - "&7Default Mode: &6First Stop"
-      - "&cMode cannot be adjusted"
-      - "&7Default Amount: &664"
-      - "&cAmount cannot be adjusted"
-      - "&eUnlike the Line Transfer from Disorder Craft, this machine&c only continuously pushes"
-      - "&cNot continuously transferring items!"
-      - "&7Mode Explanation: "
-      - "&6First Stop&7: &eOnly pushes to the first available slot"
+      - "&cSlimefun containers only"
+      - "&6Range: 32 blocks"
+      - "&7Mode: &6First Stop &8(fixed)"
+      - "&7Amount: &664 &8(fixed)"
+      - "&ePushes items along a line"
 
   NTW_EXPANSION_LINE_TRANSFER_BEST_PUSHER:
     name: "Line Transfer [V3 Push]"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&6Transfer Range: 32 blocks"
-      - "&7Default Mode: &6First Stop"
-      - "&cMode cannot be adjusted"
-      - "&7Default Amount: &664"
-      - "&cAmount cannot be adjusted"
-      - "&eUnlike the Line Transfer from Disorder Craft, this machine&c only continuously pushes"
-      - "&cNot continuously transferring items!"
-      - "&7Mode Explanation: "
-      - "&6First Stop&7: &eOnly pushes to the first available slot"
+      - "&cSlimefun containers only"
+      - "&6Range: 32 blocks"
+      - "&7Mode: &6First Stop &8(fixed)"
+      - "&7Amount: &664 &8(fixed)"
+      - "&ePushes items along a line"
 
   NTW_EXPANSION_LINE_TRANSFER_GRABBER:
     name: "Line Transfer [Grab]"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&6Transfer Range: 32 blocks"
-      - "&7Default Mode: &6First Stop"
-      - "&cMode cannot be adjusted"
-      - "&7Default Amount: &664"
-      - "&cAmount cannot be adjusted"
-      - "&eUnlike the Line Transfer from Disorder Craft, this machine&c only continuously grabs"
-      - "&cNot continuously transferring items!"
-      - "&7Mode Explanation: "
-      - "&6First Stop&7: &eOnly grabs the first slot with items"
+      - "&cSlimefun containers only"
+      - "&6Range: 32 blocks"
+      - "&7Mode: &6First Stop &8(fixed)"
+      - "&7Amount: &664 &8(fixed)"
+      - "&eGrabs items along a line"
 
   NTW_EXPANSION_LINE_TRANSFER:
     name: "Line Transfer"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&6Transfer Range: 32 blocks"
-      - "&7Default Mode: &6First Stop"
-      - "&cMode cannot be adjusted"
-      - "&7Default Amount: &664"
-      - "&cAmount cannot be adjusted"
-      - "&eUnlike the Line Transfer from Disorder Craft, this machine&c only continuously pushes and grabs"
-      - "&cNot continuously transferring items!"
-      - "&7Mode Explanation: "
-      - "&6First Stop&7: &eOnly pushes to first available slot / Only grabs first slot with items"
+      - "&cSlimefun containers only"
+      - "&6Range: 32 blocks"
+      - "&7Mode: &6First Stop &8(fixed)"
+      - "&7Amount: &664 &8(fixed)"
+      - "&ePushes and grabs items along a line"
 
   NTW_EXPANSION_LINE_TRANSFER_PLUS_PUSHER:
     name: "Line Transfer Plus [Push]"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&6Transfer Range: 64 blocks"
-      - "&7Default Mode: &6First Stop"
-      - "&cMode cannot be adjusted"
-      - "&7Default Amount: &664"
-      - "&cAmount cannot be adjusted"
-      - "&eUnlike the Line Transfer from Disorder Craft, this machine&c only continuously pushes"
-      - "&cNot continuously transferring items!"
-      - "&7Mode Explanation: "
-      - "&6First Stop&7: &eOnly pushes to the first available slot"
+      - "&cSlimefun containers only"
+      - "&6Range: 64 blocks"
+      - "&7Mode: &6First Stop &8(fixed)"
+      - "&7Amount: &664 &8(fixed)"
+      - "&ePushes items along a line"
 
   NTW_EXPANSION_LINE_TRANSFER_PLUS_MORE_PUSHER:
     name: "Line Transfer Plus [V2 Push]"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&6Transfer Range: 64 blocks"
-      - "&7Default Mode: &6First Stop"
-      - "&cMode cannot be adjusted"
-      - "&7Default Amount: &664"
-      - "&cAmount cannot be adjusted"
-      - "&eUnlike the Line Transfer from Disorder Craft, this machine&c only continuously pushes"
-      - "&cNot continuously transferring items!"
-      - "&7Mode Explanation: "
-      - "&6First Stop&7: &eOnly pushes to the first available slot"
+      - "&cSlimefun containers only"
+      - "&6Range: 64 blocks"
+      - "&7Mode: &6First Stop &8(fixed)"
+      - "&7Amount: &664 &8(fixed)"
+      - "&ePushes items along a line"
 
   NTW_EXPANSION_LINE_TRANSFER_PLUS_BEST_PUSHER:
     name: "Line Transfer Plus [V3 Push]"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&6Transfer Range: 64 blocks"
-      - "&7Default Mode: &6First Stop"
-      - "&cMode cannot be adjusted"
-      - "&7Default Amount: &664"
-      - "&cAmount cannot be adjusted"
-      - "&eUnlike the Line Transfer from Disorder Craft, this machine&c only continuously pushes"
-      - "&cNot continuously transferring items!"
-      - "&7Mode Explanation: "
-      - "&6First Stop&7: &eOnly pushes to the first available slot"
+      - "&cSlimefun containers only"
+      - "&6Range: 64 blocks"
+      - "&7Mode: &6First Stop &8(fixed)"
+      - "&7Amount: &664 &8(fixed)"
+      - "&ePushes items along a line"
 
   NTW_EXPANSION_LINE_TRANSFER_PLUS_GRABBER:
     name: "Line Transfer Plus [Grab]"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&6Transfer Range: 64 blocks"
-      - "&7Default Mode: &6First Stop"
-      - "&cMode cannot be adjusted"
-      - "&7Default Amount: &664"
-      - "&cAmount cannot be adjusted"
-      - "&eUnlike the Line Transfer from Disorder Craft, this machine&c only continuously grabs"
-      - "&cNot continuously transferring items!"
-      - "&7Mode Explanation: "
-      - "&6First Stop&7: &eOnly grabs the first slot with items"
+      - "&cSlimefun containers only"
+      - "&6Range: 64 blocks"
+      - "&7Mode: &6First Stop &8(fixed)"
+      - "&7Amount: &664 &8(fixed)"
+      - "&eGrabs items along a line"
 
   NTW_EXPANSION_LINE_TRANSFER_PLUS:
     name: "Line Transfer Plus"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&6Transfer Range: 64 blocks"
-      - "&7Default Mode: &6First Stop"
-      - "&cMode cannot be adjusted"
-      - "&7Default Amount: &664"
-      - "&cAmount cannot be adjusted"
-      - "&eUnlike the Line Transfer from Disorder Craft, this machine&c only continuously pushes and grabs"
-      - "&cNot continuously transferring items!"
-      - "&7Mode Explanation: "
-      - "&6First Stop&7: &eOnly pushes to first available slot / Only grabs first slot with items"
+      - "&cSlimefun containers only"
+      - "&6Range: 64 blocks"
+      - "&7Mode: &6First Stop &8(fixed)"
+      - "&7Amount: &664 &8(fixed)"
+      - "&ePushes and grabs items along a line"
 
   NTW_EXPANSION_LINE_TRANSFER_VANILLA_PUSHER:
     name: "Vanilla Line Transfer [Push]"
     lore:
-      - "&cOnly supports Vanilla Containers"
-      - "&6Transfer Range: 32 blocks"
-      - "&7Default Mode: &6First Stop"
-      - "&cMode cannot be adjusted"
-      - "&7Default Amount: &664"
-      - "&cAmount cannot be adjusted"
-      - "&eUnlike the Line Transfer from Disorder Craft, this machine&c only continuously pushes"
-      - "&cNot continuously transferring items!"
-      - "&7Mode Explanation: "
-      - "&6First Stop&7: &eOnly pushes to the first available slot"
+      - "&cVanilla containers only"
+      - "&6Range: 32 blocks"
+      - "&7Mode: &6First Stop &8(fixed)"
+      - "&7Amount: &664 &8(fixed)"
+      - "&ePushes items along a line"
 
   NTW_EXPANSION_LINE_TRANSFER_VANILLA_GRABBER:
     name: "Vanilla Line Transfer [Grab]"
     lore:
-      - "&cOnly supports Vanilla Containers"
-      - "&6Transfer Range: 32 blocks"
-      - "&7Default Mode: &6First Stop"
-      - "&cMode cannot be adjusted"
-      - "&7Default Amount: &664"
-      - "&cAmount cannot be adjusted"
-      - "&eUnlike the Line Transfer from Disorder Craft, this machine&c only continuously grabs"
-      - "&cNot continuously transferring items!"
-      - "&7Mode Explanation: "
-      - "&6First Stop&7: &eOnly grabs the first slot with items"
+      - "&cVanilla containers only"
+      - "&6Range: 32 blocks"
+      - "&7Mode: &6First Stop &8(fixed)"
+      - "&7Amount: &664 &8(fixed)"
+      - "&eGrabs items along a line"
 
   NTW_EXPANSION_CHAIN_GRABBER:
     name: "Chain Grabber"
     lore:
-      - "<passive>Grabs items from containers along the set direction into the network"
+      - "<passive>Grabs items from containers along a line"
       - ""
-      - "<click_info>Click the distance slot with an item<passive> amount = distance"
-      - "<passive>Insert <gold>Chain Modules<passive> to extend abilities"
+      - "<click_info>Distance slot<passive>: item amount = distance"
+      - "<passive>Add <gold>Chain Modules<passive> for more features"
 
   NTW_EXPANSION_CHAIN_PUSHER:
     name: "Chain Pusher"
     lore:
-      - "<passive>Pushes template items into containers along the set direction"
+      - "<passive>Pushes template items into containers along a line"
       - ""
-      - "<click_info>Template slots<passive> put the items to push"
-      - "<passive>Insert <gold>Chain Modules<passive> to extend abilities"
+      - "<click_info>Template slots<passive>: items to push"
+      - "<passive>Add <gold>Chain Modules<passive> for more features"
 
   NTW_EXPANSION_CHAIN_TRANSCEIVER:
     name: "Chain Transceiver"
     lore:
-      - "<passive>On the same line, pushes template items first, then grabs back target items"
+      - "<passive>Pushes template items, then grabs results back"
       - ""
-      - "<click_info>Template slots<passive> put the items to push"
-      - "<passive>Insert <gold>Chain Modules<passive> to extend abilities"
+      - "<click_info>Template slots<passive>: items to push"
+      - "<passive>Add <gold>Chain Modules<passive> for more features"
 
   NTW_EXPANSION_CHAIN_MODULE_RANGE:
     name: "Chain Distance Module"
     lore:
-      - "<passive>Increases the transfer distance of chain machines"
+      - "<passive>More range for chain machines"
       - ""
-      - "<passive>Each piece <aqua>+16 blocks<passive>, stacks up to 3"
-      - "<click_info>Put into a module slot<passive> to take effect"
+      - "<aqua>+16 blocks<passive> each, max 3"
 
   NTW_EXPANSION_CHAIN_MODULE_CAPACITY:
     name: "Chain Capacity Module"
     lore:
-      - "<passive>Adds template slots to Pushers / Transceivers"
+      - "<passive>More template slots for Pushers / Transceivers"
       - ""
-      - "<passive>Each piece <aqua>+3 slots<passive>, stacks up to 2"
-      - "<error>Grabbers have no template slots, no effect"
+      - "<aqua>+3 slots<passive> each, max 2"
+      - "<error>No effect on Grabbers"
 
   NTW_EXPANSION_CHAIN_MODULE_MODE:
     name: "Chain Mode Module"
     lore:
       - "<passive>Unlocks transfer mode switching"
       - ""
-      - "<click_info>Put into a module slot<passive> to take effect"
-      - "<click_info>Click the mode slot<passive> Left/Right Click to switch"
+      - "<click_info>Mode slot<passive>: Left/Right Click to change"
 
   NTW_EXPANSION_CHAIN_MODULE_VANILLA:
     name: "Chain Vanilla Container Module"
     lore:
-      - "<passive>Lets chain machines recognize vanilla containers"
-      - ""
-      - "<click_info>Put into a module slot<passive> to take effect"
+      - "<passive>Lets chain machines use vanilla containers"
 
   NTW_EXPANSION_CHAIN_MODULE_MULTI_DIRECTION:
     name: "Chain Multi-Direction Module"
     lore:
-      - "<passive>Lets chain machines transfer in multiple directions at once"
+      - "<passive>Lets chain machines work in several directions"
       - ""
-      - "<click_info>Click a direction slot<passive> to add or remove a direction"
+      - "<click_info>Direction slot<passive>: add / remove a direction"
 
   NTW_EXPANSION_CHAIN_MODULE_BINDING:
     name: "Chain Binding Module"
     lore:
-      - "<passive>Insert into a Pusher / Transceiver to unlock <gold>Assigned Supply"
-      - "<passive>Assign the items to supply to each container on the line individually"
+      - "<passive>Unlocks <gold>Assigned Supply<passive> on Pushers / Transceivers"
+      - "<passive>Set different items for each container on the line"
       - ""
-      - "<click_info>Put into a module slot<passive> to take effect · data is kept when removed"
+      - "<passive>Settings are kept when removed"
   NTW_EXPANSION_CHAIN_CONFIGURATOR:
     name: "Chain Configurator"
     lore:
-      - "<passive>Clone a whole line · migrate in one click"
+      - "<passive>Copy a line's setup to another machine"
       - ""
-      - "<gold>[Left Click]<aqua> source machine · copy direction config"
-      - "<gold>[Right Click]<aqua> target machine · write per distance"
-      - "<gold>[Shift+Swing at air]<aqua> clear stored config"
-      - "<passive>Sneak when applying · only writes lists, not modes"
+      - "<gold>[Left Click]<aqua> copy from machine"
+      - "<gold>[Right Click]<aqua> paste to machine"
+      - "<gold>[Shift+Swing air]<aqua> clear"
+      - "<passive>Sneak while pasting: lists only, no modes"
 
   NTW_EXPANSION_CHAIN_BRUSH:
     name: "Chain List Brush"
     lore:
-      - "<passive>Edit on click · assign feed remotely"
+      - "<passive>Edit supply lists from a distance"
       - ""
-      - "<gold>[Right Click]<aqua> machine on line · edit its list directly"
-      - "<gold>[Shift+Right Click]<aqua> machine on line · clear its list"
-      - "<gold>[Right Click]<aqua> pusher · open direction page"
-      - "<passive>Right Click a direction on the direction page · batch write the whole direction"
+      - "<gold>[Right Click]<aqua> machine on line: edit list"
+      - "<gold>[Shift+Right Click]<aqua> machine on line: clear list"
+      - "<gold>[Right Click]<aqua> pusher: open directions"
 
   NTW_EXPANSION_RUNE_COLLECT:
     name: "Network Rune"
     lore:
-      - "<passive>Drop next to a sword, pickaxe, axe, hoe or shovel to combine"
-      - "<success>Drops from kills and mining go directly into the bound network"
+      - "<passive>Combine with a sword, pickaxe, axe, hoe or shovel"
+      - "<success>Drops go straight into the bound network"
       - ""
-      - "<click_info>Sneak+Right Click a controller<passive> to bind a network"
-      - "<click_info>Sneak+Right Click air<passive> to switch mode"
+      - "<click_info>Sneak+Right Click controller<passive>: bind"
+      - "<click_info>Sneak+Right Click air<passive>: switch mode"
 
   NTW_EXPANSION_ADVANCED_LINE_TRANSFER_PUSHER:
     name: "Advanced Line Transfer [Push]"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&6Transfer Range: 32 blocks"
-      - "&7Default Mode: &6First Stop"
-      - "&aMode adjustable"
-      - "&7Default Amount: &63456"
-      - "&aAmount adjustable"
-      - "&eUnlike the Line Transfer from Disorder Craft, this machine&c only continuously pushes"
-      - "&cNot continuously transferring items!"
-      - "&7Mode Explanation: "
-      - "&6No Limit&7: &eCan push to any slot"
-      - "&6Empty Only&7: &eOnly pushes to empty slots"
-      - "&6Non-Empty Only&7: &eOnly pushes to non-empty slots"
-      - "&6First Only&7: &eOnly pushes to the first slot"
-      - "&6Last Only&7: &eOnly pushes to the last slot"
-      - "&6First Stop&7: &eOnly pushes to the first available slot"
-      - "&6Lazy Mode&7: &eWhen first slot is empty, pushes to all slots"
-      - "&6Specified Quantity Only&7: &eMaintains the set amount of each item in the container, automatically restocking without exceeding the limit."
+      - "&cSlimefun containers only"
+      - "&6Range: 32 blocks"
+      - "&7Mode: &6First Stop &a(adjustable)"
+      - "&7Amount: &63456 &a(adjustable)"
+      - "&ePushes items along a line"
+      - "&7Modes:"
+      - "&6No Limit&7: any slot"
+      - "&6Empty / Non-Empty Only&7: only those slots"
+      - "&6First / Last Only&7: only that slot"
+      - "&6First Stop&7: first slot that fits"
+      - "&6Lazy&7: only if the first slot is empty"
+      - "&6Specified Quantity&7: keep a set amount stocked"
 
   NTW_EXPANSION_ADVANCED_LINE_TRANSFER_MORE_PUSHER:
     name: "Advanced Line Transfer [V2 Push]"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&6Transfer Range: 32 blocks"
-      - "&7Default Mode: &6First Stop"
-      - "&aMode adjustable"
-      - "&7Default Amount: &63456"
-      - "&aAmount adjustable"
-      - "&eUnlike the Line Transfer from Disorder Craft, this machine&c only continuously pushes"
-      - "&cNot continuously transferring items!"
-      - "&7Mode Explanation: "
-      - "&6No Limit&7: &eCan push to any slot"
-      - "&6Empty Only&7: &eOnly pushes to empty slots"
-      - "&6Non-Empty Only&7: &eOnly pushes to non-empty slots"
-      - "&6First Only&7: &eOnly pushes to the first slot"
-      - "&6Last Only&7: &eOnly pushes to the last slot"
-      - "&6First Stop&7: &eOnly pushes to the first available slot"
-      - "&6Lazy Mode&7: &eWhen first slot is empty, pushes to all slots"
-      - "&6Specified Quantity Only&7: &eMaintains the set amount of each item in the container, automatically restocking without exceeding the limit."
+      - "&cSlimefun containers only"
+      - "&6Range: 32 blocks"
+      - "&7Mode: &6First Stop &a(adjustable)"
+      - "&7Amount: &63456 &a(adjustable)"
+      - "&ePushes items along a line"
+      - "&7Modes:"
+      - "&6No Limit&7: any slot"
+      - "&6Empty / Non-Empty Only&7: only those slots"
+      - "&6First / Last Only&7: only that slot"
+      - "&6First Stop&7: first slot that fits"
+      - "&6Lazy&7: only if the first slot is empty"
+      - "&6Specified Quantity&7: keep a set amount stocked"
 
   NTW_EXPANSION_ADVANCED_LINE_TRANSFER_BEST_PUSHER:
     name: "Advanced Line Transfer [V3 Push]"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&6Transfer Range: 32 blocks"
-      - "&7Default Mode: &6First Stop"
-      - "&aMode adjustable"
-      - "&7Default Amount: &63456"
-      - "&aAmount adjustable"
-      - "&eUnlike the Line Transfer from Disorder Craft, this machine&c only continuously pushes"
-      - "&cNot continuously transferring items!"
-      - "&7Mode Explanation: "
-      - "&6No Limit&7: &eCan push to any slot"
-      - "&6Empty Only&7: &eOnly pushes to empty slots"
-      - "&6Non-Empty Only&7: &eOnly pushes to non-empty slots"
-      - "&6First Only&7: &eOnly pushes to the first slot"
-      - "&6Last Only&7: &eOnly pushes to the last slot"
-      - "&6First Stop&7: &eOnly pushes to the first available slot"
-      - "&6Lazy Mode&7: &eWhen first slot is empty, pushes to all slots"
-      - "&6Specified Quantity Only&7: &eMaintains the set amount of each item in the container, automatically restocking without exceeding the limit."
+      - "&cSlimefun containers only"
+      - "&6Range: 32 blocks"
+      - "&7Mode: &6First Stop &a(adjustable)"
+      - "&7Amount: &63456 &a(adjustable)"
+      - "&ePushes items along a line"
+      - "&7Modes:"
+      - "&6No Limit&7: any slot"
+      - "&6Empty / Non-Empty Only&7: only those slots"
+      - "&6First / Last Only&7: only that slot"
+      - "&6First Stop&7: first slot that fits"
+      - "&6Lazy&7: only if the first slot is empty"
+      - "&6Specified Quantity&7: keep a set amount stocked"
 
   NTW_EXPANSION_ADVANCED_LINE_TRANSFER_GRABBER:
     name: "Advanced Line Transfer [Grab]"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&6Transfer Range: 32 blocks"
-      - "&7Default Mode: &6First Stop"
-      - "&aMode adjustable"
-      - "&7Default Amount: &63456"
-      - "&aAmount adjustable"
-      - "&eUnlike the Line Transfer from Disorder Craft, this machine&c only continuously grabs"
-      - "&cNot continuously transferring items!"
-      - "&7Mode Explanation: "
-      - "&6No Limit&7: &eCan grab any slot"
-      - "&6Empty Only&7: &eOnly grabs empty slots"
-      - "&6Non-Empty Only&7: &eOnly grabs non-empty slots"
-      - "&6First Only&7: &eOnly grabs the first slot"
-      - "&6Last Only&7: &eOnly grabs the last slot"
-      - "&6First Stop&7: &eOnly grabs the first slot with items"
-      - "&6Lazy Mode&7: &eWhen first slot has items, grabs all slots"
-      - "&6Specified Quantity Only&7: &eMaintains the set amount of each item in the container, automatically restocking without exceeding the limit."
+      - "&cSlimefun containers only"
+      - "&6Range: 32 blocks"
+      - "&7Mode: &6First Stop &a(adjustable)"
+      - "&7Amount: &63456 &a(adjustable)"
+      - "&eGrabs items along a line"
+      - "&7Modes:"
+      - "&6No Limit&7: any slot"
+      - "&6Empty / Non-Empty Only&7: only those slots"
+      - "&6First / Last Only&7: only that slot"
+      - "&6First Stop&7: first slot with items"
+      - "&6Lazy&7: only if the first slot has items"
+      - "&6Specified Quantity&7: leave a set amount behind"
 
   NTW_EXPANSION_ADVANCED_LINE_TRANSFER:
     name: "Advanced Line Transfer"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&6Transfer Range: 32 blocks"
-      - "&7Default Mode: &6First Stop"
-      - "&aMode adjustable"
-      - "&7Default Amount: &63456"
-      - "&aAmount adjustable"
-      - "&eUnlike the Line Transfer from Disorder Craft, this machine&c only continuously pushes and grabs"
-      - "&cNot continuously transferring items!"
-      - "&7Mode Explanation: "
-      - "&6No Limit&7: &eCan push/grab any slot"
-      - "&6Empty Only&7: &eOnly pushes/grabs empty slots"
-      - "&6Non-Empty Only&7: &eOnly pushes/grabs non-empty slots"
-      - "&6First Only&7: &eOnly pushes/grabs first slot"
-      - "&6Last Only&7: &eOnly pushes/grabs last slot"
-      - "&6First Stop&7: &eOnly pushes to/grabs from first available slot"
-      - "&6Lazy Mode&7: &ePush/Grab All based on first slot condition"
-      - "&6Specified Quantity Only&7: &eMaintains the set amount of each item in the container, automatically restocking without exceeding the limit."
+      - "&cSlimefun containers only"
+      - "&6Range: 32 blocks"
+      - "&7Mode: &6First Stop &a(adjustable)"
+      - "&7Amount: &63456 &a(adjustable)"
+      - "&ePushes and grabs items along a line"
+      - "&7Modes:"
+      - "&6No Limit&7: any slot"
+      - "&6Empty / Non-Empty Only&7: only those slots"
+      - "&6First / Last Only&7: only that slot"
+      - "&6First Stop&7: first usable slot"
+      - "&6Lazy&7: depends on the first slot"
+      - "&6Specified Quantity&7: keep a set amount"
   
   NTW_EXPANSION_ADVANCED_LINE_TRANSFER_PLUS_PUSHER:
     name: "Advanced Line Transfer Plus [Push]"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&6Transfer Range: 64 blocks"
-      - "&7Default Mode: &6First Stop"
-      - "&aMode adjustable"
-      - "&7Default Amount: &63456"
-      - "&aAmount adjustable"
-      - "&eUnlike the Line Transfer from Disorder Craft, this machine&c only continuously pushes"
-      - "&cNot continuously transferring items!"
-      - "&7Mode Explanation: "
-      - "&6No Limit&7: &eCan push to any slot"
-      - "&6Empty Only&7: &eOnly pushes to empty slots"
-      - "&6Non-Empty Only&7: &eOnly pushes to non-empty slots"
-      - "&6First Only&7: &eOnly pushes to the first slot"
-      - "&6Last Only&7: &eOnly pushes to the last slot"
-      - "&6First Stop&7: &eOnly pushes to the first available slot"
-      - "&6Lazy Mode&7: &eWhen first slot is empty, pushes to all slots"
-      - "&6Specified Quantity Only&7: &eMaintains the set amount of each item in the container, automatically restocking without exceeding the limit."
+      - "&cSlimefun containers only"
+      - "&6Range: 64 blocks"
+      - "&7Mode: &6First Stop &a(adjustable)"
+      - "&7Amount: &63456 &a(adjustable)"
+      - "&ePushes items along a line"
+      - "&7Modes:"
+      - "&6No Limit&7: any slot"
+      - "&6Empty / Non-Empty Only&7: only those slots"
+      - "&6First / Last Only&7: only that slot"
+      - "&6First Stop&7: first slot that fits"
+      - "&6Lazy&7: only if the first slot is empty"
+      - "&6Specified Quantity&7: keep a set amount stocked"
 
   NTW_EXPANSION_ADVANCED_LINE_TRANSFER_PLUS_MORE_PUSHER:
     name: "Advanced Line Transfer Plus [V2 Push]"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&6Transfer Range: 64 blocks"
-      - "&7Default Mode: &6First Stop"
-      - "&aMode adjustable"
-      - "&7Default Amount: &63456"
-      - "&aAmount adjustable"
-      - "&eUnlike the Line Transfer from Disorder Craft, this machine&c only continuously pushes"
-      - "&cNot continuously transferring items!"
-      - "&7Mode Explanation: "
-      - "&6No Limit&7: &eCan push to any slot"
-      - "&6Empty Only&7: &eOnly pushes to empty slots"
-      - "&6Non-Empty Only&7: &eOnly pushes to non-empty slots"
-      - "&6First Only&7: &eOnly pushes to the first slot"
-      - "&6Last Only&7: &eOnly pushes to the last slot"
-      - "&6First Stop&7: &eOnly pushes to the first available slot"
-      - "&6Lazy Mode&7: &eWhen first slot is empty, pushes to all slots"
-      - "&6Specified Quantity Only&7: &eMaintains the set amount of each item in the container, automatically restocking without exceeding the limit."
+      - "&cSlimefun containers only"
+      - "&6Range: 64 blocks"
+      - "&7Mode: &6First Stop &a(adjustable)"
+      - "&7Amount: &63456 &a(adjustable)"
+      - "&ePushes items along a line"
+      - "&7Modes:"
+      - "&6No Limit&7: any slot"
+      - "&6Empty / Non-Empty Only&7: only those slots"
+      - "&6First / Last Only&7: only that slot"
+      - "&6First Stop&7: first slot that fits"
+      - "&6Lazy&7: only if the first slot is empty"
+      - "&6Specified Quantity&7: keep a set amount stocked"
   
   NTW_EXPANSION_ADVANCED_LINE_TRANSFER_PLUS_BEST_PUSHER:
     name: "Advanced Line Transfer Plus [V3 Push]"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&6Transfer Range: 64 blocks"
-      - "&7Default Mode: &6First Stop"
-      - "&aMode adjustable"
-      - "&7Default Amount: &63456"
-      - "&aAmount adjustable"
-      - "&eUnlike the Line Transfer from Disorder Craft, this machine&c only continuously pushes"
-      - "&cNot continuously transferring items!"
-      - "&7Mode Explanation: "
-      - "&6No Limit&7: &eCan push to any slot"
-      - "&6Empty Only&7: &eOnly pushes to empty slots"
-      - "&6Non-Empty Only&7: &eOnly pushes to non-empty slots"
-      - "&6First Only&7: &eOnly pushes to the first slot"
-      - "&6Last Only&7: &eOnly pushes to the last slot"
-      - "&6First Stop&7: &eOnly pushes to the first available slot"
-      - "&6Lazy Mode&7: &eWhen first slot is empty, pushes to all slots"
-      - "&6Specified Quantity Only&7: &eMaintains the set amount of each item in the container, automatically restocking without exceeding the limit."
+      - "&cSlimefun containers only"
+      - "&6Range: 64 blocks"
+      - "&7Mode: &6First Stop &a(adjustable)"
+      - "&7Amount: &63456 &a(adjustable)"
+      - "&ePushes items along a line"
+      - "&7Modes:"
+      - "&6No Limit&7: any slot"
+      - "&6Empty / Non-Empty Only&7: only those slots"
+      - "&6First / Last Only&7: only that slot"
+      - "&6First Stop&7: first slot that fits"
+      - "&6Lazy&7: only if the first slot is empty"
+      - "&6Specified Quantity&7: keep a set amount stocked"
 
   NTW_EXPANSION_ADVANCED_LINE_TRANSFER_PLUS_GRABBER:
     name: "Advanced Line Transfer Plus [Grab]"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&6Transfer Range: 64 blocks"
-      - "&7Default Mode: &6First Stop"
-      - "&aMode adjustable"
-      - "&7Default Amount: &63456"
-      - "&aAmount adjustable"
-      - "&eUnlike the Line Transfer from Disorder Craft, this machine&c only continuously grabs"
-      - "&cNot continuously transferring items!"
-      - "&7Mode Explanation: "
-      - "&6No Limit&7: &eCan grab any slot"
-      - "&6Empty Only&7: &eOnly grabs empty slots"
-      - "&6Non-Empty Only&7: &eOnly grabs non-empty slots"
-      - "&6First Only&7: &eOnly grabs the first slot"
-      - "&6Last Only&7: &eOnly grabs the last slot"
-      - "&6First Stop&7: &eOnly grabs the first slot with items"
-      - "&6Lazy Mode&7: &eWhen first slot has items, grabs all slots"
-      - "&6Specified Quantity Only&7: &eMaintains the set amount of each item in the container, automatically restocking without exceeding the limit."
+      - "&cSlimefun containers only"
+      - "&6Range: 64 blocks"
+      - "&7Mode: &6First Stop &a(adjustable)"
+      - "&7Amount: &63456 &a(adjustable)"
+      - "&eGrabs items along a line"
+      - "&7Modes:"
+      - "&6No Limit&7: any slot"
+      - "&6Empty / Non-Empty Only&7: only those slots"
+      - "&6First / Last Only&7: only that slot"
+      - "&6First Stop&7: first slot with items"
+      - "&6Lazy&7: only if the first slot has items"
+      - "&6Specified Quantity&7: leave a set amount behind"
 
   NTW_EXPANSION_ADVANCED_LINE_TRANSFER_PLUS:
     name: "Advanced Line Transfer Plus"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&6Transfer Range: 64 blocks"
-      - "&7Default Mode: &6First Stop"
-      - "&aMode adjustable"
-      - "&7Default Amount: &63456"
-      - "&aAmount adjustable"
-      - "&eUnlike the Line Transfer from Disorder Craft, this machine&c only continuously pushes and grabs"
-      - "&cNot continuously transferring items!"
-      - "&7Mode Explanation: "
-      - "&6No Limit&7: &eCan push/grab any slot"
-      - "&6Empty Only&7: &eOnly pushes/grabs empty slots"
-      - "&6Non-Empty Only&7: &eOnly pushes/grabs non-empty slots"
-      - "&6First Only&7: &eOnly pushes/grabs first slot"
-      - "&6Last Only&7: &eOnly pushes/grabs last slot"
-      - "&6First Stop&7: &eOnly pushes to/grabs from first available slot"
-      - "&6Lazy Mode&7: &ePush/Grab All based on first slot condition"
-      - "&6Specified Quantity Only&7: &eMaintains the set amount of each item in the container, automatically restocking without exceeding the limit."
+      - "&cSlimefun containers only"
+      - "&6Range: 64 blocks"
+      - "&7Mode: &6First Stop &a(adjustable)"
+      - "&7Amount: &63456 &a(adjustable)"
+      - "&ePushes and grabs items along a line"
+      - "&7Modes:"
+      - "&6No Limit&7: any slot"
+      - "&6Empty / Non-Empty Only&7: only those slots"
+      - "&6First / Last Only&7: only that slot"
+      - "&6First Stop&7: first usable slot"
+      - "&6Lazy&7: depends on the first slot"
+      - "&6Specified Quantity&7: keep a set amount"
 
   NTW_EXPANSION_ADVANCED_LINE_TRANSFER_VANILLA_GRABBER:
     name: "Vanilla Advanced Line Transfer [Grab]"
     lore:
-      - "&cOnly supports Vanilla containers"
-      - "&6Transfer Range: 32 Blocks"
-      - "&7Default Mode: &6First Valid"
-      - "&aTransfer Mode Adjustable"
-      - "&7Default Amount: &63456"
-      - "&aTransfer Amount Adjustable"
-      - "&eUnlike the Chain Transfer from Disorder,"
-      - "&cthis machine only performs continuous grabbing"
-      - "&crather than continuous item transferring!"
-      - "&7Mode Explanation: "
-      - "&6Unlimited&7: &eCan push to any slot / Can grab from any slot"
-      - "&6Empty Only&7: &eOnly pushes to empty slots / Only grabs from empty slots"
-      - "&6Non-Empty Only&7: &eOnly pushes to non-empty slots / Only grabs from non-empty slots"
-      - "&6First Slot&7: &eOnly pushes to the first slot / Only grabs from the first slot"
-      - "&6Last Slot&7: &eOnly pushes to the last slot / Only grabs from the last slot"
-      - "&6First Valid&7: &ePushes to the first available slot / Grabs from the first slot with items"
-      - "&6Lazy Mode&7: &ePush to all slots if first is empty / Grab from all slots if first has items"
-      - "&6Specified Quantity Only&7: &eMaintains the set amount of each item in the container, automatically restocking without exceeding the limit."
+      - "&cVanilla containers only"
+      - "&6Range: 32 blocks"
+      - "&7Mode: &6First Stop &a(adjustable)"
+      - "&7Amount: &63456 &a(adjustable)"
+      - "&eGrabs items along a line"
+      - "&7Modes:"
+      - "&6No Limit&7: any slot"
+      - "&6Empty / Non-Empty Only&7: only those slots"
+      - "&6First / Last Only&7: only that slot"
+      - "&6First Stop&7: first slot with items"
+      - "&6Lazy&7: only if the first slot has items"
+      - "&6Specified Quantity&7: leave a set amount behind"
 
   NTW_EXPANSION_ADVANCED_LINE_TRANSFER_VANILLA_PUSHER:
     name: "Vanilla Advanced Line Transfer [Push]"
     lore:
-      - "&cOnly supports Vanilla containers"
-      - "&6Transfer Range: 32 Blocks"
-      - "&7Default Mode: &6First Valid"
-      - "&aTransfer Mode Adjustable"
-      - "&7Default Amount: &63456"
-      - "&aTransfer Amount Adjustable"
-      - "&eUnlike the Chain Transfer from Disorder,"
-      - "&cthis machine only performs continuous pushing"
-      - "&crather than continuous item transferring!"
-      - "&7Mode Explanation: "
-      - "&6Unlimited&7: &eCan push to any slot / Can grab from any slot"
-      - "&6Empty Only&7: &eOnly pushes to empty slots / Only grabs from empty slots"
-      - "&6Non-Empty Only&7: &eOnly pushes to non-empty slots / Only grabs from non-empty slots"
-      - "&6First Slot&7: &eOnly pushes to the first slot / Only grabs from the first slot"
-      - "&6Last Slot&7: &eOnly pushes to the last slot / Only grabs from the last slot"
-      - "&6First Valid&7: &ePushes to the first available slot / Grabs from the first slot with items"
-      - "&6Lazy Mode&7: &ePush to all slots if first is empty / Grab from all slots if first has items"
-      - "&6Specified Quantity Only&7: &eMaintains the set amount of each item in the container, automatically restocking without exceeding the limit."
+      - "&cVanilla containers only"
+      - "&6Range: 32 blocks"
+      - "&7Mode: &6First Stop &a(adjustable)"
+      - "&7Amount: &63456 &a(adjustable)"
+      - "&ePushes items along a line"
+      - "&7Modes:"
+      - "&6No Limit&7: any slot"
+      - "&6Empty / Non-Empty Only&7: only those slots"
+      - "&6First / Last Only&7: only that slot"
+      - "&6First Stop&7: first slot that fits"
+      - "&6Lazy&7: only if the first slot is empty"
+      - "&6Specified Quantity&7: keep a set amount stocked"
 
   NTW_EXPANSION_ADVANCED_LINE_TRANSFER_VANILLA_PLUS_GRABBER:
     name: "Vanilla Advanced Line Transfer Plus [Grab]"
     lore:
-      - "&cOnly supports Vanilla containers"
-      - "&6Transfer Range: 64 Blocks"
-      - "&7Default Mode: &6First Valid"
-      - "&aTransfer Mode Adjustable"
-      - "&7Default Amount: &63456"
-      - "&aTransfer Amount Adjustable"
-      - "&eUnlike the Chain Transfer from Disorder,"
-      - "&cthis machine only performs continuous grabbing"
-      - "&crather than continuous item transferring!"
-      - "&7Mode Explanation: "
-      - "&6Unlimited&7: &eCan push to any slot / Can grab from any slot"
-      - "&6Empty Only&7: &eOnly pushes to empty slots / Only grabs from empty slots"
-      - "&6Non-Empty Only&7: &eOnly pushes to non-empty slots / Only grabs from non-empty slots"
-      - "&6First Slot&7: &eOnly pushes to the first slot / Only grabs from the first slot"
-      - "&6Last Slot&7: &eOnly pushes to the last slot / Only grabs from the last slot"
-      - "&6First Valid&7: &ePushes to the first available slot / Grabs from the first slot with items"
-      - "&6Lazy Mode&7: &ePush to all slots if first is empty / Grab from all slots if first has items"
-      - "&6Specified Quantity Only&7: &eMaintains the set amount of each item in the container, automatically restocking without exceeding the limit."
+      - "&cVanilla containers only"
+      - "&6Range: 64 blocks"
+      - "&7Mode: &6First Stop &a(adjustable)"
+      - "&7Amount: &63456 &a(adjustable)"
+      - "&eGrabs items along a line"
+      - "&7Modes:"
+      - "&6No Limit&7: any slot"
+      - "&6Empty / Non-Empty Only&7: only those slots"
+      - "&6First / Last Only&7: only that slot"
+      - "&6First Stop&7: first slot with items"
+      - "&6Lazy&7: only if the first slot has items"
+      - "&6Specified Quantity&7: leave a set amount behind"
 
   NTW_EXPANSION_ADVANCED_LINE_TRANSFER_VANILLA_PLUS_PUSHER:
     name: "Vanilla Advanced Line Transfer Plus [Push]"
     lore:
-      - "&cOnly supports Vanilla containers"
-      - "&6Transfer Range: 64 Blocks"
-      - "&7Default Mode: &6First Valid"
-      - "&aTransfer Mode Adjustable"
-      - "&7Default Amount: &63456"
-      - "&aTransfer Amount Adjustable"
-      - "&eUnlike the Chain Transfer from Disorder,"
-      - "&cthis machine only performs continuous pushing"
-      - "&crather than continuous item transferring!"
-      - "&7Mode Explanation: "
-      - "&6Unlimited&7: &eCan push to any slot / Can grab from any slot"
-      - "&6Empty Only&7: &eOnly pushes to empty slots / Only grabs from empty slots"
-      - "&6Non-Empty Only&7: &eOnly pushes to non-empty slots / Only grabs from non-empty slots"
-      - "&6First Slot&7: &eOnly pushes to the first slot / Only grabs from the first slot"
-      - "&6Last Slot&7: &eOnly pushes to the last slot / Only grabs from the last slot"
-      - "&6First Valid&7: &ePushes to the first available slot / Grabs from the first slot with items"
-      - "&6Lazy Mode&7: &ePush to all slots if first is empty / Grab from all slots if first has items"
-      - "&6Specified Quantity Only&7: &eMaintains the set amount of each item in the container, automatically restocking without exceeding the limit."
+      - "&cVanilla containers only"
+      - "&6Range: 64 blocks"
+      - "&7Mode: &6First Stop &a(adjustable)"
+      - "&7Amount: &63456 &a(adjustable)"
+      - "&ePushes items along a line"
+      - "&7Modes:"
+      - "&6No Limit&7: any slot"
+      - "&6Empty / Non-Empty Only&7: only those slots"
+      - "&6First / Last Only&7: only that slot"
+      - "&6First Stop&7: first slot that fits"
+      - "&6Lazy&7: only if the first slot is empty"
+      - "&6Specified Quantity&7: keep a set amount stocked"
 
   NTW_EXPANSION_TRANSFER_PUSHER:
     name: "Transmitter [Push]"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&7Default Mode: &6First Stop"
-      - "&cMode cannot be adjusted"
-      - "&7Default Amount: &664"
-      - "&cAmount cannot be adjusted"
-      - "&7Mode Explanation: "
-      - "&6First Stop&7: &eOnly pushes to the first available slot"
+      - "&cSlimefun containers only"
+      - "&7Mode: &6First Stop &8(fixed)"
+      - "&7Amount: &664 &8(fixed)"
+      - "&ePushes into the facing container"
 
   NTW_EXPANSION_TRANSFER_MORE_PUSHER:
     name: "Transmitter [V2 Push]"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&7Default Mode: &6First Stop"
-      - "&cMode cannot be adjusted"
-      - "&7Default Amount: &664"
-      - "&cAmount cannot be adjusted"
-      - "&7Mode Explanation: "
-      - "&6First Stop&7: &eOnly pushes to the first available slot"
+      - "&cSlimefun containers only"
+      - "&7Mode: &6First Stop &8(fixed)"
+      - "&7Amount: &664 &8(fixed)"
+      - "&ePushes into the facing container"
 
   NTW_EXPANSION_TRANSFER_BEST_PUSHER:
     name: "Transmitter [V3 Push]"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&7Default Mode: &6First Stop"
-      - "&cMode cannot be adjusted"
-      - "&7Default Amount: &664"
-      - "&cAmount cannot be adjusted"
-      - "&7Mode Explanation: "
-      - "&6First Stop&7: &eOnly pushes to the first available slot"
+      - "&cSlimefun containers only"
+      - "&7Mode: &6First Stop &8(fixed)"
+      - "&7Amount: &664 &8(fixed)"
+      - "&ePushes into the facing container"
 
   NTW_EXPANSION_TRANSFER_GRABBER:
     name: "Transmitter [Grab]"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&7Default Mode: &6First Stop"
-      - "&cMode cannot be adjusted"
-      - "&7Default Amount: &664"
-      - "&cAmount cannot be adjusted"
-      - "&7Mode Explanation: "
-      - "&6First Stop&7: &eOnly grabs the first slot with items"
+      - "&cSlimefun containers only"
+      - "&7Mode: &6First Stop &8(fixed)"
+      - "&7Amount: &664 &8(fixed)"
+      - "&eGrabs from the facing container"
 
   NTW_EXPANSION_TRANSFER:
     name: "Transmitter"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&7Default Mode: &6First Stop"
-      - "&cMode cannot be adjusted"
-      - "&7Default Amount: &664"
-      - "&cAmount cannot be adjusted"
-      - "&7Mode Explanation: "
-      - "&6First Stop&7: &eOnly pushes to first available slot / Only grabs first slot with items"
+      - "&cSlimefun containers only"
+      - "&7Mode: &6First Stop &8(fixed)"
+      - "&7Amount: &664 &8(fixed)"
+      - "&ePushes and grabs with the facing container"
 
   NTW_EXPANSION_ADVANCED_TRANSFER_PUSHER:
     name: "Advanced Transmitter [Push]"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&7Default Mode: &6First Stop"
-      - "&aMode adjustable"
-      - "&7Default Amount: &63456"
-      - "&aAmount adjustable"
-      - "&7Mode Explanation: "
-      - "&6No Limit&7: &eCan push to any slot"
-      - "&6Empty Only&7: &eOnly pushes to empty slots"
-      - "&6Non-Empty Only&7: &eOnly pushes to non-empty slots"
-      - "&6First Only&7: &eOnly pushes to the first slot"
-      - "&6Last Only&7: &eOnly pushes to the last slot"
-      - "&6First Stop&7: &eOnly pushes to the first available slot"
-      - "&6Lazy Mode&7: &eWhen first slot is empty, pushes to all slots"
-      - "&6Specified Quantity Only&7: &eMaintains the set amount of each item in the container, automatically restocking without exceeding the limit."
+      - "&cSlimefun containers only"
+      - "&7Mode: &6First Stop &a(adjustable)"
+      - "&7Amount: &63456 &a(adjustable)"
+      - "&ePushes into the facing container"
+      - "&7Modes:"
+      - "&6No Limit&7: any slot"
+      - "&6Empty / Non-Empty Only&7: only those slots"
+      - "&6First / Last Only&7: only that slot"
+      - "&6First Stop&7: first slot that fits"
+      - "&6Lazy&7: only if the first slot is empty"
+      - "&6Specified Quantity&7: keep a set amount stocked"
 
   NTW_EXPANSION_ADVANCED_TRANSFER_MORE_PUSHER:
     name: "Advanced Transmitter [V2 Push]"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&7Default Mode: &6First Stop"
-      - "&aMode adjustable"
-      - "&7Default Amount: &63456"
-      - "&aAmount adjustable"
-      - "&7Mode Explanation: "
-      - "&6No Limit&7: &eCan push to any slot"
-      - "&6Empty Only&7: &eOnly pushes to empty slots"
-      - "&6Non-Empty Only&7: &eOnly pushes to non-empty slots"
-      - "&6First Only&7: &eOnly pushes to the first slot"
-      - "&6Last Only&7: &eOnly pushes to the last slot"
-      - "&6First Stop&7: &eOnly pushes to the first available slot"
-      - "&6Lazy Mode&7: &eWhen first slot is empty, pushes to all slots"
-      - "&6Specified Quantity Only&7: &eMaintains the set amount of each item in the container, automatically restocking without exceeding the limit."
+      - "&cSlimefun containers only"
+      - "&7Mode: &6First Stop &a(adjustable)"
+      - "&7Amount: &63456 &a(adjustable)"
+      - "&ePushes into the facing container"
+      - "&7Modes:"
+      - "&6No Limit&7: any slot"
+      - "&6Empty / Non-Empty Only&7: only those slots"
+      - "&6First / Last Only&7: only that slot"
+      - "&6First Stop&7: first slot that fits"
+      - "&6Lazy&7: only if the first slot is empty"
+      - "&6Specified Quantity&7: keep a set amount stocked"
 
   NTW_EXPANSION_ADVANCED_TRANSFER_BEST_PUSHER:
     name: "Advanced Transmitter [V3 Push]"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&7Default Mode: &6First Stop"
-      - "&aMode adjustable"
-      - "&7Default Amount: &63456"
-      - "&aAmount adjustable"
-      - "&7Mode Explanation: "
-      - "&6No Limit&7: &eCan push to any slot"
-      - "&6Empty Only&7: &eOnly pushes to empty slots"
-      - "&6Non-Empty Only&7: &eOnly pushes to non-empty slots"
-      - "&6First Only&7: &eOnly pushes to the first slot"
-      - "&6Last Only&7: &eOnly pushes to the last slot"
-      - "&6First Stop&7: &eOnly pushes to the first available slot"
-      - "&6Lazy Mode&7: &eWhen first slot is empty, pushes to all slots"
-      - "&6Specified Quantity Only&7: &eMaintains the set amount of each item in the container, automatically restocking without exceeding the limit."
+      - "&cSlimefun containers only"
+      - "&7Mode: &6First Stop &a(adjustable)"
+      - "&7Amount: &63456 &a(adjustable)"
+      - "&ePushes into the facing container"
+      - "&7Modes:"
+      - "&6No Limit&7: any slot"
+      - "&6Empty / Non-Empty Only&7: only those slots"
+      - "&6First / Last Only&7: only that slot"
+      - "&6First Stop&7: first slot that fits"
+      - "&6Lazy&7: only if the first slot is empty"
+      - "&6Specified Quantity&7: keep a set amount stocked"
 
   NTW_EXPANSION_ADVANCED_TRANSFER_GRABBER:
     name: "Advanced Transmitter [Grab]"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&7Default Mode: &6First Stop"
-      - "&aMode adjustable"
-      - "&7Default Amount: &63456"
-      - "&aAmount adjustable"
-      - "&7Mode Explanation: "
-      - "&6No Limit&7: &eCan grab any slot"
-      - "&6Empty Only&7: &eOnly grabs empty slots"
-      - "&6Non-Empty Only&7: &eOnly grabs non-empty slots"
-      - "&6First Only&7: &eOnly grabs the first slot"
-      - "&6Last Only&7: &eOnly grabs the last slot"
-      - "&6First Stop&7: &eOnly grabs the first slot with items"
-      - "&6Lazy Mode&7: &eWhen first slot has items, grabs all slots"
-      - "&6Specified Quantity Only&7: &eMaintains the set amount of each item in the container, automatically restocking without exceeding the limit."
+      - "&cSlimefun containers only"
+      - "&7Mode: &6First Stop &a(adjustable)"
+      - "&7Amount: &63456 &a(adjustable)"
+      - "&eGrabs from the facing container"
+      - "&7Modes:"
+      - "&6No Limit&7: any slot"
+      - "&6Empty / Non-Empty Only&7: only those slots"
+      - "&6First / Last Only&7: only that slot"
+      - "&6First Stop&7: first slot with items"
+      - "&6Lazy&7: only if the first slot has items"
+      - "&6Specified Quantity&7: leave a set amount behind"
 
   NTW_EXPANSION_ADVANCED_TRANSFER:
     name: "Advanced Transmitter"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&7Default Mode: &6First Stop"
-      - "&aMode adjustable"
-      - "&7Default Amount: &63456"
-      - "&aAmount adjustable"
-      - "&7Mode Explanation: "
-      - "&6No Limit&7: &eCan push/grab any slot"
-      - "&6Empty Only&7: &eOnly pushes/grabs empty slots"
-      - "&6Non-Empty Only&7: &eOnly pushes/grabs non-empty slots"
-      - "&6First Only&7: &eOnly pushes/grabs first slot"
-      - "&6Last Only&7: &eOnly pushes/grabs last slot"
-      - "&6First Stop&7: &eOnly pushes to/grabs from first available slot"
-      - "&6Lazy Mode&7: &ePush/Grab All based on first slot condition"
-      - "&6Specified Quantity Only&7: &eMaintains the set amount of each item in the container, automatically restocking without exceeding the limit."
+      - "&cSlimefun containers only"
+      - "&7Mode: &6First Stop &a(adjustable)"
+      - "&7Amount: &63456 &a(adjustable)"
+      - "&ePushes and grabs with the facing container"
+      - "&7Modes:"
+      - "&6No Limit&7: any slot"
+      - "&6Empty / Non-Empty Only&7: only those slots"
+      - "&6First / Last Only&7: only that slot"
+      - "&6First Stop&7: first usable slot"
+      - "&6Lazy&7: depends on the first slot"
+      - "&6Specified Quantity&7: keep a set amount"
 
   NTW_EXPANSION_SMART_GRABBER:
     name: "Smart Grabber"
     lore:
-      - "Plug and Play"
-      - "&7Place facing the machine, place any network machine on the other end"
+      - "Plug and play"
+      - "&7Face it toward a machine, put a network block behind it"
 
   NTW_EXPANSION_SMART_PUSHER:
     name: "Smart Pusher"
     lore:
-      - "Plug and Play"
-      - "&7Place facing the machine, place any network machine on the other end"
+      - "Plug and play"
+      - "&7Face it toward a machine, put a network block behind it"
 
   NTW_EXPANSION_GRID_NEW_STYLE:
     name: "Advanced Grid"
     lore:
-      - "Advanced Grid allows you to view all items in the network"
-      - "You can also deposit or withdraw items directly"
+      - "Shows all items in the network"
+      - "Insert or take items directly"
       - "Supports custom keybinds"
-      - "Sort Modes: "
-      - "&eAZ&7: &eAlphabetical Order"
-      - "&eQuantity&7: &eAscending Quantity"
-      - "&eQuantity Desc&7: &eDescending Quantity"
-      - "&eAddon&7: &eAddon Alphabetical Order"
-      - "Supports Pinyin Search (if applicable)"
+      - "Sort: &eA-Z&7, &eAmount&7, &eAmount (desc)&7, &eAddon"
+      - "Pinyin search supported"
 
   NTW_EXPANSION_MAGIC_WORKBENCH_BLUEPRINT:
     name: "Magic Workbench Blueprint"
     lore:
-      - "A blank blueprint"
-      - "Can store a Magic Workbench recipe"
+      - "Blank blueprint"
+      - "Stores one Magic Workbench recipe"
 
   NTW_EXPANSION_ARMOR_FORGE_BLUEPRINT:
     name: "Armor Forge Blueprint"
     lore:
-      - "A blank blueprint"
-      - "Can store an Armor Forge recipe"
+      - "Blank blueprint"
+      - "Stores one Armor Forge recipe"
 
   NTW_EXPANSION_SMELTERY_BLUEPRINT:
     name: "Smeltery Blueprint"
     lore:
-      - "A blank blueprint"
-      - "Can store a Smeltery recipe"
+      - "Blank blueprint"
+      - "Stores one Smeltery recipe"
 
   NTW_EXPANSION_QUANTUM_WORKBENCH_BLUEPRINT:
     name: "Quantum Workbench Blueprint"
     lore:
-      - "A blank blueprint"
-      - "Can store a Quantum Workbench recipe"
+      - "Blank blueprint"
+      - "Stores one Quantum Workbench recipe"
 
   NTW_EXPANSION_ANCIENT_ALTAR_BLUEPRINT:
     name: "Ancient Altar Blueprint"
     lore:
-      - "A blank blueprint"
-      - "Can store an Ancient Altar recipe"
+      - "Blank blueprint"
+      - "Stores one Ancient Altar recipe"
 
   NTW_EXPANSION_EXPANSION_WORKBENCH_BLUEPRINT:
     name: "Networks Expansion Workbench Blueprint"
     lore:
-      - "A blank blueprint"
-      - "Can store a Networks Expansion Workbench recipe"
+      - "Blank blueprint"
+      - "Stores one Networks Expansion Workbench recipe"
 
   NTW_EXPANSION_COMPRESSOR_BLUEPRINT:
     name: "Compressor Blueprint"
     lore:
-      - "A blank blueprint"
-      - "Can store a Compressor recipe"
+      - "Blank blueprint"
+      - "Stores one Compressor recipe"
 
   NTW_EXPANSION_GRIND_STONE_BLUEPRINT:
     name: "Grind Stone Blueprint"
     lore:
-      - "A blank blueprint"
-      - "Can store a Grind Stone recipe"
+      - "Blank blueprint"
+      - "Stores one Grind Stone recipe"
 
   NTW_EXPANSION_JUICER_BLUEPRINT:
     name: "Juicer Blueprint"
     lore:
-      - "A blank blueprint"
-      - "Can store a Juicer recipe"
+      - "Blank blueprint"
+      - "Stores one Juicer recipe"
 
   NTW_EXPANSION_ORE_CRUSHER_BLUEPRINT:
     name: "Ore Crusher Blueprint"
     lore:
-      - "A blank blueprint"
-      - "Can store an Ore Crusher recipe"
+      - "Blank blueprint"
+      - "Stores one Ore Crusher recipe"
 
   NTW_EXPANSION_PRESSURE_CHAMBER_BLUEPRINT:
     name: "Pressure Chamber Blueprint"
     lore:
-      - "A blank blueprint"
-      - "Can store a Pressure Chamber recipe"
+      - "Blank blueprint"
+      - "Stores one Pressure Chamber recipe"
 
   NTW_EXPANSION_MAGIC_WORKBENCH_RECIPE_ENCODER:
     name: "Network Magic Workbench Recipe Encoder"
     lore:
-      - "Can encode Magic Workbench blueprints based on input items"
+      - "Turns input items into a Magic Workbench Blueprint"
       - ""
-      - "<click_info>Power Usage: &72,000 per encode"
+      - "<click_info>Power: &72,000 per encode"
 
   NTW_EXPANSION_ARMOR_FORGE_RECIPE_ENCODER:
     name: "Network Armor Forge Recipe Encoder"
     lore:
-      - "Can encode Armor Forge blueprints based on input items"
+      - "Turns input items into a Armor Forge Blueprint"
       - ""
-      - "<click_info>Power Usage: &72,000 per encode"
+      - "<click_info>Power: &72,000 per encode"
 
   NTW_EXPANSION_SMELTERY_RECIPE_ENCODER:
     name: "Network Smeltery Recipe Encoder"
     lore:
-      - "Can encode Smeltery blueprints based on input items"
+      - "Turns input items into a Smeltery Blueprint"
       - ""
-      - "<click_info>Power Usage: &72,000 per encode"
+      - "<click_info>Power: &72,000 per encode"
 
   NTW_EXPANSION_QUANTUM_WORKBENCH_RECIPE_ENCODER:
     name: "Network Quantum Workbench Recipe Encoder"
     lore:
-      - "Can encode Quantum Workbench blueprints based on input items"
+      - "Turns input items into a Quantum Workbench Blueprint"
       - ""
-      - "<click_info>Power Usage: &72,000 per encode"
+      - "<click_info>Power: &72,000 per encode"
 
   NTW_EXPANSION_ANCIENT_ALTAR_RECIPE_ENCODER:
     name: "Network Ancient Altar Recipe Encoder"
     lore:
-      - "Can encode Ancient Altar blueprints based on input items"
+      - "Turns input items into a Ancient Altar Blueprint"
       - ""
-      - "<click_info>Power Usage: &72,000 per encode"
+      - "<click_info>Power: &72,000 per encode"
 
   NTW_EXPANSION_EXPANSION_WORKBENCH_RECIPE_ENCODER:
     name: "Network Expansion Workbench Recipe Encoder"
     lore:
-      - "Can encode Networks Expansion Workbench blueprints based on input items"
+      - "Turns input items into a Networks Expansion Workbench Blueprint"
       - ""
-      - "<click_info>Power Usage: &72,000 per encode"
+      - "<click_info>Power: &72,000 per encode"
 
   NTW_EXPANSION_COMPRESSOR_RECIPE_ENCODER:
     name: "Network Compressor Recipe Encoder"
     lore:
-      - "Can encode Compressor blueprints based on input items"
+      - "Turns input items into a Compressor Blueprint"
       - ""
-      - "<click_info>Power Usage: &72,000 per encode"
+      - "<click_info>Power: &72,000 per encode"
 
   NTW_EXPANSION_GRIND_STONE_RECIPE_ENCODER:
     name: "Network Grind Stone Recipe Encoder"
     lore:
-      - "Can encode Grind Stone blueprints based on input items"
+      - "Turns input items into a Grind Stone Blueprint"
       - ""
-      - "<click_info>Power Usage: &72,000 per encode"
+      - "<click_info>Power: &72,000 per encode"
 
   NTW_EXPANSION_JUICER_RECIPE_ENCODER:
     name: "Network Juicer Recipe Encoder"
     lore:
-      - "Can encode Juicer blueprints based on input items"
+      - "Turns input items into a Juicer Blueprint"
       - ""
-      - "<click_info>Power Usage: &72,000 per encode"
+      - "<click_info>Power: &72,000 per encode"
 
   NTW_EXPANSION_ORE_CRUSHER_RECIPE_ENCODER:
     name: "Network Ore Crusher Recipe Encoder"
     lore:
-      - "Can encode Ore Crusher blueprints based on input items"
+      - "Turns input items into a Ore Crusher Blueprint"
       - ""
-      - "<click_info>Power Usage: &72,000 per encode"
+      - "<click_info>Power: &72,000 per encode"
 
   NTW_EXPANSION_PRESSURE_CHAMBER_RECIPE_ENCODER:
     name: "Network Pressure Chamber Recipe Encoder"
     lore:
-      - "Can encode Pressure Chamber blueprints based on input items"
+      - "Turns input items into a Pressure Chamber Blueprint"
       - ""
-      - "<click_info>Power Usage: &72,000 per encode"
+      - "<click_info>Power: &72,000 per encode"
 
   NTW_EXPANSION_AUTO_MAGIC_WORKBENCH:
     name: "Network Auto Magic Workbench"
     lore:
-      - "Requires a Magic Workbench Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Magic Workbench Blueprint"
+      - "when the item runs out in the network"
       - ""
-      - "<click_info>Power Usage: &764 per craft"
+      - "<click_info>Power: &764 per craft"
 
   NTW_EXPANSION_AUTO_MAGIC_WORKBENCH_WITHHOLDING:
-    name: "Network Auto Magic Workbench (Witholding)"
+    name: "Network Auto Magic Workbench (Withholding)"
     lore:
-      - "Requires a Magic Workbench Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Magic Workbench Blueprint"
+      - "when the item runs out in the network"
+      - "&eKeeps 1 stack ready in the output"
+      - "&7(visible in the network, Cargo can pull it)"
       - ""
-      - "The Witholding version will continue crafting"
-      - "until the output slot has 1 stack of items."
-      - "This stack of items can be accessed in the network"
-      - "or extracted via a cargo system."
-      - ""
-      - "<click_info>Power Usage: &7128 per craft"
+      - "<click_info>Power: &7128 per craft"
 
   NTW_EXPANSION_AUTO_ARMOR_FORGE:
     name: "Network Auto Armor Forge"
     lore:
-      - "Requires an Armor Forge Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Armor Forge Blueprint"
+      - "when the item runs out in the network"
       - ""
-      - "<click_info>Power Usage: &764 per craft"
+      - "<click_info>Power: &764 per craft"
 
   NTW_EXPANSION_AUTO_ARMOR_FORGE_WITHHOLDING:
-    name: "Network Auto Armor Forge (Witholding)"
+    name: "Network Auto Armor Forge (Withholding)"
     lore:
-      - "Requires an Armor Forge Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Armor Forge Blueprint"
+      - "when the item runs out in the network"
+      - "&eKeeps 1 stack ready in the output"
+      - "&7(visible in the network, Cargo can pull it)"
       - ""
-      - "The Witholding version will continue crafting"
-      - "until the output slot has 1 stack of items."
-      - "This stack of items can be accessed in the network"
-      - "or extracted via a cargo system."
-      - ""
-      - "<click_info>Power Usage: &7128 per craft"
+      - "<click_info>Power: &7128 per craft"
 
   NTW_EXPANSION_AUTO_SMELTERY:
     name: "Network Auto Smeltery"
     lore:
-      - "Requires a Smeltery Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Smeltery Blueprint"
+      - "when the item runs out in the network"
       - ""
-      - "<click_info>Power Usage: &764 per craft"
+      - "<click_info>Power: &764 per craft"
 
   NTW_EXPANSION_AUTO_SMELTERY_WITHHOLDING:
-    name: "Network Auto Smeltery (Witholding)"
+    name: "Network Auto Smeltery (Withholding)"
     lore:
-      - "Requires a Smeltery Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Smeltery Blueprint"
+      - "when the item runs out in the network"
+      - "&eKeeps 1 stack ready in the output"
+      - "&7(visible in the network, Cargo can pull it)"
       - ""
-      - "The Witholding version will continue crafting"
-      - "until the output slot has 1 stack of items."
-      - "This stack of items can be accessed in the network"
-      - "or extracted via a cargo system."
-      - ""
-      - "<click_info>Power Usage: &7128 per craft"
+      - "<click_info>Power: &7128 per craft"
 
   NTW_EXPANSION_AUTO_QUANTUM_WORKBENCH:
     name: "Network Auto Quantum Workbench"
     lore:
-      - "Requires a Quantum Workbench Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Quantum Workbench Blueprint"
+      - "when the item runs out in the network"
       - ""
-      - "<click_info>Power Usage: &764 per craft"
+      - "<click_info>Power: &764 per craft"
 
   NTW_EXPANSION_AUTO_QUANTUM_WORKBENCH_WITHHOLDING:
-    name: "Network Auto Quantum Workbench (Witholding)"
+    name: "Network Auto Quantum Workbench (Withholding)"
     lore:
-      - "Requires a Quantum Workbench Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Quantum Workbench Blueprint"
+      - "when the item runs out in the network"
+      - "&eKeeps 1 stack ready in the output"
+      - "&7(visible in the network, Cargo can pull it)"
       - ""
-      - "The Witholding version will continue crafting"
-      - "until the output slot has 1 stack of items."
-      - "This stack of items can be accessed in the network"
-      - "or extracted via a cargo system."
-      - ""
-      - "<click_info>Power Usage: &7128 per craft"
+      - "<click_info>Power: &7128 per craft"
 
   NTW_EXPANSION_AUTO_ANCIENT_ALTAR:
     name: "Network Auto Ancient Altar"
     lore:
-      - "Requires an Ancient Altar Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Ancient Altar Blueprint"
+      - "when the item runs out in the network"
       - ""
-      - "<click_info>Power Usage: &764 per craft"
+      - "<click_info>Power: &764 per craft"
 
   NTW_EXPANSION_AUTO_ANCIENT_ALTAR_WITHHOLDING:
-    name: "Network Auto Ancient Altar (Witholding)"
+    name: "Network Auto Ancient Altar (Withholding)"
     lore:
-      - "Requires an Ancient Altar Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Ancient Altar Blueprint"
+      - "when the item runs out in the network"
+      - "&eKeeps 1 stack ready in the output"
+      - "&7(visible in the network, Cargo can pull it)"
       - ""
-      - "The Witholding version will continue crafting"
-      - "until the output slot has 1 stack of items."
-      - "This stack of items can be accessed in the network"
-      - "or extracted via a cargo system."
-      - ""
-      - "<click_info>Power Usage: &7128 per craft"
+      - "<click_info>Power: &7128 per craft"
 
   NTW_EXPANSION_AUTO_EXPANSION_WORKBENCH:
     name: "Network Auto Networks Expansion Workbench"
     lore:
-      - "Requires a Networks Expansion Workbench Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Networks Expansion Workbench Blueprint"
+      - "when the item runs out in the network"
       - ""
-      - "<click_info>Power Usage: &764 per craft"
+      - "<click_info>Power: &764 per craft"
 
   NTW_EXPANSION_AUTO_EXPANSION_WORKBENCH_WITHHOLDING:
-    name: "Network Auto Networks Expansion Workbench (Witholding)"
+    name: "Network Auto Networks Expansion Workbench (Withholding)"
     lore:
-      - "Requires a Networks Expansion Workbench Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Networks Expansion Workbench Blueprint"
+      - "when the item runs out in the network"
+      - "&eKeeps 1 stack ready in the output"
+      - "&7(visible in the network, Cargo can pull it)"
       - ""
-      - "The Witholding version will continue crafting"
-      - "until the output slot has 1 stack of items."
-      - "This stack of items can be accessed in the network"
-      - "or extracted via a cargo system."
-      - ""
-      - "<click_info>Power Usage: &7128 per craft"
+      - "<click_info>Power: &7128 per craft"
 
   NTW_EXPANSION_AUTO_COMPRESSOR:
     name: "Network Auto Compressor"
     lore:
-      - "Requires a Compressor Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Compressor Blueprint"
+      - "when the item runs out in the network"
       - ""
-      - "<click_info>Power Usage: &764 per craft"
+      - "<click_info>Power: &764 per craft"
 
   NTW_EXPANSION_AUTO_COMPRESSOR_WITHHOLDING:
-    name: "Network Auto Compressor (Witholding)"
+    name: "Network Auto Compressor (Withholding)"
     lore:
-      - "Requires a Compressor Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Compressor Blueprint"
+      - "when the item runs out in the network"
+      - "&eKeeps 1 stack ready in the output"
+      - "&7(visible in the network, Cargo can pull it)"
       - ""
-      - "The Witholding version will continue crafting"
-      - "until the output slot has 1 stack of items."
-      - "This stack of items can be accessed in the network"
-      - "or extracted via a cargo system."
-      - ""
-      - "<click_info>Power Usage: &7128 per craft"
+      - "<click_info>Power: &7128 per craft"
 
   NTW_EXPANSION_AUTO_GRIND_STONE:
     name: "Network Auto Grind Stone"
     lore:
-      - "Requires a Grind Stone Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Grind Stone Blueprint"
+      - "when the item runs out in the network"
       - ""
-      - "<click_info>Power Usage: &764 per craft"
+      - "<click_info>Power: &764 per craft"
 
   NTW_EXPANSION_AUTO_GRIND_STONE_WITHHOLDING:
-    name: "Network Auto Grind Stone (Witholding)"
+    name: "Network Auto Grind Stone (Withholding)"
     lore:
-      - "Requires a Grind Stone Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Grind Stone Blueprint"
+      - "when the item runs out in the network"
+      - "&eKeeps 1 stack ready in the output"
+      - "&7(visible in the network, Cargo can pull it)"
       - ""
-      - "The Witholding version will continue crafting"
-      - "until the output slot has 1 stack of items."
-      - "This stack of items can be accessed in the network"
-      - "or extracted via a cargo system."
-      - ""
-      - "<click_info>Power Usage: &7128 per craft"
+      - "<click_info>Power: &7128 per craft"
 
   NTW_EXPANSION_AUTO_JUICER:
     name: "Network Auto Juicer"
     lore:
-      - "Requires a Juicer Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Juicer Blueprint"
+      - "when the item runs out in the network"
       - ""
-      - "<click_info>Power Usage: &764 per craft"
+      - "<click_info>Power: &764 per craft"
 
   NTW_EXPANSION_AUTO_JUICER_WITHHOLDING:
-    name: "Network Auto Juicer (Witholding)"
+    name: "Network Auto Juicer (Withholding)"
     lore:
-      - "Requires a Juicer Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Juicer Blueprint"
+      - "when the item runs out in the network"
+      - "&eKeeps 1 stack ready in the output"
+      - "&7(visible in the network, Cargo can pull it)"
       - ""
-      - "The Witholding version will continue crafting"
-      - "until the output slot has 1 stack of items."
-      - "This stack of items can be accessed in the network"
-      - "or extracted via a cargo system."
-      - ""
-      - "<click_info>Power Usage: &7128 per craft"
+      - "<click_info>Power: &7128 per craft"
 
   NTW_EXPANSION_AUTO_ORE_CRUSHER:
     name: "Network Auto Ore Crusher"
     lore:
-      - "Requires an Ore Crusher Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Ore Crusher Blueprint"
+      - "when the item runs out in the network"
       - ""
-      - "<click_info>Power Usage: &764 per craft"
+      - "<click_info>Power: &764 per craft"
 
   NTW_EXPANSION_AUTO_ORE_CRUSHER_WITHHOLDING:
-    name: "Network Auto Ore Crusher (Witholding)"
+    name: "Network Auto Ore Crusher (Withholding)"
     lore:
-      - "Requires an Ore Crusher Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Ore Crusher Blueprint"
+      - "when the item runs out in the network"
+      - "&eKeeps 1 stack ready in the output"
+      - "&7(visible in the network, Cargo can pull it)"
       - ""
-      - "The Witholding version will continue crafting"
-      - "until the output slot has 1 stack of items."
-      - "This stack of items can be accessed in the network"
-      - "or extracted via a cargo system."
-      - ""
-      - "<click_info>Power Usage: &7128 per craft"
+      - "<click_info>Power: &7128 per craft"
 
   NTW_EXPANSION_AUTO_PRESSURE_CHAMBER:
     name: "Network Auto Pressure Chamber"
     lore:
-      - "Requires a Pressure Chamber Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Pressure Chamber Blueprint"
+      - "when the item runs out in the network"
       - ""
-      - "<click_info>Power Usage: &764 per craft"
+      - "<click_info>Power: &764 per craft"
 
   NTW_EXPANSION_AUTO_PRESSURE_CHAMBER_WITHHOLDING:
-    name: "Network Auto Pressure Chamber (Witholding)"
+    name: "Network Auto Pressure Chamber (Withholding)"
     lore:
-      - "Requires a Pressure Chamber Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Pressure Chamber Blueprint"
+      - "when the item runs out in the network"
+      - "&eKeeps 1 stack ready in the output"
+      - "&7(visible in the network, Cargo can pull it)"
       - ""
-      - "The Witholding version will continue crafting"
-      - "until the output slot has 1 stack of items."
-      - "This stack of items can be accessed in the network"
-      - "or extracted via a cargo system."
-      - ""
-      - "<click_info>Power Usage: &7128 per craft"
+      - "<click_info>Power: &7128 per craft"
 
   NTW_EXPANSION_ADVANCED_AUTO_MAGIC_WORKBENCH:
     name: "Advanced Network Auto Magic Workbench"
     lore:
-      - "Requires a Magic Workbench Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "Allows blueprint stacking (Not backward compatible)"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Magic Workbench Blueprint"
+      - "when the item runs out in the network"
+      - "&aBlueprints can be stacked"
       - ""
-      - "<click_info>Power Usage: &77640 per craft"
+      - "<click_info>Power: &77640 per craft"
 
   NTW_EXPANSION_ADVANCED_AUTO_MAGIC_WORKBENCH_WITHHOLDING:
-    name: "Advanced Network Auto Magic Workbench (Witholding)"
+    name: "Advanced Network Auto Magic Workbench (Withholding)"
     lore:
-      - "Requires a Magic Workbench Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "Allows blueprint stacking (Not backward compatible)"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Magic Workbench Blueprint"
+      - "when the item runs out in the network"
+      - "&aBlueprints can be stacked"
+      - "&eKeeps 1 stack ready in the output"
+      - "&7(visible in the network, Cargo can pull it)"
       - ""
-      - "The Witholding version will continue crafting"
-      - "until the output slot has 1 stack of items."
-      - "This stack of items can be accessed in the network"
-      - "or extracted via a cargo system."
-      - ""
-      - "<click_info>Power Usage: &71,280 per craft"
+      - "<click_info>Power: &71,280 per craft"
 
   NTW_EXPANSION_ADVANCED_AUTO_ARMOR_FORGE:
     name: "Advanced Network Auto Armor Forge"
     lore:
-      - "Requires an Armor Forge Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "Allows blueprint stacking (Not backward compatible)"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Armor Forge Blueprint"
+      - "when the item runs out in the network"
+      - "&aBlueprints can be stacked"
       - ""
-      - "<click_info>Power Usage: &77640 per craft"
+      - "<click_info>Power: &77640 per craft"
 
   NTW_EXPANSION_ADVANCED_AUTO_ARMOR_FORGE_WITHHOLDING:
-    name: "Advanced Network Auto Armor Forge (Witholding)"
+    name: "Advanced Network Auto Armor Forge (Withholding)"
     lore:
-      - "Requires an Armor Forge Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "Allows blueprint stacking (Not backward compatible)"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Armor Forge Blueprint"
+      - "when the item runs out in the network"
+      - "&aBlueprints can be stacked"
+      - "&eKeeps 1 stack ready in the output"
+      - "&7(visible in the network, Cargo can pull it)"
       - ""
-      - "The Witholding version will continue crafting"
-      - "until the output slot has 1 stack of items."
-      - "This stack of items can be accessed in the network"
-      - "or extracted via a cargo system."
-      - ""
-      - "<click_info>Power Usage: &71,280 per craft"
+      - "<click_info>Power: &71,280 per craft"
 
   NTW_EXPANSION_ADVANCED_AUTO_SMELTERY:
     name: "Advanced Network Auto Smeltery"
     lore:
-      - "Requires a Smeltery Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "Allows blueprint stacking (Not backward compatible)"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Smeltery Blueprint"
+      - "when the item runs out in the network"
+      - "&aBlueprints can be stacked"
       - ""
-      - "<click_info>Power Usage: &77640 per craft"
+      - "<click_info>Power: &77640 per craft"
 
   NTW_EXPANSION_ADVANCED_AUTO_SMELTERY_WITHHOLDING:
-    name: "Advanced Network Auto Smeltery (Witholding)"
+    name: "Advanced Network Auto Smeltery (Withholding)"
     lore:
-      - "Requires a Smeltery Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "Allows blueprint stacking (Not backward compatible)"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Smeltery Blueprint"
+      - "when the item runs out in the network"
+      - "&aBlueprints can be stacked"
+      - "&eKeeps 1 stack ready in the output"
+      - "&7(visible in the network, Cargo can pull it)"
       - ""
-      - "The Witholding version will continue crafting"
-      - "until the output slot has 1 stack of items."
-      - "This stack of items can be accessed in the network"
-      - "or extracted via a cargo system."
-      - ""
-      - "<click_info>Power Usage: &71,280 per craft"
+      - "<click_info>Power: &71,280 per craft"
 
   NTW_EXPANSION_ADVANCED_AUTO_QUANTUM_WORKBENCH:
     name: "Advanced Network Auto Quantum Workbench"
     lore:
-      - "Requires a Quantum Workbench Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "Allows blueprint stacking (Not backward compatible)"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Quantum Workbench Blueprint"
+      - "when the item runs out in the network"
+      - "&aBlueprints can be stacked"
       - ""
-      - "<click_info>Power Usage: &77640 per craft"
+      - "<click_info>Power: &77640 per craft"
 
   NTW_EXPANSION_ADVANCED_AUTO_QUANTUM_WORKBENCH_WITHHOLDING:
-    name: "Advanced Network Auto Quantum Workbench (Witholding)"
+    name: "Advanced Network Auto Quantum Workbench (Withholding)"
     lore:
-      - "Requires a Quantum Workbench Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "Allows blueprint stacking (Not backward compatible)"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Quantum Workbench Blueprint"
+      - "when the item runs out in the network"
+      - "&aBlueprints can be stacked"
+      - "&eKeeps 1 stack ready in the output"
+      - "&7(visible in the network, Cargo can pull it)"
       - ""
-      - "The Witholding version will continue crafting"
-      - "until the output slot has 1 stack of items."
-      - "This stack of items can be accessed in the network"
-      - "or extracted via a cargo system."
-      - ""
-      - "<click_info>Power Usage: &71,280 per craft"
+      - "<click_info>Power: &71,280 per craft"
 
   NTW_EXPANSION_ADVANCED_AUTO_ANCIENT_ALTAR:
     name: "Advanced Network Auto Ancient Altar"
     lore:
-      - "Requires an Ancient Altar Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "Allows blueprint stacking (Not backward compatible)"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Ancient Altar Blueprint"
+      - "when the item runs out in the network"
+      - "&aBlueprints can be stacked"
       - ""
-      - "<click_info>Power Usage: &77640 per craft"
+      - "<click_info>Power: &77640 per craft"
 
   NTW_EXPANSION_ADVANCED_AUTO_ANCIENT_ALTAR_WITHHOLDING:
-    name: "Advanced Network Auto Ancient Altar (Witholding)"
+    name: "Advanced Network Auto Ancient Altar (Withholding)"
     lore:
-      - "Requires an Ancient Altar Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "Allows blueprint stacking (Not backward compatible)"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Ancient Altar Blueprint"
+      - "when the item runs out in the network"
+      - "&aBlueprints can be stacked"
+      - "&eKeeps 1 stack ready in the output"
+      - "&7(visible in the network, Cargo can pull it)"
       - ""
-      - "The Witholding version will continue crafting"
-      - "until the output slot has 1 stack of items."
-      - "This stack of items can be accessed in the network"
-      - "or extracted via a cargo system."
-      - ""
-      - "<click_info>Power Usage: &71,280 per craft"
+      - "<click_info>Power: &71,280 per craft"
 
   NTW_EXPANSION_ADVANCED_AUTO_EXPANSION_WORKBENCH:
     name: "Advanced Network Auto Networks Expansion Workbench"
     lore:
-      - "Requires a Networks Expansion Workbench Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "Allows blueprint stacking (Not backward compatible)"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Networks Expansion Workbench Blueprint"
+      - "when the item runs out in the network"
+      - "&aBlueprints can be stacked"
       - ""
-      - "<click_info>Power Usage: &77640 per craft"
+      - "<click_info>Power: &77640 per craft"
 
   NTW_EXPANSION_ADVANCED_AUTO_EXPANSION_WORKBENCH_WITHHOLDING:
-    name: "Advanced Network Auto Networks Expansion Workbench (Witholding)"
+    name: "Advanced Network Auto Networks Expansion Workbench (Withholding)"
     lore:
-      - "Requires a Networks Expansion Workbench Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "Allows blueprint stacking (Not backward compatible)"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Networks Expansion Workbench Blueprint"
+      - "when the item runs out in the network"
+      - "&aBlueprints can be stacked"
+      - "&eKeeps 1 stack ready in the output"
+      - "&7(visible in the network, Cargo can pull it)"
       - ""
-      - "The Witholding version will continue crafting"
-      - "until the output slot has 1 stack of items."
-      - "This stack of items can be accessed in the network"
-      - "or extracted via a cargo system."
-      - ""
-      - "<click_info>Power Usage: &71,280 per craft"
+      - "<click_info>Power: &71,280 per craft"
 
   NTW_EXPANSION_ADVANCED_AUTO_COMPRESSOR:
     name: "Advanced Network Auto Compressor"
     lore:
-      - "Requires a Compressor Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "Allows blueprint stacking (Not backward compatible)"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Compressor Blueprint"
+      - "when the item runs out in the network"
+      - "&aBlueprints can be stacked"
       - ""
-      - "<click_info>Power Usage: &77640 per craft"
+      - "<click_info>Power: &77640 per craft"
 
   NTW_EXPANSION_ADVANCED_AUTO_COMPRESSOR_WITHHOLDING:
-    name: "Advanced Network Auto Compressor (Witholding)"
+    name: "Advanced Network Auto Compressor (Withholding)"
     lore:
-      - "Requires a Compressor Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "Allows blueprint stacking (Not backward compatible)"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Compressor Blueprint"
+      - "when the item runs out in the network"
+      - "&aBlueprints can be stacked"
+      - "&eKeeps 1 stack ready in the output"
+      - "&7(visible in the network, Cargo can pull it)"
       - ""
-      - "The Witholding version will continue crafting"
-      - "until the output slot has 1 stack of items."
-      - "This stack of items can be accessed in the network"
-      - "or extracted via a cargo system."
-      - ""
-      - "<click_info>Power Usage: &71,280 per craft"
+      - "<click_info>Power: &71,280 per craft"
 
   NTW_EXPANSION_ADVANCED_AUTO_GRIND_STONE:
     name: "Advanced Network Auto Grind Stone"
     lore:
-      - "Requires a Grind Stone Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "Allows blueprint stacking (Not backward compatible)"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Grind Stone Blueprint"
+      - "when the item runs out in the network"
+      - "&aBlueprints can be stacked"
       - ""
-      - "<click_info>Power Usage: &77640 per craft"
+      - "<click_info>Power: &77640 per craft"
 
   NTW_EXPANSION_ADVANCED_AUTO_GRIND_STONE_WITHHOLDING:
-    name: "Advanced Network Auto Grind Stone (Witholding)"
+    name: "Advanced Network Auto Grind Stone (Withholding)"
     lore:
-      - "Requires a Grind Stone Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "Allows blueprint stacking (Not backward compatible)"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Grind Stone Blueprint"
+      - "when the item runs out in the network"
+      - "&aBlueprints can be stacked"
+      - "&eKeeps 1 stack ready in the output"
+      - "&7(visible in the network, Cargo can pull it)"
       - ""
-      - "The Witholding version will continue crafting"
-      - "until the output slot has 1 stack of items."
-      - "This stack of items can be accessed in the network"
-      - "or extracted via a cargo system."
-      - ""
-      - "<click_info>Power Usage: &71,280 per craft"
+      - "<click_info>Power: &71,280 per craft"
 
   NTW_EXPANSION_ADVANCED_AUTO_JUICER:
     name: "Advanced Network Auto Juicer"
     lore:
-      - "Requires a Juicer Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "Allows blueprint stacking (Not backward compatible)"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Juicer Blueprint"
+      - "when the item runs out in the network"
+      - "&aBlueprints can be stacked"
       - ""
-      - "<click_info>Power Usage: &77640 per craft"
+      - "<click_info>Power: &77640 per craft"
 
   NTW_EXPANSION_ADVANCED_AUTO_JUICER_WITHHOLDING:
-    name: "Advanced Network Auto Juicer (Witholding)"
+    name: "Advanced Network Auto Juicer (Withholding)"
     lore:
-      - "Requires a Juicer Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "Allows blueprint stacking (Not backward compatible)"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Juicer Blueprint"
+      - "when the item runs out in the network"
+      - "&aBlueprints can be stacked"
+      - "&eKeeps 1 stack ready in the output"
+      - "&7(visible in the network, Cargo can pull it)"
       - ""
-      - "The Witholding version will continue crafting"
-      - "until the output slot has 1 stack of items."
-      - "This stack of items can be accessed in the network"
-      - "or extracted via a cargo system."
-      - ""
-      - "<click_info>Power Usage: &71,280 per craft"
+      - "<click_info>Power: &71,280 per craft"
 
   NTW_EXPANSION_ADVANCED_AUTO_ORE_CRUSHER:
     name: "Advanced Network Auto Ore Crusher"
     lore:
-      - "Requires an Ore Crusher Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "Allows blueprint stacking (Not backward compatible)"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Ore Crusher Blueprint"
+      - "when the item runs out in the network"
+      - "&aBlueprints can be stacked"
       - ""
-      - "<click_info>Power Usage: &77640 per craft"
+      - "<click_info>Power: &77640 per craft"
 
   NTW_EXPANSION_ADVANCED_AUTO_ORE_CRUSHER_WITHHOLDING:
-    name: "Advanced Network Auto Ore Crusher (Witholding)"
+    name: "Advanced Network Auto Ore Crusher (Withholding)"
     lore:
-      - "Requires an Ore Crusher Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "Allows blueprint stacking (Not backward compatible)"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Ore Crusher Blueprint"
+      - "when the item runs out in the network"
+      - "&aBlueprints can be stacked"
+      - "&eKeeps 1 stack ready in the output"
+      - "&7(visible in the network, Cargo can pull it)"
       - ""
-      - "The Witholding version will continue crafting"
-      - "until the output slot has 1 stack of items."
-      - "This stack of items can be accessed in the network"
-      - "or extracted via a cargo system."
-      - ""
-      - "<click_info>Power Usage: &71,280 per craft"
+      - "<click_info>Power: &71,280 per craft"
 
   NTW_EXPANSION_ADVANCED_AUTO_PRESSURE_CHAMBER:
     name: "Advanced Network Auto Pressure Chamber"
     lore:
-      - "Requires a Pressure Chamber Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "Allows blueprint stacking (Not backward compatible)"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Pressure Chamber Blueprint"
+      - "when the item runs out in the network"
+      - "&aBlueprints can be stacked"
       - ""
-      - "<click_info>Power Usage: &77640 per craft"
+      - "<click_info>Power: &77640 per craft"
 
   NTW_EXPANSION_ADVANCED_AUTO_PRESSURE_CHAMBER_WITHHOLDING:
-    name: "Advanced Network Auto Pressure Chamber (Witholding)"
+    name: "Advanced Network Auto Pressure Chamber (Withholding)"
     lore:
-      - "Requires a Pressure Chamber Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "Allows blueprint stacking (Not backward compatible)"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Pressure Chamber Blueprint"
+      - "when the item runs out in the network"
+      - "&aBlueprints can be stacked"
+      - "&eKeeps 1 stack ready in the output"
+      - "&7(visible in the network, Cargo can pull it)"
       - ""
-      - "The Witholding version will continue crafting"
-      - "until the output slot has 1 stack of items."
-      - "This stack of items can be accessed in the network"
-      - "or extracted via a cargo system."
-      - ""
-      - "<click_info>Power Usage: &71,280 per craft"
+      - "<click_info>Power: &71,280 per craft"
 
   NTW_EXPANSION_ADVANCED_AUTO_CRAFTING:
     name: "Advanced Network Auto Crafter"
     lore:
-      - "Requires a Crafting Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "Allows blueprint stacking (Not backward compatible)"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Crafting Blueprint"
+      - "when the item runs out in the network"
+      - "&aBlueprints can be stacked"
       - ""
-      - "<click_info>Power Usage: &77640 per craft"
+      - "<click_info>Power: &77640 per craft"
 
   NTW_EXPANSION_ADVANCED_AUTO_CRAFTING_WITHHOLDING:
-    name: "Advanced Network Auto Crafter (Witholding)"
+    name: "Advanced Network Auto Crafter (Withholding)"
     lore:
-      - "Requires a Crafting Blueprint to operate."
-      - "When the target item is missing from the network,"
-      - "the machine will automatically fetch materials from the network to craft it"
-      - "Allows blueprint stacking (Not backward compatible)"
-      - "(Requires sufficient raw materials in the network)"
+      - "Auto-crafts with a Crafting Blueprint"
+      - "when the item runs out in the network"
+      - "&aBlueprints can be stacked"
+      - "&eKeeps 1 stack ready in the output"
+      - "&7(visible in the network, Cargo can pull it)"
       - ""
-      - "The Witholding version will continue crafting"
-      - "until the output slot has 1 stack of items."
-      - "This stack of items can be accessed in the network"
-      - "or extracted via a cargo system."
-      - ""
-      - "<click_info>Power Usage: &71,280 per craft"
+      - "<click_info>Power: &71,280 per craft"
 
   NTW_EXPANSION_BRIDGE_ORDINAL:
     name: "Network Bridge (Transparent)"
     lore:
-      - "The bridge is used to connect different network objects"
-      - "to form a complete network"
-      - "with a clearer network layout"
+      - "Connects network blocks together"
 
   NTW_EXPANSION_BRIDGE_WHITE:
     name: "Network Bridge (White)"
     lore:
-      - "Network Bridge is used to connect different network items"
-      - "to form a complete network"
-      - "Clearer network layout"
+      - "Connects network blocks together"
+      - "Use colors to keep layouts tidy"
 
   NTW_EXPANSION_BRIDGE_LIGHT_GRAY:
     name: "Network Bridge (Light Gray)"
     lore:
-      - "Network Bridge is used to connect different network items"
-      - "to form a complete network"
-      - "Clearer network layout"
+      - "Connects network blocks together"
+      - "Use colors to keep layouts tidy"
 
   NTW_EXPANSION_BRIDGE_GRAY:
     name: "Network Bridge (Gray)"
     lore:
-      - "Network Bridge is used to connect different network items"
-      - "to form a complete network"
-      - "Clearer network layout"
+      - "Connects network blocks together"
+      - "Use colors to keep layouts tidy"
 
   NTW_EXPANSION_BRIDGE_BLACK:
     name: "Network Bridge (Black)"
     lore:
-      - "Network Bridge is used to connect different network items"
-      - "to form a complete network"
-      - "Clearer network layout"
+      - "Connects network blocks together"
+      - "Use colors to keep layouts tidy"
 
   NTW_EXPANSION_BRIDGE_BROWN:
     name: "Network Bridge (Brown)"
     lore:
-      - "Network Bridge is used to connect different network items"
-      - "to form a complete network"
-      - "Clearer network layout"
+      - "Connects network blocks together"
+      - "Use colors to keep layouts tidy"
 
   NTW_EXPANSION_BRIDGE_RED:
     name: "Network Bridge (Red)"
     lore:
-      - "Network Bridge is used to connect different network items"
-      - "to form a complete network"
-      - "Clearer network layout"
+      - "Connects network blocks together"
+      - "Use colors to keep layouts tidy"
 
   NTW_EXPANSION_BRIDGE_ORANGE:
     name: "Network Bridge (Orange)"
     lore:
-      - "Network Bridge is used to connect different network items"
-      - "to form a complete network"
-      - "Clearer network layout"
+      - "Connects network blocks together"
+      - "Use colors to keep layouts tidy"
 
   NTW_EXPANSION_BRIDGE_YELLOW:
     name: "Network Bridge (Yellow)"
     lore:
-      - "Network Bridge is used to connect different network items"
-      - "to form a complete network"
-      - "Clearer network layout"
+      - "Connects network blocks together"
+      - "Use colors to keep layouts tidy"
 
   NTW_EXPANSION_BRIDGE_LIME:
     name: "Network Bridge (Lime)"
     lore:
-      - "Network Bridge is used to connect different network items"
-      - "to form a complete network"
-      - "Clearer network layout"
+      - "Connects network blocks together"
+      - "Use colors to keep layouts tidy"
 
   NTW_EXPANSION_BRIDGE_GREEN:
     name: "Network Bridge (Green)"
     lore:
-      - "Network Bridge is used to connect different network items"
-      - "to form a complete network"
-      - "Clearer network layout"
+      - "Connects network blocks together"
+      - "Use colors to keep layouts tidy"
 
   NTW_EXPANSION_BRIDGE_CYAN:
     name: "Network Bridge (Cyan)"
     lore:
-      - "Network Bridge is used to connect different network items"
-      - "to form a complete network"
-      - "Clearer network layout"
+      - "Connects network blocks together"
+      - "Use colors to keep layouts tidy"
 
   NTW_EXPANSION_BRIDGE_LIGHT_BLUE:
     name: "Network Bridge (Light Blue)"
     lore:
-      - "Network Bridge is used to connect different network items"
-      - "to form a complete network"
-      - "Clearer network layout"
+      - "Connects network blocks together"
+      - "Use colors to keep layouts tidy"
 
   NTW_EXPANSION_BRIDGE_BLUE:
     name: "Network Bridge (Blue)"
     lore:
-      - "Network Bridge is used to connect different network items"
-      - "to form a complete network"
-      - "Clearer network layout"
+      - "Connects network blocks together"
+      - "Use colors to keep layouts tidy"
 
   NTW_EXPANSION_BRIDGE_PURPLE:
     name: "Network Bridge (Purple)"
     lore:
-      - "Network Bridge is used to connect different network items"
-      - "to form a complete network"
-      - "Clearer network layout"
+      - "Connects network blocks together"
+      - "Use colors to keep layouts tidy"
 
   NTW_EXPANSION_BRIDGE_MAGENTA:
     name: "Network Bridge (Magenta)"
     lore:
-      - "Network Bridge is used to connect different network items"
-      - "to form a complete network"
-      - "Clearer network layout"
+      - "Connects network blocks together"
+      - "Use colors to keep layouts tidy"
 
   NTW_EXPANSION_BRIDGE_PINK:
     name: "Network Bridge (Pink)"
     lore:
-      - "Network Bridge is used to connect different network items"
-      - "to form a complete network"
-      - "Clearer network layout"
+      - "Connects network blocks together"
+      - "Use colors to keep layouts tidy"
 
   NTW_EXPANSION_ADVANCED_QUANTUM_STORAGE:
     name: "Advanced Quantum Storage"
     lore:
-      - "Customizable max storage capacity"
-      - "Please note that after setting the quantity, it cannot be set lower than the previous setting"
-      - "Otherwise it clears to the current max capacity"
+      - "Set your own max capacity"
+      - "&cCan't be lowered after setting"
+      - "&c(lowering resets to the current max)"
 
   NTW_EXPANSION_LINE_POWER_OUTLET_1:
     name: "Line Power Outlet (1)"
     lore:
-      - "Line Power Outlet can transmit stored power"
-      - "from the network to a specified machine."
+      - "Sends network power to the facing machines in a line"
       - ""
       - "<click_info>Buffer: &764J"
 
   NTW_EXPANSION_LINE_POWER_OUTLET_2:
     name: "Line Power Outlet (2)"
     lore:
-      - "Line Power Outlet can transmit stored power"
-      - "from the network to a specified machine."
+      - "Sends network power to the facing machines in a line"
       - ""
       - "<click_info>Buffer: &7256J"
 
   NTW_EXPANSION_LINE_POWER_OUTLET_3:
     name: "Line Power Outlet (3)"
     lore:
-      - "Line Power Outlet can transmit stored power"
-      - "from the network to a specified machine."
+      - "Sends network power to the facing machines in a line"
       - ""
       - "<click_info>Buffer: &71,024J"
 
   NTW_EXPANSION_LINE_POWER_OUTLET_4:
     name: "Line Power Outlet (4)"
     lore:
-      - "Line Power Outlet can transmit stored power"
-      - "from the network to a specified machine."
+      - "Sends network power to the facing machines in a line"
       - ""
       - "<click_info>Buffer: &74,096J"
 
   NTW_EXPANSION_LINE_POWER_OUTLET_5:
     name: "Line Power Outlet (5)"
     lore:
-      - "Line Power Outlet can transmit stored power"
-      - "from the network to a specified machine."
+      - "Sends network power to the facing machines in a line"
       - ""
       - "<click_info>Buffer: &732,768J"
 
   NTW_EXPANSION_LINE_POWER_OUTLET_6:
     name: "Line Power Outlet (6)"
     lore:
-      - "Line Power Outlet can transmit stored power"
-      - "from the network to a specified machine."
+      - "Sends network power to the facing machines in a line"
       - ""
       - "<click_info>Buffer: &7262,144J"
 
   NTW_EXPANSION_LINE_POWER_OUTLET_7:
     name: "Line Power Outlet (7)"
     lore:
-      - "Line Power Outlet can transmit stored power"
-      - "from the network to a specified machine."
+      - "Sends network power to the facing machines in a line"
       - ""
       - "<click_info>Buffer: &72,097,152J"
 
   NTW_EXPANSION_LINE_POWER_OUTLET_8:
     name: "Line Power Outlet (8)"
     lore:
-      - "Line Power Outlet can transmit stored power"
-      - "from the network to a specified machine."
+      - "Sends network power to the facing machines in a line"
       - ""
       - "<click_info>Buffer: &716,777,216J"
 
   NTW_EXPANSION_LINE_POWER_OUTLET_9:
     name: "Line Power Outlet (9)"
     lore:
-      - "Line Power Outlet can transmit stored power"
-      - "from the network to a specified machine."
+      - "Sends network power to the facing machines in a line"
       - ""
       - "<click_info>Buffer: &7134,217,728J"
 
   NTW_EXPANSION_LINE_POWER_OUTLET_10:
     name: "Line Power Outlet (10)"
     lore:
-      - "Line Power Outlet can transmit stored power"
-      - "from the network to a specified machine."
+      - "Sends network power to the facing machines in a line"
       - ""
       - "<click_info>Buffer: &71,073,741,824J"
 
   NTW_EXPANSION_LINE_POWER_OUTLET_11:
     name: "Line Power Outlet (11)"
     lore:
-      - "Line Power Outlet can transmit stored power"
-      - "from the network to a specified machine."
+      - "Sends network power to the facing machines in a line"
       - ""
       - "<click_info>Buffer: &72,147,483,647J"
 
@@ -3793,21 +3423,17 @@ items:
   NTW_EXPANSION_VISUAL_GRID:
     name: "Interactive Grid"
     lore:
-      - "The Interactive Grid lets you view all items in the network"
-      - "You can also insert or withdraw items directly"
+      - "Shows all items in the network"
+      - "Insert or take items directly"
       - "Supports custom keybinds"
-      - "Sort modes: "
-      - "&eAZ&7: &eSort alphabetically"
-      - "&eAmount&7: &eSort by item amount"
-      - "&eAmount Reverse&7: &eSort by item amount descending"
-      - "&eAddon&7: &eSort alphabetically by item addon"
+      - "Sort: &eA-Z&7, &eAmount&7, &eAmount (desc)&7, &eAddon"
       - "Pinyin search supported"
 
   NTW_EXPANSION_CARGO_NODE_QUICK_TOOL:
     name: "Cargo Node Quick Tool"
     lore:
-      - "&aRight Click: Set config to the pointed Cargo Node"
-      - "&eShift + Right Click: Load config from the pointed Cargo Node"
+      - "&aRight Click: &7apply config to a Cargo Node"
+      - "&eShift+Right Click: &7copy config from a Cargo Node"
       - ""
       - "&x&c&c&8&c&f&4&lP&x&c&b&9&7&f&5&lr&x&c&a&a&3&f&6&lo&x&c&9&a&e&f&7&lv&x&c&8&b&9&f&8&li&x&c&7&c&5&f&9&ld&x&c&5&d&0&f&9&le&x&c&4&d&b&f&a&ld&x&c&3&e&6&f&b&l &x&c&2&f&2&f&c&lb&x&c&1&f&d&f&d&ly"
       - "&x&c&c&8&c&f&4&lM&x&c&b&9&7&f&5&lo&x&c&a&a&3&f&6&ly&x&c&9&a&e&f&7&lu&x&c&8&b&9&f&8&lS&x&c&7&c&5&f&9&ll&x&c&5&d&0&f&9&li&x&c&4&d&b&f&a&lm&x&c&3&e&6&f&b&le&x&c&2&f&2&f&c&lf&x&c&1&f&d&f&d&lu&x&c&0&f&e&f&e&ln"
@@ -3825,10 +3451,10 @@ items:
   NTW_EXPANSION_CARGO_STORAGE_UNIT_1:
     name: "Network Drawer I"
     lore:
-      - "&6Supports Network Quick Input/Output"
+      - "&6Works with network fast input/output"
       - ""
-      - "&7⇨ &eStores 32 types of items"
-      - "&7⇨ &eCapacity: 256 per type"
+      - "&7⇨ &e32 item types"
+      - "&7⇨ &e256 per type"
       - ""
       - "&x&c&c&8&c&f&4&lP&x&c&b&9&7&f&5&lr&x&c&a&a&3&f&6&lo&x&c&9&a&e&f&7&lv&x&c&8&b&9&f&8&li&x&c&7&c&5&f&9&ld&x&c&5&d&0&f&9&le&x&c&4&d&b&f&a&ld&x&c&3&e&6&f&b&l &x&c&2&f&2&f&c&lb&x&c&1&f&d&f&d&ly"
       - "&x&c&c&8&c&f&4&lM&x&c&b&9&7&f&5&lo&x&c&a&a&3&f&6&ly&x&c&9&a&e&f&7&lu&x&c&8&b&9&f&8&lS&x&c&7&c&5&f&9&ll&x&c&5&d&0&f&9&li&x&c&4&d&b&f&a&lm&x&c&3&e&6&f&b&le&x&c&2&f&2&f&c&lf&x&c&1&f&d&f&d&lu&x&c&0&f&e&f&e&ln"
@@ -3837,10 +3463,10 @@ items:
   NTW_EXPANSION_CARGO_STORAGE_UNIT_2:
     name: "Network Drawer II"
     lore:
-      - "&6Supports Network Quick Input/Output"
+      - "&6Works with network fast input/output"
       - ""
-      - "&7⇨ &eStores 32 types of items"
-      - "&7⇨ &eCapacity: 1,024 per type"
+      - "&7⇨ &e32 item types"
+      - "&7⇨ &e1,024 per type"
       - ""
       - "&x&c&c&8&c&f&4&lP&x&c&b&9&7&f&5&lr&x&c&a&a&3&f&6&lo&x&c&9&a&e&f&7&lv&x&c&8&b&9&f&8&li&x&c&7&c&5&f&9&ld&x&c&5&d&0&f&9&le&x&c&4&d&b&f&a&ld&x&c&3&e&6&f&b&l &x&c&2&f&2&f&c&lb&x&c&1&f&d&f&d&ly"
       - "&x&c&c&8&c&f&4&lM&x&c&b&9&7&f&5&lo&x&c&a&a&3&f&6&ly&x&c&9&a&e&f&7&lu&x&c&8&b&9&f&8&lS&x&c&7&c&5&f&9&ll&x&c&5&d&0&f&9&li&x&c&4&d&b&f&a&lm&x&c&3&e&6&f&b&le&x&c&2&f&2&f&c&lf&x&c&1&f&d&f&d&lu&x&c&0&f&e&f&e&ln"
@@ -3849,10 +3475,10 @@ items:
   NTW_EXPANSION_CARGO_STORAGE_UNIT_3:
     name: "Network Drawer III"
     lore:
-      - "&6Supports Network Quick Input/Output"
+      - "&6Works with network fast input/output"
       - ""
-      - "&7⇨ &eStores 32 types of items"
-      - "&7⇨ &eCapacity: 4,096 per type"
+      - "&7⇨ &e32 item types"
+      - "&7⇨ &e4,096 per type"
       - ""
       - "&x&c&c&8&c&f&4&lP&x&c&b&9&7&f&5&lr&x&c&a&a&3&f&6&lo&x&c&9&a&e&f&7&lv&x&c&8&b&9&f&8&li&x&c&7&c&5&f&9&ld&x&c&5&d&0&f&9&le&x&c&4&d&b&f&a&ld&x&c&3&e&6&f&b&l &x&c&2&f&2&f&c&lb&x&c&1&f&d&f&d&ly"
       - "&x&c&c&8&c&f&4&lM&x&c&b&9&7&f&5&lo&x&c&a&a&3&f&6&ly&x&c&9&a&e&f&7&lu&x&c&8&b&9&f&8&lS&x&c&7&c&5&f&9&ll&x&c&5&d&0&f&9&li&x&c&4&d&b&f&a&lm&x&c&3&e&6&f&b&le&x&c&2&f&2&f&c&lf&x&c&1&f&d&f&d&lu&x&c&0&f&e&f&e&ln"
@@ -3861,10 +3487,10 @@ items:
   NTW_EXPANSION_CARGO_STORAGE_UNIT_4:
     name: "Network Drawer IV"
     lore:
-      - "&6Supports Network Quick Input/Output"
+      - "&6Works with network fast input/output"
       - ""
-      - "&7⇨ &eStores 32 types of items"
-      - "&7⇨ &eCapacity: 32,768 per type"
+      - "&7⇨ &e32 item types"
+      - "&7⇨ &e32,768 per type"
       - ""
       - "&x&c&c&8&c&f&4&lP&x&c&b&9&7&f&5&lr&x&c&a&a&3&f&6&lo&x&c&9&a&e&f&7&lv&x&c&8&b&9&f&8&li&x&c&7&c&5&f&9&ld&x&c&5&d&0&f&9&le&x&c&4&d&b&f&a&ld&x&c&3&e&6&f&b&l &x&c&2&f&2&f&c&lb&x&c&1&f&d&f&d&ly"
       - "&x&c&c&8&c&f&4&lM&x&c&b&9&7&f&5&lo&x&c&a&a&3&f&6&ly&x&c&9&a&e&f&7&lu&x&c&8&b&9&f&8&lS&x&c&7&c&5&f&9&ll&x&c&5&d&0&f&9&li&x&c&4&d&b&f&a&lm&x&c&3&e&6&f&b&le&x&c&2&f&2&f&c&lf&x&c&1&f&d&f&d&lu&x&c&0&f&e&f&e&ln"
@@ -3873,10 +3499,10 @@ items:
   NTW_EXPANSION_CARGO_STORAGE_UNIT_5:
     name: "Network Drawer V"
     lore:
-      - "&6Supports Network Quick Input/Output"
+      - "&6Works with network fast input/output"
       - ""
-      - "&7⇨ &eStores 32 types of items"
-      - "&7⇨ &eCapacity: 262,144 per type"
+      - "&7⇨ &e32 item types"
+      - "&7⇨ &e262,144 per type"
       - ""
       - "&x&c&c&8&c&f&4&lP&x&c&b&9&7&f&5&lr&x&c&a&a&3&f&6&lo&x&c&9&a&e&f&7&lv&x&c&8&b&9&f&8&li&x&c&7&c&5&f&9&ld&x&c&5&d&0&f&9&le&x&c&4&d&b&f&a&ld&x&c&3&e&6&f&b&l &x&c&2&f&2&f&c&lb&x&c&1&f&d&f&d&ly"
       - "&x&c&c&8&c&f&4&lM&x&c&b&9&7&f&5&lo&x&c&a&a&3&f&6&ly&x&c&9&a&e&f&7&lu&x&c&8&b&9&f&8&lS&x&c&7&c&5&f&9&ll&x&c&5&d&0&f&9&li&x&c&4&d&b&f&a&lm&x&c&3&e&6&f&b&le&x&c&2&f&2&f&c&lf&x&c&1&f&d&f&d&lu&x&c&0&f&e&f&e&ln"
@@ -3885,10 +3511,10 @@ items:
   NTW_EXPANSION_CARGO_STORAGE_UNIT_6:
     name: "Network Drawer VI"
     lore:
-      - "&6Supports Network Quick Input/Output"
+      - "&6Works with network fast input/output"
       - ""
-      - "&7⇨ &eStores 32 types of items"
-      - "&7⇨ &eCapacity: 2,097,152 per type"
+      - "&7⇨ &e32 item types"
+      - "&7⇨ &e2,097,152 per type"
       - ""
       - "&x&c&c&8&c&f&4&lP&x&c&b&9&7&f&5&lr&x&c&a&a&3&f&6&lo&x&c&9&a&e&f&7&lv&x&c&8&b&9&f&8&li&x&c&7&c&5&f&9&ld&x&c&5&d&0&f&9&le&x&c&4&d&b&f&a&ld&x&c&3&e&6&f&b&l &x&c&2&f&2&f&c&lb&x&c&1&f&d&f&d&ly"
       - "&x&c&c&8&c&f&4&lM&x&c&b&9&7&f&5&lo&x&c&a&a&3&f&6&ly&x&c&9&a&e&f&7&lu&x&c&8&b&9&f&8&lS&x&c&7&c&5&f&9&ll&x&c&5&d&0&f&9&li&x&c&4&d&b&f&a&lm&x&c&3&e&6&f&b&le&x&c&2&f&2&f&c&lf&x&c&1&f&d&f&d&lu&x&c&0&f&e&f&e&ln"
@@ -3897,10 +3523,10 @@ items:
   NTW_EXPANSION_CARGO_STORAGE_UNIT_7:
     name: "Network Drawer VII"
     lore:
-      - "&6Supports Network Quick Input/Output"
+      - "&6Works with network fast input/output"
       - ""
-      - "&7⇨ &eStores 32 types of items"
-      - "&7⇨ &eCapacity: 4,194,304 per type"
+      - "&7⇨ &e32 item types"
+      - "&7⇨ &e4,194,304 per type"
       - ""
       - "&x&c&c&8&c&f&4&lP&x&c&b&9&7&f&5&lr&x&c&a&a&3&f&6&lo&x&c&9&a&e&f&7&lv&x&c&8&b&9&f&8&li&x&c&7&c&5&f&9&ld&x&c&5&d&0&f&9&le&x&c&4&d&b&f&a&ld&x&c&3&e&6&f&b&l &x&c&2&f&2&f&c&lb&x&c&1&f&d&f&d&ly"
       - "&x&c&c&8&c&f&4&lM&x&c&b&9&7&f&5&lo&x&c&a&a&3&f&6&ly&x&c&9&a&e&f&7&lu&x&c&8&b&9&f&8&lS&x&c&7&c&5&f&9&ll&x&c&5&d&0&f&9&li&x&c&4&d&b&f&a&lm&x&c&3&e&6&f&b&le&x&c&2&f&2&f&c&lf&x&c&1&f&d&f&d&lu&x&c&0&f&e&f&e&ln"
@@ -3909,10 +3535,10 @@ items:
   NTW_EXPANSION_CARGO_STORAGE_UNIT_8:
     name: "Network Drawer VIII"
     lore:
-      - "&6Supports Network Quick Input/Output"
+      - "&6Works with network fast input/output"
       - ""
-      - "&7⇨ &eStores 32 types of items"
-      - "&7⇨ &eCapacity: 8,388,608 per type"
+      - "&7⇨ &e32 item types"
+      - "&7⇨ &e8,388,608 per type"
       - ""
       - "&x&c&c&8&c&f&4&lP&x&c&b&9&7&f&5&lr&x&c&a&a&3&f&6&lo&x&c&9&a&e&f&7&lv&x&c&8&b&9&f&8&li&x&c&7&c&5&f&9&ld&x&c&5&d&0&f&9&le&x&c&4&d&b&f&a&ld&x&c&3&e&6&f&b&l &x&c&2&f&2&f&c&lb&x&c&1&f&d&f&d&ly"
       - "&x&c&c&8&c&f&4&lM&x&c&b&9&7&f&5&lo&x&c&a&a&3&f&6&ly&x&c&9&a&e&f&7&lu&x&c&8&b&9&f&8&lS&x&c&7&c&5&f&9&ll&x&c&5&d&0&f&9&li&x&c&4&d&b&f&a&lm&x&c&3&e&6&f&b&le&x&c&2&f&2&f&c&lf&x&c&1&f&d&f&d&lu&x&c&0&f&e&f&e&ln"
@@ -3921,10 +3547,10 @@ items:
   NTW_EXPANSION_CARGO_STORAGE_UNIT_9:
     name: "Network Drawer IX"
     lore:
-      - "&6Supports Network Quick Input/Output"
+      - "&6Works with network fast input/output"
       - ""
-      - "&7⇨ &eStores 32 types of items"
-      - "&7⇨ &eCapacity: 16,777,216 per type"
+      - "&7⇨ &e32 item types"
+      - "&7⇨ &e16,777,216 per type"
       - ""
       - "&x&c&c&8&c&f&4&lP&x&c&b&9&7&f&5&lr&x&c&a&a&3&f&6&lo&x&c&9&a&e&f&7&lv&x&c&8&b&9&f&8&li&x&c&7&c&5&f&9&ld&x&c&5&d&0&f&9&le&x&c&4&d&b&f&a&ld&x&c&3&e&6&f&b&l &x&c&2&f&2&f&c&lb&x&c&1&f&d&f&d&ly"
       - "&x&c&c&8&c&f&4&lM&x&c&b&9&7&f&5&lo&x&c&a&a&3&f&6&ly&x&c&9&a&e&f&7&lu&x&c&8&b&9&f&8&lS&x&c&7&c&5&f&9&ll&x&c&5&d&0&f&9&li&x&c&4&d&b&f&a&lm&x&c&3&e&6&f&b&le&x&c&2&f&2&f&c&lf&x&c&1&f&d&f&d&lu&x&c&0&f&e&f&e&ln"
@@ -3933,10 +3559,10 @@ items:
   NTW_EXPANSION_CARGO_STORAGE_UNIT_10:
     name: "Network Drawer X"
     lore:
-      - "&6Supports Network Quick Input/Output"
+      - "&6Works with network fast input/output"
       - ""
-      - "&7⇨ &eStores 32 types of items"
-      - "&7⇨ &eCapacity: 33,554,432 per type"
+      - "&7⇨ &e32 item types"
+      - "&7⇨ &e33,554,432 per type"
       - ""
       - "&x&c&c&8&c&f&4&lP&x&c&b&9&7&f&5&lr&x&c&a&a&3&f&6&lo&x&c&9&a&e&f&7&lv&x&c&8&b&9&f&8&li&x&c&7&c&5&f&9&ld&x&c&5&d&0&f&9&le&x&c&4&d&b&f&a&ld&x&c&3&e&6&f&b&l &x&c&2&f&2&f&c&lb&x&c&1&f&d&f&d&ly"
       - "&x&c&c&8&c&f&4&lM&x&c&b&9&7&f&5&lo&x&c&a&a&3&f&6&ly&x&c&9&a&e&f&7&lu&x&c&8&b&9&f&8&lS&x&c&7&c&5&f&9&ll&x&c&5&d&0&f&9&li&x&c&4&d&b&f&a&lm&x&c&3&e&6&f&b&le&x&c&2&f&2&f&c&lf&x&c&1&f&d&f&d&lu&x&c&0&f&e&f&e&ln"
@@ -3945,10 +3571,10 @@ items:
   NTW_EXPANSION_CARGO_STORAGE_UNIT_11:
     name: "Network Drawer XI"
     lore:
-      - "&6Supports Network Quick Input/Output"
+      - "&6Works with network fast input/output"
       - ""
-      - "&7⇨ &eStores 32 types of items"
-      - "&7⇨ &eCapacity: 134,217,728 per type"
+      - "&7⇨ &e32 item types"
+      - "&7⇨ &e134,217,728 per type"
       - ""
       - "&x&c&c&8&c&f&4&lP&x&c&b&9&7&f&5&lr&x&c&a&a&3&f&6&lo&x&c&9&a&e&f&7&lv&x&c&8&b&9&f&8&li&x&c&7&c&5&f&9&ld&x&c&5&d&0&f&9&le&x&c&4&d&b&f&a&ld&x&c&3&e&6&f&b&l &x&c&2&f&2&f&c&lb&x&c&1&f&d&f&d&ly"
       - "&x&c&c&8&c&f&4&lM&x&c&b&9&7&f&5&lo&x&c&a&a&3&f&6&ly&x&c&9&a&e&f&7&lu&x&c&8&b&9&f&8&lS&x&c&7&c&5&f&9&ll&x&c&5&d&0&f&9&li&x&c&4&d&b&f&a&lm&x&c&3&e&6&f&b&le&x&c&2&f&2&f&c&lf&x&c&1&f&d&f&d&lu&x&c&0&f&e&f&e&ln"
@@ -3957,10 +3583,10 @@ items:
   NTW_EXPANSION_CARGO_STORAGE_UNIT_12:
     name: "Network Drawer XII"
     lore:
-      - "&6Supports Network Quick Input/Output"
+      - "&6Works with network fast input/output"
       - ""
-      - "&7⇨ &eStores 35 types of items"
-      - "&7⇨ &eCapacity: 1,073,741,824 per type"
+      - "&7⇨ &e35 item types"
+      - "&7⇨ &e1,073,741,824 per type"
       - ""
       - "&x&c&c&8&c&f&4&lP&x&c&b&9&7&f&5&lr&x&c&a&a&3&f&6&lo&x&c&9&a&e&f&7&lv&x&c&8&b&9&f&8&li&x&c&7&c&5&f&9&ld&x&c&5&d&0&f&9&le&x&c&4&d&b&f&a&ld&x&c&3&e&6&f&b&l &x&c&2&f&2&f&c&lb&x&c&1&f&d&f&d&ly"
       - "&x&c&c&8&c&f&4&lM&x&c&b&9&7&f&5&lo&x&c&a&a&3&f&6&ly&x&c&9&a&e&f&7&lu&x&c&8&b&9&f&8&lS&x&c&7&c&5&f&9&ll&x&c&5&d&0&f&9&li&x&c&4&d&b&f&a&lm&x&c&3&e&6&f&b&le&x&c&2&f&2&f&c&lf&x&c&1&f&d&f&d&lu&x&c&0&f&e&f&e&ln"
@@ -3969,10 +3595,10 @@ items:
   NTW_EXPANSION_CARGO_STORAGE_UNIT_13:
     name: "Network Drawer XIII"
     lore:
-      - "&6Supports Network Quick Input/Output"
+      - "&6Works with network fast input/output"
       - ""
-      - "&7⇨ &eStores 35 types of items"
-      - "&7⇨ &eCapacity: 2,147,483,647 per type"
+      - "&7⇨ &e35 item types"
+      - "&7⇨ &e2,147,483,647 per type"
       - ""
       - "&x&c&c&8&c&f&4&lP&x&c&b&9&7&f&5&lr&x&c&a&a&3&f&6&lo&x&c&9&a&e&f&7&lv&x&c&8&b&9&f&8&li&x&c&7&c&5&f&9&ld&x&c&5&d&0&f&9&le&x&c&4&d&b&f&a&ld&x&c&3&e&6&f&b&l &x&c&2&f&2&f&c&lb&x&c&1&f&d&f&d&ly"
       - "&x&c&c&8&c&f&4&lM&x&c&b&9&7&f&5&lo&x&c&a&a&3&f&6&ly&x&c&9&a&e&f&7&lu&x&c&8&b&9&f&8&lS&x&c&7&c&5&f&9&ll&x&c&5&d&0&f&9&li&x&c&4&d&b&f&a&lm&x&c&3&e&6&f&b&le&x&c&2&f&2&f&c&lf&x&c&1&f&d&f&d&lu&x&c&0&f&e&f&e&ln"
@@ -3981,12 +3607,11 @@ items:
   NTW_EXPANSION_CARGO_STORAGE_UNIT_1_MODEL:
     name: "Network Drawer I"
     lore:
-      - "&6Supports Network Quick Input/Output"
+      - "&6Works with network fast input/output"
       - ""
-      - "&7⇨ &eStores 32 types of items"
-      - "&7⇨ &eCapacity: 256 per type"
-      - ""
-      - "&7⇨ &eRequires Network Wrench to dismantle Model Block"
+      - "&7⇨ &e32 item types"
+      - "&7⇨ &e256 per type"
+      - "&7⇨ &eBreak the model block with a Network Rake"
       - ""
       - "&x&c&c&8&c&f&4&lP&x&c&b&9&7&f&5&lr&x&c&a&a&3&f&6&lo&x&c&9&a&e&f&7&lv&x&c&8&b&9&f&8&li&x&c&7&c&5&f&9&ld&x&c&5&d&0&f&9&le&x&c&4&d&b&f&a&ld&x&c&3&e&6&f&b&l &x&c&2&f&2&f&c&lb&x&c&1&f&d&f&d&ly"
       - "&x&c&c&8&c&f&4&lM&x&c&b&9&7&f&5&lo&x&c&a&a&3&f&6&ly&x&c&9&a&e&f&7&lu&x&c&8&b&9&f&8&lS&x&c&7&c&5&f&9&ll&x&c&5&d&0&f&9&li&x&c&4&d&b&f&a&lm&x&c&3&e&6&f&b&le&x&c&2&f&2&f&c&lf&x&c&1&f&d&f&d&lu&x&c&0&f&e&f&e&ln"
@@ -3995,12 +3620,11 @@ items:
   NTW_EXPANSION_CARGO_STORAGE_UNIT_2_MODEL:
     name: "Network Drawer II"
     lore:
-      - "&6Supports Network Quick Input/Output"
+      - "&6Works with network fast input/output"
       - ""
-      - "&7⇨ &eStores 32 types of items"
-      - "&7⇨ &eCapacity: 1,024 per type"
-      - ""
-      - "&7⇨ &eRequires Network Wrench to dismantle Model Block"
+      - "&7⇨ &e32 item types"
+      - "&7⇨ &e1,024 per type"
+      - "&7⇨ &eBreak the model block with a Network Rake"
       - ""
       - "&x&c&c&8&c&f&4&lP&x&c&b&9&7&f&5&lr&x&c&a&a&3&f&6&lo&x&c&9&a&e&f&7&lv&x&c&8&b&9&f&8&li&x&c&7&c&5&f&9&ld&x&c&5&d&0&f&9&le&x&c&4&d&b&f&a&ld&x&c&3&e&6&f&b&l &x&c&2&f&2&f&c&lb&x&c&1&f&d&f&d&ly"
       - "&x&c&c&8&c&f&4&lM&x&c&b&9&7&f&5&lo&x&c&a&a&3&f&6&ly&x&c&9&a&e&f&7&lu&x&c&8&b&9&f&8&lS&x&c&7&c&5&f&9&ll&x&c&5&d&0&f&9&li&x&c&4&d&b&f&a&lm&x&c&3&e&6&f&b&le&x&c&2&f&2&f&c&lf&x&c&1&f&d&f&d&lu&x&c&0&f&e&f&e&ln"
@@ -4009,12 +3633,11 @@ items:
   NTW_EXPANSION_CARGO_STORAGE_UNIT_3_MODEL:
     name: "Network Drawer III"
     lore:
-      - "&6Supports Network Quick Input/Output"
+      - "&6Works with network fast input/output"
       - ""
-      - "&7⇨ &eStores 32 types of items"
-      - "&7⇨ &eCapacity: 4,096 per type"
-      - ""
-      - "&7⇨ &eRequires Network Wrench to dismantle Model Block"
+      - "&7⇨ &e32 item types"
+      - "&7⇨ &e4,096 per type"
+      - "&7⇨ &eBreak the model block with a Network Rake"
       - ""
       - "&x&c&c&8&c&f&4&lP&x&c&b&9&7&f&5&lr&x&c&a&a&3&f&6&lo&x&c&9&a&e&f&7&lv&x&c&8&b&9&f&8&li&x&c&7&c&5&f&9&ld&x&c&5&d&0&f&9&le&x&c&4&d&b&f&a&ld&x&c&3&e&6&f&b&l &x&c&2&f&2&f&c&lb&x&c&1&f&d&f&d&ly"
       - "&x&c&c&8&c&f&4&lM&x&c&b&9&7&f&5&lo&x&c&a&a&3&f&6&ly&x&c&9&a&e&f&7&lu&x&c&8&b&9&f&8&lS&x&c&7&c&5&f&9&ll&x&c&5&d&0&f&9&li&x&c&4&d&b&f&a&lm&x&c&3&e&6&f&b&le&x&c&2&f&2&f&c&lf&x&c&1&f&d&f&d&lu&x&c&0&f&e&f&e&ln"
@@ -4023,12 +3646,11 @@ items:
   NTW_EXPANSION_CARGO_STORAGE_UNIT_4_MODEL:
     name: "Network Drawer IV"
     lore:
-      - "&6Supports Network Quick Input/Output"
+      - "&6Works with network fast input/output"
       - ""
-      - "&7⇨ &eStores 32 types of items"
-      - "&7⇨ &eCapacity: 32,768 per type"
-      - ""
-      - "&7⇨ &eRequires Network Wrench to dismantle Model Block"
+      - "&7⇨ &e32 item types"
+      - "&7⇨ &e32,768 per type"
+      - "&7⇨ &eBreak the model block with a Network Rake"
       - ""
       - "&x&c&c&8&c&f&4&lP&x&c&b&9&7&f&5&lr&x&c&a&a&3&f&6&lo&x&c&9&a&e&f&7&lv&x&c&8&b&9&f&8&li&x&c&7&c&5&f&9&ld&x&c&5&d&0&f&9&le&x&c&4&d&b&f&a&ld&x&c&3&e&6&f&b&l &x&c&2&f&2&f&c&lb&x&c&1&f&d&f&d&ly"
       - "&x&c&c&8&c&f&4&lM&x&c&b&9&7&f&5&lo&x&c&a&a&3&f&6&ly&x&c&9&a&e&f&7&lu&x&c&8&b&9&f&8&lS&x&c&7&c&5&f&9&ll&x&c&5&d&0&f&9&li&x&c&4&d&b&f&a&lm&x&c&3&e&6&f&b&le&x&c&2&f&2&f&c&lf&x&c&1&f&d&f&d&lu&x&c&0&f&e&f&e&ln"
@@ -4037,12 +3659,11 @@ items:
   NTW_EXPANSION_CARGO_STORAGE_UNIT_5_MODEL:
     name: "Network Drawer V"
     lore:
-      - "&6Supports Network Quick Input/Output"
+      - "&6Works with network fast input/output"
       - ""
-      - "&7⇨ &eStores 32 types of items"
-      - "&7⇨ &eCapacity: 262,144 per type"
-      - ""
-      - "&7⇨ &eRequires Network Wrench to dismantle Model Block"
+      - "&7⇨ &e32 item types"
+      - "&7⇨ &e262,144 per type"
+      - "&7⇨ &eBreak the model block with a Network Rake"
       - ""
       - "&x&c&c&8&c&f&4&lP&x&c&b&9&7&f&5&lr&x&c&a&a&3&f&6&lo&x&c&9&a&e&f&7&lv&x&c&8&b&9&f&8&li&x&c&7&c&5&f&9&ld&x&c&5&d&0&f&9&le&x&c&4&d&b&f&a&ld&x&c&3&e&6&f&b&l &x&c&2&f&2&f&c&lb&x&c&1&f&d&f&d&ly"
       - "&x&c&c&8&c&f&4&lM&x&c&b&9&7&f&5&lo&x&c&a&a&3&f&6&ly&x&c&9&a&e&f&7&lu&x&c&8&b&9&f&8&lS&x&c&7&c&5&f&9&ll&x&c&5&d&0&f&9&li&x&c&4&d&b&f&a&lm&x&c&3&e&6&f&b&le&x&c&2&f&2&f&c&lf&x&c&1&f&d&f&d&lu&x&c&0&f&e&f&e&ln"
@@ -4051,12 +3672,11 @@ items:
   NTW_EXPANSION_CARGO_STORAGE_UNIT_6_MODEL:
     name: "Network Drawer VI"
     lore:
-      - "&6Supports Network Quick Input/Output"
+      - "&6Works with network fast input/output"
       - ""
-      - "&7⇨ &eStores 32 types of items"
-      - "&7⇨ &eCapacity: 2,097,152 per type"
-      - ""
-      - "&7⇨ &eRequires Network Wrench to dismantle Model Block"
+      - "&7⇨ &e32 item types"
+      - "&7⇨ &e2,097,152 per type"
+      - "&7⇨ &eBreak the model block with a Network Rake"
       - ""
       - "&x&c&c&8&c&f&4&lP&x&c&b&9&7&f&5&lr&x&c&a&a&3&f&6&lo&x&c&9&a&e&f&7&lv&x&c&8&b&9&f&8&li&x&c&7&c&5&f&9&ld&x&c&5&d&0&f&9&le&x&c&4&d&b&f&a&ld&x&c&3&e&6&f&b&l &x&c&2&f&2&f&c&lb&x&c&1&f&d&f&d&ly"
       - "&x&c&c&8&c&f&4&lM&x&c&b&9&7&f&5&lo&x&c&a&a&3&f&6&ly&x&c&9&a&e&f&7&lu&x&c&8&b&9&f&8&lS&x&c&7&c&5&f&9&ll&x&c&5&d&0&f&9&li&x&c&4&d&b&f&a&lm&x&c&3&e&6&f&b&le&x&c&2&f&2&f&c&lf&x&c&1&f&d&f&d&lu&x&c&0&f&e&f&e&ln"
@@ -4065,12 +3685,11 @@ items:
   NTW_EXPANSION_CARGO_STORAGE_UNIT_7_MODEL:
     name: "Network Drawer VII"
     lore:
-      - "&6Supports Network Quick Input/Output"
+      - "&6Works with network fast input/output"
       - ""
-      - "&7⇨ &eStores 32 types of items"
-      - "&7⇨ &eCapacity: 4,194,304 per type"
-      - ""
-      - "&7⇨ &eRequires Network Wrench to dismantle Model Block"
+      - "&7⇨ &e32 item types"
+      - "&7⇨ &e4,194,304 per type"
+      - "&7⇨ &eBreak the model block with a Network Rake"
       - ""
       - "&x&c&c&8&c&f&4&lP&x&c&b&9&7&f&5&lr&x&c&a&a&3&f&6&lo&x&c&9&a&e&f&7&lv&x&c&8&b&9&f&8&li&x&c&7&c&5&f&9&ld&x&c&5&d&0&f&9&le&x&c&4&d&b&f&a&ld&x&c&3&e&6&f&b&l &x&c&2&f&2&f&c&lb&x&c&1&f&d&f&d&ly"
       - "&x&c&c&8&c&f&4&lM&x&c&b&9&7&f&5&lo&x&c&a&a&3&f&6&ly&x&c&9&a&e&f&7&lu&x&c&8&b&9&f&8&lS&x&c&7&c&5&f&9&ll&x&c&5&d&0&f&9&li&x&c&4&d&b&f&a&lm&x&c&3&e&6&f&b&le&x&c&2&f&2&f&c&lf&x&c&1&f&d&f&d&lu&x&c&0&f&e&f&e&ln"
@@ -4079,12 +3698,11 @@ items:
   NTW_EXPANSION_CARGO_STORAGE_UNIT_8_MODEL:
     name: "Network Drawer VIII"
     lore:
-      - "&6Supports Network Quick Input/Output"
+      - "&6Works with network fast input/output"
       - ""
-      - "&7⇨ &eStores 32 types of items"
-      - "&7⇨ &eCapacity: 8,388,608 per type"
-      - ""
-      - "&7⇨ &eRequires Network Wrench to dismantle Model Block"
+      - "&7⇨ &e32 item types"
+      - "&7⇨ &e8,388,608 per type"
+      - "&7⇨ &eBreak the model block with a Network Rake"
       - ""
       - "&x&c&c&8&c&f&4&lP&x&c&b&9&7&f&5&lr&x&c&a&a&3&f&6&lo&x&c&9&a&e&f&7&lv&x&c&8&b&9&f&8&li&x&c&7&c&5&f&9&ld&x&c&5&d&0&f&9&le&x&c&4&d&b&f&a&ld&x&c&3&e&6&f&b&l &x&c&2&f&2&f&c&lb&x&c&1&f&d&f&d&ly"
       - "&x&c&c&8&c&f&4&lM&x&c&b&9&7&f&5&lo&x&c&a&a&3&f&6&ly&x&c&9&a&e&f&7&lu&x&c&8&b&9&f&8&lS&x&c&7&c&5&f&9&ll&x&c&5&d&0&f&9&li&x&c&4&d&b&f&a&lm&x&c&3&e&6&f&b&le&x&c&2&f&2&f&c&lf&x&c&1&f&d&f&d&lu&x&c&0&f&e&f&e&ln"
@@ -4093,12 +3711,11 @@ items:
   NTW_EXPANSION_CARGO_STORAGE_UNIT_9_MODEL:
     name: "Network Drawer IX"
     lore:
-      - "&6Supports Network Quick Input/Output"
+      - "&6Works with network fast input/output"
       - ""
-      - "&7⇨ &eStores 32 types of items"
-      - "&7⇨ &eCapacity: 16,777,216 per type"
-      - ""
-      - "&7⇨ &eRequires Network Wrench to dismantle Model Block"
+      - "&7⇨ &e32 item types"
+      - "&7⇨ &e16,777,216 per type"
+      - "&7⇨ &eBreak the model block with a Network Rake"
       - ""
       - "&x&c&c&8&c&f&4&lP&x&c&b&9&7&f&5&lr&x&c&a&a&3&f&6&lo&x&c&9&a&e&f&7&lv&x&c&8&b&9&f&8&li&x&c&7&c&5&f&9&ld&x&c&5&d&0&f&9&le&x&c&4&d&b&f&a&ld&x&c&3&e&6&f&b&l &x&c&2&f&2&f&c&lb&x&c&1&f&d&f&d&ly"
       - "&x&c&c&8&c&f&4&lM&x&c&b&9&7&f&5&lo&x&c&a&a&3&f&6&ly&x&c&9&a&e&f&7&lu&x&c&8&b&9&f&8&lS&x&c&7&c&5&f&9&ll&x&c&5&d&0&f&9&li&x&c&4&d&b&f&a&lm&x&c&3&e&6&f&b&le&x&c&2&f&2&f&c&lf&x&c&1&f&d&f&d&lu&x&c&0&f&e&f&e&ln"
@@ -4107,12 +3724,11 @@ items:
   NTW_EXPANSION_CARGO_STORAGE_UNIT_10_MODEL:
     name: "Network Drawer X"
     lore:
-      - "&6Supports Network Quick Input/Output"
+      - "&6Works with network fast input/output"
       - ""
-      - "&7⇨ &eStores 32 types of items"
-      - "&7⇨ &eCapacity: 33,554,432 per type"
-      - ""
-      - "&7⇨ &eRequires Network Wrench to dismantle Model Block"
+      - "&7⇨ &e32 item types"
+      - "&7⇨ &e33,554,432 per type"
+      - "&7⇨ &eBreak the model block with a Network Rake"
       - ""
       - "&x&c&c&8&c&f&4&lP&x&c&b&9&7&f&5&lr&x&c&a&a&3&f&6&lo&x&c&9&a&e&f&7&lv&x&c&8&b&9&f&8&li&x&c&7&c&5&f&9&ld&x&c&5&d&0&f&9&le&x&c&4&d&b&f&a&ld&x&c&3&e&6&f&b&l &x&c&2&f&2&f&c&lb&x&c&1&f&d&f&d&ly"
       - "&x&c&c&8&c&f&4&lM&x&c&b&9&7&f&5&lo&x&c&a&a&3&f&6&ly&x&c&9&a&e&f&7&lu&x&c&8&b&9&f&8&lS&x&c&7&c&5&f&9&ll&x&c&5&d&0&f&9&li&x&c&4&d&b&f&a&lm&x&c&3&e&6&f&b&le&x&c&2&f&2&f&c&lf&x&c&1&f&d&f&d&lu&x&c&0&f&e&f&e&ln"
@@ -4121,12 +3737,11 @@ items:
   NTW_EXPANSION_CARGO_STORAGE_UNIT_11_MODEL:
     name: "Network Drawer XI"
     lore:
-      - "&6Supports Network Quick Input/Output"
+      - "&6Works with network fast input/output"
       - ""
-      - "&7⇨ &eStores 32 types of items"
-      - "&7⇨ &eCapacity: 134,217,728 per type"
-      - ""
-      - "&7⇨ &eRequires Network Wrench to dismantle Model Block"
+      - "&7⇨ &e32 item types"
+      - "&7⇨ &e134,217,728 per type"
+      - "&7⇨ &eBreak the model block with a Network Rake"
       - ""
       - "&x&c&c&8&c&f&4&lP&x&c&b&9&7&f&5&lr&x&c&a&a&3&f&6&lo&x&c&9&a&e&f&7&lv&x&c&8&b&9&f&8&li&x&c&7&c&5&f&9&ld&x&c&5&d&0&f&9&le&x&c&4&d&b&f&a&ld&x&c&3&e&6&f&b&l &x&c&2&f&2&f&c&lb&x&c&1&f&d&f&d&ly"
       - "&x&c&c&8&c&f&4&lM&x&c&b&9&7&f&5&lo&x&c&a&a&3&f&6&ly&x&c&9&a&e&f&7&lu&x&c&8&b&9&f&8&lS&x&c&7&c&5&f&9&ll&x&c&5&d&0&f&9&li&x&c&4&d&b&f&a&lm&x&c&3&e&6&f&b&le&x&c&2&f&2&f&c&lf&x&c&1&f&d&f&d&lu&x&c&0&f&e&f&e&ln"
@@ -4135,12 +3750,11 @@ items:
   NTW_EXPANSION_CARGO_STORAGE_UNIT_12_MODEL:
     name: "Network Drawer XII"
     lore:
-      - "&6Supports Network Quick Input/Output"
+      - "&6Works with network fast input/output"
       - ""
-      - "&7⇨ &eStores 35 types of items"
-      - "&7⇨ &eCapacity: 1,073,741,824 per type"
-      - ""
-      - "&7⇨ &eRequires Network Wrench to dismantle Model Block"
+      - "&7⇨ &e35 item types"
+      - "&7⇨ &e1,073,741,824 per type"
+      - "&7⇨ &eBreak the model block with a Network Rake"
       - ""
       - "&x&c&c&8&c&f&4&lP&x&c&b&9&7&f&5&lr&x&c&a&a&3&f&6&lo&x&c&9&a&e&f&7&lv&x&c&8&b&9&f&8&li&x&c&7&c&5&f&9&ld&x&c&5&d&0&f&9&le&x&c&4&d&b&f&a&ld&x&c&3&e&6&f&b&l &x&c&2&f&2&f&c&lb&x&c&1&f&d&f&d&ly"
       - "&x&c&c&8&c&f&4&lM&x&c&b&9&7&f&5&lo&x&c&a&a&3&f&6&ly&x&c&9&a&e&f&7&lu&x&c&8&b&9&f&8&lS&x&c&7&c&5&f&9&ll&x&c&5&d&0&f&9&li&x&c&4&d&b&f&a&lm&x&c&3&e&6&f&b&le&x&c&2&f&2&f&c&lf&x&c&1&f&d&f&d&lu&x&c&0&f&e&f&e&ln"
@@ -4149,12 +3763,11 @@ items:
   NTW_EXPANSION_CARGO_STORAGE_UNIT_13_MODEL:
     name: "Network Drawer XIII"
     lore:
-      - "&6Supports Network Quick Input/Output"
+      - "&6Works with network fast input/output"
       - ""
-      - "&7⇨ &eStores 35 types of items"
-      - "&7⇨ &eCapacity: 2,147,483,647 per type"
-      - ""
-      - "&7⇨ &eRequires Network Wrench to dismantle Model Block"
+      - "&7⇨ &e35 item types"
+      - "&7⇨ &e2,147,483,647 per type"
+      - "&7⇨ &eBreak the model block with a Network Rake"
       - ""
       - "&x&c&c&8&c&f&4&lP&x&c&b&9&7&f&5&lr&x&c&a&a&3&f&6&lo&x&c&9&a&e&f&7&lv&x&c&8&b&9&f&8&li&x&c&7&c&5&f&9&ld&x&c&5&d&0&f&9&le&x&c&4&d&b&f&a&ld&x&c&3&e&6&f&b&l &x&c&2&f&2&f&c&lb&x&c&1&f&d&f&d&ly"
       - "&x&c&c&8&c&f&4&lM&x&c&b&9&7&f&5&lo&x&c&a&a&3&f&6&ly&x&c&9&a&e&f&7&lu&x&c&8&b&9&f&8&lS&x&c&7&c&5&f&9&ll&x&c&5&d&0&f&9&li&x&c&4&d&b&f&a&lm&x&c&3&e&6&f&b&le&x&c&2&f&2&f&c&lf&x&c&1&f&d&f&d&lu&x&c&0&f&e&f&e&ln"
@@ -4162,17 +3775,17 @@ items:
   NTW_EXPANSION_DUE_MACHINE_CONFIGURATOR:
     name: "&6Limiter Configurator"
     lore:
-      - "Used to configure Limiter slots"
+      - "Copies Limiter slot settings"
       - ""
-      - "<click_info>Right Click: <passive>Apply Settings"
-      - "<click_info>Shift + Right Click: <passive>Save Settings"
+      - "<click_info>Right Click: <passive>apply"
+      - "<click_info>Shift+Right Click: <passive>save"
 
   NTW_EXPANSION_ITEM_MOVER:
     name: "&6Item Mover"
     lore:
-      - "&6Right Click to transfer item to Item Mover"
-      - "&6Shift + Right Click to transfer item to specified storage"
-      - "&cDoes not support Infinity Storage"
+      - "&6Right Click: &7store the item in the Item Mover"
+      - "&6Shift+Right Click: &7move it to the target storage"
+      - "&cInfinity storage not supported"
 
   NTW_EXPANSION_BLUEPRINT_DECODER:
     name: "&6Network Blueprint Decoder"
@@ -4183,738 +3796,609 @@ items:
   NTW_EXPANSION_DUE_MACHINE:
     name: "&6Limiter"
     lore:
-      - "Transfers matching whitelist items from input slots to output slots"
+      - "Moves whitelisted items from input to output slots"
 
   NTW_EXPANSION_OFFSETTER:
     name: "&aSlot Offsetter"
     lore:
-      - "&8Transfer corresponding slots"
-      - "&8Adjust offset value to determine corresponding position"
-      - "&7Place facing one machine, place another machine on the other side"
+      - "&8Moves items between matching slots"
+      - "&8Use the offset to pick the target slot"
+      - "&7Place it between two machines"
 
   NTW_EXPANSION_BETTER_GRABBER:
     name: "Better Network Grabber"
     lore:
-      - "Better Network Grabber will attempt to grab"
-      - "the first item from the specified machine"
+      - "Grabs the first item from the facing machine"
 
   NTW_SYNTHETIC_EMERALD_SHARD:
     name: "Synthetic Emerald Shard"
     lore:
-      - "A shard of synthetic emerald that"
-      - "is the backbone for information"
-      - "transference."
+      - "Crafting material for information transfer"
 
   NTW_OPTIC_GLASS:
     name: "Optic Glass"
     lore:
-      - "A simple glass that is able to"
-      - "transfer small bits of information."
+      - "Crafting material: carries small data"
 
   NTW_OPTIC_CABLE:
     name: "Optic Cable"
     lore:
-      - "A simple wire that is able to"
-      - "transfer large bits of information."
+      - "Crafting material: carries large data"
 
   NTW_OPTIC_STAR:
     name: "Optic Star"
     lore:
-      - "A crystalline star structure that"
-      - "can transfer large bits of information."
+      - "Crafting material: carries large data"
 
   NTW_RADIOACTIVE_OPTIC_STAR:
     name: "Radioactive Optic Star"
     lore:
-      - "A crystalline star structure that"
-      - "can store insane amounts of information."
+      - "Crafting material: stores huge data"
 
   NTW_SHRINKING_BASE:
     name: "Shrinking Base"
     lore:
-      - "An advanced construct able to make"
-      - "big things go small."
+      - "Crafting material: makes big things small"
 
   NTW_SIMPLE_NANOBOTS:
     name: "Simple Nanobots"
     lore:
-      - "Teeny Tiny little bots that can"
-      - "help you with precise tasks."
+      - "Tiny bots for precise tasks"
 
   NTW_ADVANCED_NANOBOTS:
     name: "Advanced Nanobots"
     lore:
-      - "Teeny Tiny little bots that can"
-      - "help you with precise tasks."
-      - "This version is smarter and faster."
+      - "Tiny bots for precise tasks"
+      - "Smarter and faster version"
 
   NTW_AI_CORE:
     name: "A.I. Core"
     lore:
-      - "A burgeoning artificial intelligence"
-      - "resides within this weak shell."
+      - "A young A.I. in a weak shell"
 
   NTW_EMPOWERED_AI_CORE:
     name: "Empowered A.I. Core"
     lore:
-      - "A flourishing artificial intelligence"
-      - "resides within this shell."
+      - "A growing A.I. in a sturdy shell"
 
   NTW_PRISTINE_AI_CORE:
     name: "Pristine A.I. Core"
     lore:
-      - "A perfected artificial intelligence"
-      - "resides within this defined shell."
+      - "A perfected A.I. in a refined shell"
 
   NTW_INTERDIMENSIONAL_PRESENCE:
     name: "Interdimensional Presence"
     lore:
-      - "An artificial intelligence that has"
-      - "grown too powerful for just a"
-      - "single dimension."
+      - "An A.I. too powerful for one dimension"
 
   NTW_CONTROLLER:
     name: "Network Controller"
     lore:
-      - "The Network controller is the brain"
-      - "for the whole network. Max 1 per network."
+      - "The brain of the network"
+      - "&cMax 1 per network"
 
   NTW_BRIDGE:
     name: "Network Bridge"
     lore:
-      - "The bridge allows you to cheaply"
-      - "connect network objects together."
+      - "Connects network blocks together"
 
   NTW_MONITOR:
     name: "Network Monitor"
     lore:
-      - "The Network Monitor can interact with adjacent blocks"
-      - "allowing specified blocks to access the network"
+      - "Connects an adjacent storage to the network"
       - ""
-      - "Currently supports:"
-      - "InfinityExpansion - Storage Units"
-      - "FluffyMachines - Fluffy Barrels"
-      - "Networks - Quantum Storage"
-      - "<random_color>Networks Expansion - Network Drawers"
+      - "Supports:"
+      - "InfinityExpansion Storage Unit"
+      - "FluffyMachines Barrel"
+      - "Networks Quantum Storage"
+      - "<random_color>Network Drawer"
 
   NTW_IMPORT:
     name: "Network Importer"
     lore:
-      - "The Network Importer brings any"
-      - "item inside it into the network, up"
-      - "to 9 stacks per SF tick."
-      - "Accepts items in from cargo."
+      - "Sends its items into the network"
+      - "Up to 9 stacks per SF tick"
+      - "Accepts items from Cargo"
 
   NTW_EXPORT:
     name: "Network Exporter"
     lore:
-      - "The Network Exporter can be set to"
-      - "constantly export 1 stack of any"
-      - "given item."
-      - "Accepts item withdrawal from cargo."
+      - "Keeps exporting 1 stack of the set item"
+      - "Cargo can pull items from it"
 
   NTW_GRABBER:
     name: "Network Grabber"
     lore:
-      - "The Network Grabber will try"
-      - "to grab the first item it finds"
-      - "from within the selected machine."
+      - "Grabs the first item from the facing machine"
 
   NTW_PUSHER:
     name: "Network Pusher"
     lore:
-      - "The Network Pusher will try"
-      - "to push a matching item from a"
-      - "given item into the chosen machine."
+      - "Pushes the set item into the facing machine"
 
   NTW_MOREPUSHER:
     name: "Network Pusher V2"
     lore:
-      - "Attempts to push specified items"
-      - "into the machine"
-      - "This pusher has 9 slots for pushing"
+      - "Pushes the set items into the facing machine"
+      - "Has 9 item slots"
 
   NTW_BESTPUSHER:
     name: "Network Pusher V3"
     lore:
-      - "Attempts to push specified items"
-      - "into the machine"
-      - "This pusher has 12 slots for pushing"
+      - "Pushes the set items into the facing machine"
+      - "Has 12 item slots"
 
   NTW_CONTROL_X:
     name: "Network Control: X"
     lore:
-      - "The Network Control: X will try"
-      - "to 'cut' a block out of the world"
-      - "and put it into the Network."
-      - "Only works on Vanilla blocks without"
-      - "inventories."
+      - "\"Cuts\" a block from the world into the network"
+      - "&cVanilla blocks without inventory only"
       - ""
       - "<click_info>Network Drain: <passive>100/cut"
 
   NTW_CONTROL_V:
     name: "Network Control: V"
     lore:
-      - "The Network Control: V will try"
-      - "to 'paste' a block from the Network"
-      - "into the world."
-      - "Only works with Vanilla blocks."
+      - "\"Pastes\" a block from the network into the world"
+      - "&cVanilla blocks only"
       - ""
       - "<click_info>Network Drain: <passive>100/paste"
 
   NTW_VACUUM:
     name: "Network Vacuum"
     lore:
-      - "The Network Vacuum will suck"
-      - "items into itself within a"
-      - "4 x 4 range centered on itself."
-      - "Vacuumed items will try to push"
-      - "into the Network."
+      - "Picks up dropped items in a 4x4 area"
+      - "and sends them into the network"
       - ""
       - "<click_info>Network Drain: <passive>100/tick"
 
   NTW_VANILLA_GRABBER:
     name: "Network Vanilla Grabber"
     lore:
-      - "The Network Vanilla Grabber will try"
-      - "to grab the first item from the chosen vanilla container."
-      - ""
-      - "This machine cannot interact with the network directly,"
-      - "you also need a Network Grabber"
-      - "to input the items in this machine into the network."
+      - "Grabs the first item from the facing vanilla container"
+      - "&eNeeds a Network Grabber to move items into the network"
 
   NTW_VANILLA_PUSHER:
     name: "Network Vanilla Pusher"
     lore:
-      - "The Network Vanilla Pusher will try"
-      - "to push its items into the chosen vanilla container."
-      - ""
-      - "This machine cannot interact with the network directly,"
-      - "you also need a Network Pusher"
-      - "to push items from the network into this machine."
+      - "Pushes its items into the facing vanilla container"
+      - "&eNeeds a Network Pusher to fill it from the network"
 
   NTW_NETWORK_WIRELESS_TRANSMITTER:
     name: "Network Wireless Transmitter"
     lore:
-      - "The Network Wireless Transmitter will"
-      - "try to transmit any item inside itself"
-      - "to a linked Network Wireless Receiver"
-      - "located within the same world."
-      - "Use the Wireless Configurator to"
-      - "setup the Wireless Transmitter."
-      - "Requires 500 Network Power per transfer."
+      - "Sends its items to a linked Wireless Receiver"
+      - "&7Same world only · bind with a Wireless Configurator"
+      - "<click_info>Network Drain: <passive>500/transfer"
 
   NTW_EXPANSION_ADVANCED_WIRELESS_TRANSMITTER:
     name: "Advanced Network Wireless Transmitter"
     lore:
-      - "Transmits items inside it"
-      - "to the bound Network Wireless Receiver"
-      - "(Must be in the same world)."
-      - "Use Wireless Configurator to bind."
+      - "Sends its items to a linked Wireless Receiver"
+      - "&7Same world only · bind with a Wireless Configurator"
 
   NTW_NETWORK_WIRELESS_RECEIVER:
     name: "Network Wireless Receiver"
     lore:
-      - "The Network Wireless Receiver is"
-      - "able to receive items from a linked"
-      - "wireless transmitter located within"
-      - "the same world."
-      - "It will try to push received items"
-      - "into the Network each tick."
+      - "Receives items from a linked Wireless Transmitter"
+      - "and pushes them into the network"
+      - "&7Same world only"
 
   NTW_TRASH:
     name: "Network Purger"
     lore:
-      - "The Network Purger will pull"
-      - "matching items from the network"
-      - "and instantly void them."
-      - "Use with great care!"
+      - "Deletes the set items from the network"
+      - "&cDeleted items are gone forever!"
 
   NTW_GRID:
     name: "Network Grid"
     lore:
-      - "The Network Grid shows you all"
-      - "the items you have in the network"
-      - "and lets you insert or withdraw"
-      - "directly."
+      - "Shows all items in the network"
+      - "Insert or take items directly"
 
   NTW_CRAFTING_GRID:
     name: "Network Crafting Grid"
     lore:
-      - "This grid is similar to a normal grid"
-      - "but displays fewer items"
-      - "however you can craft directly"
-      - "using items from the network"
+      - "A grid that can craft"
+      - "using items straight from the network"
       - "Pinyin search supported"
 
   NTW_CELL:
     name: "Network Cell"
     lore:
-      - "The Network Cell is a large"
-      - "(double chest) inventory that can"
-      - "be accessed both from the network"
-      - "and in the world."
+      - "A double chest of storage"
+      - "usable from the network and by hand"
 
   NTW_GREEDY_BLOCK:
     name: "Network Greedy Block"
     lore:
-      - "The Network Greedy Block can"
-      - "be set to one item which it will"
-      - "then greedily hold on to a single"
-      - "stack of. If more incoming items"
-      - "do not fit, they will not enter"
-      - "the network."
+      - "Holds 1 stack of the set item"
+      - "When full, that item stops"
+      - "entering the network"
 
   NTW_QUANTUM_WORKBENCH:
     name: "Network Quantum Workbench"
     lore:
-      - "Network Quantum Workbench"
-      - "Allows the crafting of Quantum Storages."
+      - "Crafts Quantum Storages"
 
   NTW_QUANTUM_STORAGE_0:
     name: "Network Quantum Storage (64)"
     lore:
       - "Stores 64 items"
       - ""
-      - "Stores massive amounts of items in a quantum singularity"
+      - "A huge quantum storage for one item type"
 
   NTW_QUANTUM_STORAGE_9:
     name: "Network Quantum Storage (256)"
     lore:
       - "Stores 256 items"
       - ""
-      - "Stores massive amounts of items in a quantum singularity"
+      - "A huge quantum storage for one item type"
 
   NTW_QUANTUM_STORAGE_10:
     name: "Network Quantum Storage (1024)"
     lore:
       - "Stores 1024 items"
       - ""
-      - "Stores massive amounts of items in a quantum singularity"
+      - "A huge quantum storage for one item type"
 
   NTW_QUANTUM_STORAGE_1:
     name: "Network Quantum Storage (4k)"
     lore:
       - "Stores 4096 items"
       - ""
-      - "Stores items in mass quantities within"
-      - "a quantum singularity."
+      - "Quantum storage for one item type"
 
   NTW_QUANTUM_STORAGE_2:
     name: "Network Quantum Storage (32K)"
     lore:
       - "Stores 32768 items"
       - ""
-      - "Stores items in mass quantities within"
-      - "a quantum singularity."
+      - "Quantum storage for one item type"
 
   NTW_QUANTUM_STORAGE_3:
     name: "Network Quantum Storage (262K)"
     lore:
       - "Stores 262144 items"
       - ""
-      - "Stores items in mass quantities within"
-      - "a quantum singularity."
+      - "Quantum storage for one item type"
 
   NTW_QUANTUM_STORAGE_4:
     name: "Network Quantum Storage (2M)"
     lore:
       - "Stores 2097152 items"
       - ""
-      - "Stores items in mass quantities within"
-      - "a quantum singularity."
+      - "Quantum storage for one item type"
 
   NTW_QUANTUM_STORAGE_5:
     name: "Network Quantum Storage (16M)"
     lore:
       - "Stores 16777216 items"
       - ""
-      - "Stores items in mass quantities within"
-      - "a quantum singularity."
+      - "Quantum storage for one item type"
 
   NTW_QUANTUM_STORAGE_6:
     name: "Network Quantum Storage (134M)"
     lore:
       - "Stores 134217728 items"
       - ""
-      - "Stores items in mass quantities within"
-      - "a quantum singularity."
+      - "Quantum storage for one item type"
 
   NTW_QUANTUM_STORAGE_7:
     name: "Network Quantum Storage (1B)"
     lore:
       - "Stores 1073741824 items"
       - ""
-      - "Stores items in mass quantities within"
-      - "a quantum singularity."
+      - "Quantum storage for one item type"
 
   NTW_QUANTUM_STORAGE_8:
     name: "Network Quantum Storage (∞)"
     lore:
       - "Stores ∞ items... almost"
       - ""
-      - "Stores items in mass quantities within"
-      - "a quantum singularity."
+      - "Quantum storage for one item type"
 
   NTW_QUANTUM_STORAGE_11:
     name: "Network Quantum Storage (34B)"
     lore:
-      - "Capable of storing almost infinite items"
+      - "Stores almost infinite items"
       - ""
-      - "Stores massive amounts of items in a quantum singularity"
+      - "A huge quantum storage for one item type"
 
   NTW_QUANTUM_STORAGE_12:
     name: "Network Quantum Storage (549B)"
     lore:
-      - "Capable of storing almost infinite items"
+      - "Stores almost infinite items"
       - ""
-      - "Stores massive amounts of items in a quantum singularity"
+      - "A huge quantum storage for one item type"
 
   NTW_QUANTUM_STORAGE_13:
     name: "Network Quantum Storage (8T)"
     lore:
-      - "Capable of storing almost infinite items"
+      - "Stores almost infinite items"
       - ""
-      - "Stores massive amounts of items in a quantum singularity"
+      - "A huge quantum storage for one item type"
 
   NTW_QUANTUM_STORAGE_14:
     name: "Network Quantum Storage (140T)"
     lore:
-      - "Capable of storing almost infinite items"
+      - "Stores almost infinite items"
       - ""
-      - "Stores massive amounts of items in a quantum singularity"
+      - "A huge quantum storage for one item type"
 
   NTW_CAPACITOR_1:
     name: "Network Capacitor (1)"
     lore:
-      - "The Network Capacitor can take"
-      - "power in and store it for use"
-      - "within the network."
+      - "Stores power for the network"
       - ""
       - "<click_info>Capacity: <passive>1,000"
 
   NTW_CAPACITOR_2:
     name: "Network Capacitor (2)"
     lore:
-      - "The Network Capacitor can take"
-      - "power in and store it for use"
-      - "within the network."
+      - "Stores power for the network"
       - ""
       - "<click_info>Capacity: <passive>10,000"
 
   NTW_CAPACITOR_3:
     name: "Network Capacitor (3)"
     lore:
-      - "The Network Capacitor can take"
-      - "power in and store it for use"
-      - "within the network."
+      - "Stores power for the network"
       - ""
       - "<click_info>Capacity: <passive>100,000"
 
   NTW_CAPACITOR_4:
     name: "Network Capacitor (4)"
     lore:
-      - "The Network Capacitor can take"
-      - "power in and store it for use"
-      - "within the network."
+      - "Stores power for the network"
       - ""
       - "<click_info>Capacity: <passive>1,000,000"
 
   NTW_POWER_OUTLET_1:
     name: "Network Power Outlet (1)"
     lore:
-      - "The Network Power Outlet transfers power"
-      - "stored in the network to a specified machine."
+      - "Sends network power to the facing machine"
       - ""
       - "<click_info>Capacity: <passive>500J"
 
   NTW_POWER_OUTLET_2:
     name: "Network Power Outlet (2)"
     lore:
-      - "The Network Power Outlet transfers power"
-      - "stored in the network to a specified machine."
+      - "Sends network power to the facing machine"
       - ""
       - "<click_info>Capacity: <passive>2,000J"
 
   NTW_POWER_DISPLAY:
     name: "Network Power Display"
     lore:
-      - "The Network Power Display will"
-      - "display the power in the network."
-      - "Simple, right?"
+      - "Shows the network's power"
 
   NTW_RECIPE_ENCODER:
     name: "Network Recipe Encoder"
     lore:
-      - "Used to form a Crafting Blueprint"
-      - "from input items."
+      - "Turns input items into a Crafting Blueprint"
       - ""
       - "<click_info>Network Drain: <passive>20,000/encode"
 
   NTW_AUTO_CRAFTER:
     name: "Network Auto Crafter"
     lore:
-      - "The Network Auto Crafter accepts"
-      - "a crafting blueprint. When the"
-      - "blueprint output item is requested"
-      - "while there is none in the network"
-      - "it will be crafted if you have"
-      - "materials."
+      - "Auto-crafts with a Crafting Blueprint"
+      - "when the item runs out in the network"
       - ""
       - "<click_info>Network Drain: <passive>64/craft"
 
   NTW_AUTO_CRAFTER_WITHHOLDING:
-    name: "Network Auto Crafter (Witholding)"
+    name: "Network Auto Crafter (Withholding)"
     lore:
-      - "The Network Auto Crafter accepts"
-      - "a crafting blueprint. When the"
-      - "blueprint output item is requested"
-      - "while there is none in the network"
-      - "it will be crafted if you have"
-      - "materials."
-      - ""
-      - "A Withholding Crafter will keep"
-      - "a stack in the output and stop"
-      - "crafting. The stack can been seen"
-      - "in the Network and also allows for"
-      - "cargo."
+      - "Auto-crafts with a Crafting Blueprint"
+      - "when the item runs out in the network"
+      - "&eKeeps 1 stack ready in the output"
+      - "&7(visible in the network, Cargo can pull it)"
       - ""
       - "<click_info>Network Drain: <passive>128/craft"
 
   NTW_CRAFTING_BLUEPRINT:
     name: "Crafting Blueprint"
     lore:
-      - "A blank blueprint that can"
-      - "be used to store a crafting"
-      - "recipe."
+      - "Blank blueprint"
+      - "Stores one crafting recipe"
 
   NTW_PROBE:
     name: "Network Probe"
     lore:
-      - "When used on a controller, this will"
-      - "show the nodes on the network."
+      - "Use on a controller to see the network's nodes"
 
   NTW_REMOTE:
     name: "Network Remote"
     lore:
-      - "Opens a bound grid remotely"
-      - "The grid's chunk must be loaded"
+      - "Opens a bound grid from afar"
+      - "&7The grid's chunk must be loaded"
       - ""
-      - "<click_info>Shift+Right Click <passive>a normal grid to bind"
+      - "<click_info>Shift+Right Click <passive>a grid to bind"
       - ""
       - "<click_info>Range: <passive>150 blocks"
 
   NTW_REMOTE_EMPOWERED:
     name: "Network Remote Empowered"
     lore:
-      - "Opens a bound grid remotely"
-      - "The grid's chunk must be loaded"
+      - "Opens a bound grid from afar"
+      - "&7The grid's chunk must be loaded"
       - ""
-      - "<click_info>Shift+Right Click <passive>a normal grid to bind"
+      - "<click_info>Shift+Right Click <passive>a grid to bind"
       - ""
       - "<click_info>Range: <passive>500 blocks"
 
   NTW_REMOTE_PRISTINE:
     name: "Network Remote Pristine"
     lore:
-      - "Opens a bound grid remotely"
-      - "The grid's chunk must be loaded"
+      - "Opens a bound grid from afar"
+      - "&7The grid's chunk must be loaded"
       - ""
-      - "<click_info>Shift+Right Click <passive>a normal grid to bind"
+      - "<click_info>Shift+Right Click <passive>a grid to bind"
       - ""
-      - "<click_info>Range: <passive>Unlimited (same world only)"
+      - "<click_info>Range: <passive>Unlimited (same world)"
 
   NTW_REMOTE_ULTIMATE:
     name: "Network Remote Ultimate"
     lore:
-      - "Opens a bound grid remotely"
-      - "The grid's chunk must be loaded"
+      - "Opens a bound grid from afar"
+      - "&7The grid's chunk must be loaded"
       - ""
-      - "<click_info>Shift+Right Click <passive>a normal grid to bind"
+      - "<click_info>Shift+Right Click <passive>a grid to bind"
       - ""
-      - "<click_info>Range: <passive>Cross-dimensional"
+      - "<click_info>Range: <passive>Any world"
 
   NTW_CRAYON:
     name: "Network Crayon"
     lore:
-      - "When used on a controller, this will"
-      - "enable particle display from specific"
-      - "blocks when working."
+      - "Use on a controller to show"
+      - "particles on working blocks"
 
   NTW_CONFIGURATOR:
     name: "Network Configurator"
     lore:
-      - "Used to copy and paste the"
-      - "configurations of directional"
-      - "interfaces."
+      - "Copies and pastes facing-block settings"
       - ""
-      - "<click_info>Right Click: <passive>Apply Config"
-      - "<click_info>Shift Right Click: <passive>Store Config"
+      - "<click_info>Right Click: <passive>apply"
+      - "<click_info>Shift+Right Click: <passive>save"
 
   NTW_WIRELESS_CONFIGURATOR:
     name: "Network Wireless Configurator"
     lore:
-      - "Used to store a Receiver location"
-      - "and then to apply to a Transmitter"
+      - "Links a Transmitter to a Receiver"
       - ""
-      - "<click_info>Right Click: <passive>Store Receiver Location"
-      - "<click_info>Shift Right Click: <passive>Set Location to Transmitter"
+      - "<click_info>Right Click: <passive>save Receiver location"
+      - "<click_info>Shift+Right Click: <passive>apply to Transmitter"
 
   NTW_RAKE_1:
     name: "Network Rake (1)"
     lore:
-      - "Right click a Network Object to"
-      - "break it instantly."
+      - "Right Click a network block to break it instantly"
       - ""
 
   NTW_RAKE_2:
     name: "Network Rake (2)"
     lore:
-      - "Right click a Network Object to"
-      - "break it instantly."
+      - "Right Click a network block to break it instantly"
       - ""
 
   NTW_RAKE_3:
     name: "Network Rake (3)"
     lore:
-      - "Right click a Network Object to"
-      - "break it instantly."
+      - "Right Click a network block to break it instantly"
       - ""
 
   NTW_DEBUG_STICK:
     name: "Network Debug Stick"
     lore:
-      - "Right click a Network Object to"
-      - "turn on debugging."
+      - "Right Click a network block to toggle debugging"
 
   NTW_EXPANSION_CRAFTING_GRID_NEW_STYLE:
     name: "Advanced Crafting Grid"
     lore:
-      - "Advanced Crafting Grid allows you to view all items in the network"
-      - "You can also deposit or withdraw items directly"
+      - "Shows all items in the network and can craft"
+      - "Insert or take items directly"
       - "Supports custom keybinds"
-      - "Sort Modes: "
-      - "&eAZ&7: &eAlphabetical Order"
-      - "&eQuantity&7: &eAscending Quantity"
-      - "&eQuantity Desc&7: &eDescending Quantity"
-      - "&eAddon&7: &eAddon Alphabetical Order"
-      - "Supports Pinyin Search (if applicable)"
+      - "Sort: &eA-Z&7, &eAmount&7, &eAmount (desc)&7, &eAddon"
+      - "Pinyin search supported"
 
   # debugger for player
   NTW_EXPANSION_STATUS_VIEWER:
     name: "Debugger"
     lore:
-      - "Right click network machine to view operation logs"
+      - "Right Click a network machine to see its logs"
 
   NTW_EXPANSION_DRAWER_TIPS:
     name: "Drawer Tips"
     lore:
-      - "1. When using drawers, remember the drawer ID (visible in GUI). Useful for asking admins to compensate if drawer breaks."
-      - "2. If drawer breaks, ask admin to place a new one, look at it and use /networks setContainerId <id>, then break and replace."
-      - "Example: /networks setContainerId 1037"
+      - "&7Remember your drawer ID (shown in its GUI)."
+      - "&7If a drawer breaks, an admin can place a new one,"
+      - "&7look at it, run the command below, then break and replace it:"
+      - "&e/networks setContainerId <id>"
+      - "&7Example: &e/networks setContainerId 1037"
 
   NTW_EXPANSION_QUANTUM_MANAGER:
     name: "Quantum Storage Manager"
     lore:
-      - "Used for faster management of Quantum Storage devices"
+      - "Manage Quantum Storages quickly"
 
   NTW_EXPANSION_DRAWER_MANAGER:
     name: "Drawer Manager"
     lore:
-      - "Used for faster management of Drawers"
+      - "Manage Network Drawers quickly"
 
   NTW_EXPANSION_ITEM_FLOW_VIEWER:
     name: "Item Flow Viewer"
     lore:
-      - "Used to quickly view item destinations"
+      - "See where items go"
 
   NTW_EXPANSION_CRAFTER_MANAGER:
     name: "Crafter Manager"
     lore:
-      - "Used for faster management of Crafters"
+      - "Manage crafters quickly"
 
   NTW_EXPANSION_ADVANCED_VACUUM:
     name: "Advanced Network Vacuum"
     lore:
-      - "Advanced Network Vacuum absorbs dropped items within a"
-      - "4x4 area around it,"
-      - "then attempts to send these items into the network."
+      - "Picks up dropped items in a 4x4 area"
+      - "and sends them into the network"
       - ""
-      - "<click_info>Power Usage: <passive>100J/tick"
+      - "<click_info>Power: <passive>100J/tick"
 
   NTW_EXPANSION_SWITCHING_MONITOR:
     name: "Switching Monitor"
     lore:
-      - "&cMust be placed against a network machine"
-      - "Switches items"
+      - "&cMust be placed on a network machine"
+      - "Swaps items"
 
   NTW_EXPANSION_HANGING_GRID_NEW_STYLE:
     name: "Hanging Advanced Grid"
     lore:
-      - "&cMust be placed against a network machine"
-      - "Hanging Advanced Grid allows you to view all items in the network"
-      - "You can also deposit or withdraw items directly"
+      - "&cMust be placed on a network machine"
+      - "Shows all items in the network"
+      - "Insert or take items directly"
       - "Supports custom keybinds"
-      - "Sort Modes: "
-      - "&eAZ&7: &eAlphabetical Order"
-      - "&eQuantity&7: &eAscending Quantity"
-      - "&eQuantity Desc&7: &eDescending Quantity"
-      - "&eAddon&7: &eAddon Alphabetical Order"
-      - "Supports Pinyin Search (if applicable)"
+      - "Sort: &eA-Z&7, &eAmount&7, &eAmount (desc)&7, &eAddon"
+      - "Pinyin search supported"
 
   NTW_EXPANSION_WHITELISTED_TRANSFER_GRABBER:
     name: "Whitelisted Network Grabber"
     lore:
-      - "Whitelisted Network Grabber attempts to grab"
-      - "the first item from the specified machine"
+      - "Grabs whitelisted items from the facing machine"
 
   NTW_EXPANSION_WHITELISTED_TRANSFER_VANILLA_GRABBER:
     name: "Whitelisted Vanilla Network Grabber"
     lore:
-      - "Whitelisted Vanilla Network Grabber attempts to grab"
-      - "the first item from the specified machine"
+      - "Grabs whitelisted items from the facing vanilla container"
 
   NTW_EXPANSION_WHITELISTED_LINE_TRANSFER_GRABBER:
     name: "Whitelisted Line Transfer [Grab]"
     lore:
-      - "&cOnly supports Slimefun Containers"
-      - "&6Transfer Range: 32 blocks"
-      - "&7Default Mode: &6First Stop"
-      - "&cMode cannot be adjusted"
-      - "&7Default Amount: &664"
-      - "&cAmount cannot be adjusted"
-      - "&eUnlike the Line Transfer from Disorder Craft, this machine&c only continuously grabs"
-      - "&cNot continuously transferring items!"
-      - "&7Mode Explanation: "
-      - "&6First Stop&7: &eOnly grabs the first slot with items"
+      - "&cSlimefun containers only"
+      - "&6Range: 32 blocks"
+      - "&7Mode: &6First Stop &8(fixed)"
+      - "&7Amount: &664 &8(fixed)"
+      - "&eGrabs items along a line"
 
   NTW_EXPANSION_WHITELISTED_LINE_TRANSFER_VANILLA_GRABBER:
     name: "Whitelisted Vanilla Line Transfer [Grab]"
     lore:
-      - "&cOnly supports Vanilla Containers"
-      - "&6Transfer Range: 32 blocks"
-      - "&7Default Mode: &6First Stop"
-      - "&cMode cannot be adjusted"
-      - "&7Default Amount: &664"
-      - "&cAmount cannot be adjusted"
-      - "&eUnlike the Line Transfer from Disorder Craft, this machine&c only continuously grabs"
-      - "&cNot continuously transferring items!"
-      - "&7Mode Explanation: "
-      - "&6First Stop&7: &eOnly grabs the first slot with items"
+      - "&cVanilla containers only"
+      - "&6Range: 32 blocks"
+      - "&7Mode: &6First Stop &8(fixed)"
+      - "&7Amount: &664 &8(fixed)"
+      - "&eGrabs items along a line"
   NTW_EXPANSION_SMART_NETWORK_CRAFTING_GRID_NEW_STYLE:
     name: "Smart Advanced Crafting Grid"
     lore:
-      - "Smart Advanced Crafting Grid allows you to view all items in the network"
-      - "You can also deposit or withdraw items directly"
-      - "Has more output slots"
+      - "Shows all items in the network and can craft"
+      - "Insert or take items directly"
+      - "More output slots"
+      - "Auto-handles buckets, bowls and bottles left after crafting"
       - "Supports custom keybinds"
-      - "Supports automatic handling of buckets, bowls, glass bottles after crafting"
-      - "Sort Modes: "
-      - "&eAZ&7: &eAlphabetical Order"
-      - "&eQuantity&7: &eAscending Quantity"
-      - "&eQuantity Desc&7: &eDescending Quantity"
-      - "&eAddon&7: &eAddon Alphabetical Order"
-      - "Supports Pinyin Search (if applicable)"
+      - "Sort: &eA-Z&7, &eAmount&7, &eAmount (desc)&7, &eAddon"
+      - "Pinyin search supported"
   NTW_EXPANSION_ITEM_DIFFERENTER:
     name: "Item Difference Indicator"
     lore:
@@ -4922,26 +4406,22 @@ items:
   NTW_EXPANSION_STORAGE_CARD_CONVERTER:
     name: "Storage Card Converter"
     lore:
-      - "Converts Quantum Storage into (New) Disorder (Changed) Storage Cards"
+      - "Turns Quantum Storage into Disorder Storage Cards"
   NTW_EXPANSION_FACING_PRESETTER:
     name: "Facing Presetter"
     lore:
-      - "Presets direction for Grabbers, Pushers, Monitors, etc."
-      - "Instantly sets the corresponding direction upon placement"
+      - "Sets the facing of Grabbers, Pushers, Monitors, etc."
+      - "as soon as they are placed"
   NTW_EXPANSION_SUPER_TRASH:
     name: "Super Trash Can"
     lore:
-      - "Instantly destroys all inputted items"
-      - "Clicking items in your inventory will destroy them"
+      - "Instantly deletes every item put in"
+      - "&cClicking items in your inventory deletes them too"
   NTW_EXPANSION_LINKER_GRID:
     name: "Logic Linker Grid"
     lore:
-      - "&eConveniently get Hyperlinks / Quantum Entanglement Singularities"
-      - "Sort modes: "
-      - "&eAZ&7: &eSort alphabetically"
-      - "&eAmount&7: &eSort by item amount"
-      - "&eAmount Reverse&7: &eSort by item amount descending"
-      - "&eAddon&7: &eSort alphabetically by item addon"
+      - "&eGet Hyperlinks / Quantum Entanglement Singularities easily"
+      - "Sort: &eA-Z&7, &eAmount&7, &eAmount (desc)&7, &eAddon"
       - "Pinyin search supported"
   NTW_EXPANSION_PLACEHOLDER_ITEM:
     name: "Placeholder"
@@ -4951,134 +4431,133 @@ items:
   NTW_EXPANSION_CELL_DRIVE:
     name: "Cell Drive"
     lore:
-      - "<passive>Insert Storage Cells, the items in the cells become network stock"
+      - "<passive>Holds Storage Cells; their items join the network"
       - ""
-      - "<click_info>Right Click<passive> to open the drive"
-      - "<click_info>Right Click a cell slot with empty hand<passive> to view cell contents"
+      - "<click_info>Right Click<passive> open"
+      - "<click_info>Right Click a cell slot (empty hand)<passive> view cell"
 
   NTW_EXPANSION_CELL_CLEANER:
     name: "Cell Cleaner"
     lore:
-      - "<passive>Batch delete unwanted items in a cell"
+      - "<passive>Deletes unwanted items from a cell"
       - ""
-      - "<click_info>Insert a cell<passive> · <click_info>Shift+Click an item<passive> to delete"
-      - "<error>All items of that type are deleted, cannot be undone"
+      - "<click_info>Shift+Click an item<passive> to delete it"
+      - "<error>Deletes all of that item · can't be undone"
 
   NTW_EXPANSION_CELL_CONVERTER:
     name: "Cell Converter"
     lore:
-      - "<passive>Transfers items between Storage Cells and Quantum Storage"
+      - "<passive>Moves items between Storage Cells and Quantum Storage"
       - ""
-      - "<click_info>Click an item<passive> to export it as a Quantum Storage"
-      - "<passive>Reuses storages in the slots first; otherwise uses <aqua>1<passive> empty shell to produce a storage of the same tier"
-      - "<aqua>Infinity Cell<passive> exception: no shell needed, outputs the highest tier Quantum Storage directly"
-      - "<click_info>Switch mode<passive> to import into cells: Quantum Storage with contents is not consumed, empty ones remain as shells"
-      - "<passive>Importing requires the storage amount to be <aqua>1<passive> and pass the cell whitelist"
-      - "<success>Click an empty shell of the same tier or the bottom button to upgrade the cell"
+      - "<click_info>Click an item<passive> export as Quantum Storage"
+      - "<passive>Uses <aqua>1<passive> empty shell if no storage can be reused"
+      - "<aqua>Infinity Cell<passive>: no shell needed"
+      - "<click_info>Switch mode<passive> import back into the cell"
+      - "<success>Use an empty shell of the same tier to upgrade the cell"
 
   NTW_EXPANSION_CELL:
     name: "Storage Cell {0}"
     lore:
-      - "<passive>Each item type takes one unit · unit limit <aqua>{0}"
+      - "<passive>One unit per item type · <aqua>{0}<passive> per unit"
       - ""
-      - "<click_info>Right Click<passive> view contents · upgrade units"
-      - "<passive>Put into a <gold>Cell Drive<passive> to connect to the network"
+      - "<click_info>Right Click<passive> view · upgrade units"
+      - "<passive>Put in a <gold>Cell Drive<passive> to use"
 
   NTW_EXPANSION_CELL_INFINITY:
     name: "Infinity Cell ∞"
     lore:
-      - "<passive>Unlimited amount per unit · unlimited units · no upgrade needed"
+      - "<passive>Unlimited types and amounts · no upgrades needed"
       - ""
-      - "<click_info>Right Click<passive> view contents"
-      - "<passive>Put into a <gold>Cell Drive<passive> to connect to the network"
+      - "<click_info>Right Click<passive> view"
+      - "<passive>Put in a <gold>Cell Drive<passive> to use"
 
   NTW_EXPANSION_ASSEMBLY_DRIVE:
     name: "Assembly Drive"
     lore:
-      - "<passive>Insert Assembly Cards to produce automatically · stops when full"
+      - "<passive>Crafts from Assembly Cards · stops when full"
       - ""
-      - "<click_info>Left/Right Click<passive> gear up/down"
-      - "<click_info>Shift+Left Click<passive> switch mode · <click_info>Shift+Right Click<passive> set plan"
+      - "<click_info>Left/Right Click<passive> speed up/down"
+      - "<click_info>Shift+Left Click<passive> mode · <click_info>Shift+Right Click<passive> plan"
 
   NTW_EXPANSION_VOID_CELL:
     name: "Void Cell"
     lore:
-      - "<passive>Destroys matching items, a fallback for network overflow"
+      - "<passive>Deletes matching items to stop network overflow"
       - ""
-      - "<click_info>Right Click<passive> to set the filter"
-      - "<error>Cannot be placed in an Ender Drive"
+      - "<click_info>Right Click<passive> set filter"
+      - "<error>Not allowed in Ender Drives"
 
   NTW_EXPANSION_ENDER_DRIVE:
     name: "Ender Drive"
     lore:
-      - "<passive>Ender Drives on the same channel share cells"
+      - "<passive>Drives on the same channel share cells"
       - ""
       - "<click_info>Right Click<passive> bind channel · <click_info>Sneak+Right Click<passive> copy"
-      - "<click_info>Click the center slot<passive> to unbind"
+      - "<click_info>Click the center slot<passive> unbind"
 
   NTW_EXPANSION_ASSEMBLY_CARD:
     name: "Assembly Card"
     lore:
-      - "<passive>Records one recipe, produces when inserted into an Assembly Drive"
+      - "<passive>Holds one recipe for an Assembly Drive"
       - ""
-      - "<click_info>At an Assembly Workshop<passive> write a recipe"
+      - "<passive>Write it at an <gold>Assembly Workshop"
 
   NTW_EXPANSION_ASSEMBLY_WORKSHOP:
     name: "Assembly Workshop"
     lore:
-      - "<passive>Consumes materials to write a recipe onto an Assembly Card"
+      - "<passive>Writes recipes onto Assembly Cards (uses materials)"
       - ""
-      - "<click_info>Left Click<passive> write once · <click_info>Shift+Left Click<passive> write continuously"
-      - "<click_info>Insert a written card<passive> to clear and return materials"
+      - "<click_info>Left Click<passive> once · <click_info>Shift+Left Click<passive> repeat"
+      - "<click_info>Put in a written card<passive> to clear it"
 
   NTW_EXPANSION_CONTAINER_FILLER:
     name: "Auto Filler"
     lore:
-      - "<passive>Fills network items into storage containers, outputs automatically when full"
-      - "<passive>Supports <aqua>Shulker Boxes <passive>/ <aqua>Storage Cells <passive>/ <aqua>Quantum Storage <passive>/ <aqua>Network Drawers"
+      - "<passive>Fills containers with network items"
+      - "<passive>Shulker Boxes / Storage Cells / Quantum Storage / Drawers"
       - ""
-      - "<click_info>List area<passive> put items to fill · <click_info>Container area<passive> put containers"
-      - "<passive>When the network runs short, outputs with what is available instead of waiting"
+      - "<click_info>List area<passive> items · <click_info>Container area<passive> containers"
+      - "<passive>Outputs with what's available, no waiting"
 
   NTW_EXPANSION_CHANNEL_CONFIGURATOR:
     name: "Channel Configurator"
     lore:
-      - "<passive>Configures channels for Ender Drives"
+      - "<passive>Sets channels for Ender Drives"
       - ""
-      - "<click_info>Right Click<passive> to bind, creates a channel automatically if none"
-      - "<click_info>Sneak+Right Click<passive> copy / clear channel"
+      - "<click_info>Right Click<passive> bind (makes a channel if needed)"
+      - "<click_info>Sneak+Right Click<passive> copy / clear"
 
   NTW_EXPANSION_OVERCLOCK_CORE:
     name: "Overclock Core"
     lore:
-      - "<passive>Unlocks the full load gear for Assembly Drives"
+      - "<passive>Unlocks max speed on Assembly Drives"
       - ""
-      - "<click_info>Put into the upgrade slot<passive> to take effect"
+      - "<click_info>Put in the upgrade slot"
 
   NTW_EXPANSION_SMART_CORE:
     name: "Smart Core"
     lore:
-      - "<passive>Restock checks include the stock of the bound channel"
+      - "<passive>Restocking also counts the bound channel's stock"
       - ""
-      - "<click_info>Put into the smart slot<passive> to take effect"
-      - "<click_info>Click the smart slot with a Channel Configurator<passive> to bind a channel"
+      - "<click_info>Put in the smart slot"
+      - "<click_info>Click it with a Channel Configurator<passive> to bind"
 
   NTW_EXPANSION_ASSEMBLY_MONITOR:
     name: "Assembly Monitor"
     lore:
-      - "<passive>Overview of all Assembly Drives in the network"
+      - "<passive>See every Assembly Drive in the network"
       - ""
-      - "<click_info>Click<passive> to pause / resume remotely"
-      - "<passive>Supports naming and search"
+      - "<click_info>Click<passive> pause / resume remotely"
+      - "<passive>Name and search supported"
 
   NTW_EXPANSION_DRIVE_MONITOR:
     name: "Drive Monitor"
     lore:
-      - "<passive>Overview of all Cell Drives on the same network"
+      - "<passive>See every Cell Drive in the network"
       - ""
-      - "<click_info>Left Click<passive> open remotely · <click_info>Right Click<passive> arrow guide"
-      - "<click_info>Shift+Left Click<passive> rename · <click_info>Shift+Right Click<passive> clear"
-      - "<passive>Supports search by name / coordinates"
+      - "<click_info>Left Click<passive> open · <click_info>Right Click<passive> guide arrow"
+      - "<click_info>Shift+Left/Right Click<passive> rename / clear name"
+      - "<passive>Search by name or coordinates"
 
 displays:
   quantum_storage:
