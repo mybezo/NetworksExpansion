@@ -25,5 +25,7 @@ Also, thanks to **[GentlemanCheesy](https://github.com/GentlemanCheesy)** of **m
 
 Thanks to [m1919810 / matl114](https://github.com/m1919810) for helping [me](https://github.com/balugaq) find several bugs in [NetworksExpansion](https://github.com/balugaq/NetworksExpansion)
 
+Thanks to [Mybezo](https://github.com/mybezo) for the English translation.
+
 If you like this addon, you can buy the [author](https://github.com/balugaq) a cup of milk tea~
 <img width="657" height="657" alt="cd7ab045e33de6267ee2c167f1e63e9c" src="https://github.com/user-attachments/assets/cdcd8276-a24a-4614-a156-41dfbc328219" />
