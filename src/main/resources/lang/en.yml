@@ -3376,6 +3376,11 @@ items:
     lore:
       - "Networks Expansion Developer"
 
+  NTW_EXPANSION_AUTHOR_MYBEZO:
+    name: "Mybezo"
+    lore:
+      - "English Translation"
+
   NTW_EXPANSION_VISUAL_GRID:
     name: "Interactive Grid"
     lore:

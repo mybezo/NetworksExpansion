@@ -1272,6 +1272,9 @@ public class ExpansionItems {
         ExpansionRecipes.AUTHOR_TINALNESS
     );
 
+    public static final SpecialSlimefunItem AUTHOR_MYBEZO =
+        new AuthorHead(ExpansionItemsMenus.MENU_TROPHY, ExpansionItemStacks.AUTHOR_MYBEZO);
+
     public static final DueMachineConfigurator DUE_MACHINE_CONFIGURATOR = new DueMachineConfigurator(
         ExpansionItemsMenus.MENU_ITEMS,
         ExpansionItemStacks.DUE_MACHINE_CONFIGURATOR,

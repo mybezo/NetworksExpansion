@@ -3581,6 +3581,11 @@ items:
     lore:
       - "网络拓展开发者"
 
+  NTW_EXPANSION_AUTHOR_MYBEZO:
+    name: "Mybezo"
+    lore:
+      - "英文翻译"
+
   NTW_EXPANSION_VISUAL_GRID:
     name: "交互式网格"
     lore:

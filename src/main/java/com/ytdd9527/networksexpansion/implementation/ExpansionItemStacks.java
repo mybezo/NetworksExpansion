@@ -383,6 +383,8 @@ public class ExpansionItemStacks {
         Theme.random(Lang.getItem("NTW_EXPANSION_AUTHOR_YITOUDAIDAI", Material.PLAYER_HEAD), Theme.GUIDE);
     public static final SlimefunItemStack AUTHOR_TINALNESS =
         Theme.random(Lang.getItem("NTW_EXPANSION_AUTHOR_TINALNESS", Skins.AUTHOR_TINALNESS.getHash()), Theme.GUIDE);
+    public static final SlimefunItemStack AUTHOR_MYBEZO =
+        Theme.random(Lang.getItem("NTW_EXPANSION_AUTHOR_MYBEZO", Skins.AUTHOR_MYBEZO.getHash()), Theme.GUIDE);
     // Cargo Nodes
     public static final SlimefunItemStack CARGO_NODE_QUICK_TOOL =
         Theme.random(Lang.getItem("NTW_EXPANSION_CARGO_NODE_QUICK_TOOL", Material.BONE), Theme.MACHINE);
