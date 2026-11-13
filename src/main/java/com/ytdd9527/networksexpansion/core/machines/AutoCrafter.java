@@ -1,5 +1,6 @@
 package com.ytdd9527.networksexpansion.core.machines;
 
+import com.balugaq.netex.api.enums.CraftType;
 import com.balugaq.netex.api.enums.FeedbackType;
 import com.balugaq.netex.api.helpers.Icon;
 import com.balugaq.netex.api.interfaces.CraftTyped;
@@ -49,6 +50,7 @@ public class AutoCrafter extends NetworkObject implements SoftCellBannable, Craf
     private static final int[] OUTPUT_BACKGROUND = new int[]{6, 7, 8, 15, 17, 24, 25, 26};
     protected final int chargePerCraft;
     protected final boolean withholding;
+    protected final @Nullable CraftType craftType;
 
     public AutoCrafter(
         @NotNull ItemGroup itemGroup,
@@ -57,7 +59,22 @@ public class AutoCrafter extends NetworkObject implements SoftCellBannable, Craf
         ItemStack @NotNull [] recipe,
         int chargePerCraft,
         boolean withholding) {
+        this(itemGroup, item, recipeType, recipe, chargePerCraft, withholding, null);
+    }
+
+    /**
+     * @param craftType the only blueprint type this crafter accepts; {@code null} accepts every blueprint type
+     */
+    public AutoCrafter(
+        @NotNull ItemGroup itemGroup,
+        @NotNull SlimefunItemStack item,
+        @NotNull RecipeType recipeType,
+        ItemStack @NotNull [] recipe,
+        int chargePerCraft,
+        boolean withholding,
+        @Nullable CraftType craftType) {
         super(itemGroup, item, recipeType, recipe, NodeType.CRAFTER);
+        this.craftType = craftType;
 
         this.chargePerCraft = chargePerCraft;
         this.withholding = withholding;
@@ -295,7 +312,16 @@ public class AutoCrafter extends NetworkObject implements SoftCellBannable, Craf
     }
 
     public boolean isValidBlueprint(SlimefunItem item) {
-        return item instanceof Blueprint;
+        if (!(item instanceof Blueprint blueprint)) {
+            return false;
+        }
+        // Type-specific crafters only accept blueprints of their own type
+        return this.craftType == null || blueprint.craftType() == this.craftType;
+    }
+
+    @Override
+    public @NotNull CraftType craftType() {
+        return this.craftType == null ? CraftType.CRAFTING : this.craftType;
     }
 
     public boolean canBlueprintStack() {

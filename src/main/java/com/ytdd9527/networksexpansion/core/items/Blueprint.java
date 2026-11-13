@@ -1,5 +1,6 @@
 package com.ytdd9527.networksexpansion.core.items;
 
+import com.balugaq.netex.api.enums.CraftType;
 import com.balugaq.netex.api.interfaces.CraftTyped;
 import com.balugaq.netex.utils.Lang;
 import io.github.sefiraat.networks.network.stackcaches.BlueprintInstance;
@@ -15,18 +16,39 @@ import net.guizhanss.minecraft.guizhanlib.gugu.minecraft.helpers.inventory.ItemS
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Blueprint extends UnusableSlimefunItem implements DistinctiveItem, CraftTyped {
+    private final @Nullable CraftType craftType;
+
     public Blueprint(
         @NotNull ItemGroup itemGroup,
         @NotNull SlimefunItemStack item,
         @NotNull RecipeType recipeType,
         ItemStack[] recipe) {
+        this(itemGroup, item, recipeType, recipe, null);
+    }
+
+    /**
+     * @param craftType the recipe type this blueprint stores; {@code null} means a generic crafting blueprint
+     */
+    public Blueprint(
+        @NotNull ItemGroup itemGroup,
+        @NotNull SlimefunItemStack item,
+        @NotNull RecipeType recipeType,
+        ItemStack[] recipe,
+        @Nullable CraftType craftType) {
         super(itemGroup, item, recipeType, recipe);
+        this.craftType = craftType;
+    }
+
+    @Override
+    public @NotNull CraftType craftType() {
+        return this.craftType == null ? CraftType.CRAFTING : this.craftType;
     }
 
     @SuppressWarnings("deprecation")

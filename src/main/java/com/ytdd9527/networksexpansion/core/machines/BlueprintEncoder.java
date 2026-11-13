@@ -32,6 +32,7 @@ import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,13 +52,27 @@ public class BlueprintEncoder extends NetworkObject implements CraftTyped {
     private static final int ITEM_TARGET_DESC_SLOT = 26;
     private static final int ITEM_TARGET_SLOT = 35;
     private static final int CHARGE_COST = 2000;
+    private final @Nullable CraftType craftType;
 
     public BlueprintEncoder(
         @NotNull ItemGroup itemGroup,
         @NotNull SlimefunItemStack item,
         @NotNull RecipeType recipeType,
         ItemStack @NotNull [] recipe) {
+        this(itemGroup, item, recipeType, recipe, null);
+    }
+
+    /**
+     * @param craftType the only recipe type this encoder encodes; {@code null} encodes every recipe type
+     */
+    public BlueprintEncoder(
+        @NotNull ItemGroup itemGroup,
+        @NotNull SlimefunItemStack item,
+        @NotNull RecipeType recipeType,
+        ItemStack @NotNull [] recipe,
+        @Nullable CraftType craftType) {
         super(itemGroup, item, recipeType, recipe, NodeType.ENCODER);
+        this.craftType = craftType;
         for (int recipeSlot : RECIPE_SLOTS) {
             this.getSlotsToDrop().add(recipeSlot);
         }
@@ -193,6 +208,10 @@ public class BlueprintEncoder extends NetworkObject implements CraftTyped {
         if (target == null || target.getType() == Material.AIR) target = null;
 
         for (var e : CraftType.map().entrySet()) {
+            // Type-specific encoders only look at recipes of their own type
+            if (this.craftType != null && e.getKey() != this.craftType) {
+                continue;
+            }
             boolean found = false;
             for (Map.Entry<ItemStack[], ItemStack> entry : e.getValue()) {
                 if (testRecipe(e.getKey(), inputs, entry.getKey())) {
@@ -289,6 +308,11 @@ public class BlueprintEncoder extends NetworkObject implements CraftTyped {
     }
 
     public boolean canTestVanillaRecipe(ItemStack[] inputs) {
-        return true;
+        return this.craftType == null || this.craftType == CraftType.CRAFTING;
+    }
+
+    @Override
+    public @NotNull CraftType craftType() {
+        return this.craftType == null ? CraftType.CRAFTING : this.craftType;
     }
 }
