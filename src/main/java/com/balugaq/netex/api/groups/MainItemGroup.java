@@ -44,6 +44,9 @@ public class MainItemGroup extends FlexItemGroup {
         new int[]{37, 38, 39, 40, 41, 42, 43, 44},
         new int[]{46, 47, 48, 49, 50, 51, 52, 53}
     };
+    // Flat layout: up to 5 categories in the middle of the third row (slots 18..26)
+    private static final int FLAT_ROW_CENTER = 22;
+    private static final int FLAT_MAX = 5;
     private final @Nullable ItemStack item;
     private final int page;
     private List<ItemGroup> fatherItemGroupList = new ArrayList<>();
@@ -153,6 +156,28 @@ public class MainItemGroup extends FlexItemGroup {
             chestMenu.addMenuClickHandler(slot, ChestMenuUtils.getEmptyClickHandler());
         }
 
+        if (this.isFlatLayout()) {
+            // Flat layout: every category is shown once, side by side in one centered row
+            int count = Math.min(this.fatherItemGroupList.size(), FLAT_MAX);
+            int start = FLAT_ROW_CENTER - (count - 1);
+            for (int slot = FLAT_ROW_CENTER - 4; slot <= FLAT_ROW_CENTER + 4; slot++) {
+                chestMenu.addItem(slot, ItemStackUtil.getCleanItem(ChestMenuUtils.getBackground()));
+                chestMenu.addMenuClickHandler(slot, ChestMenuUtils.getEmptyClickHandler());
+            }
+            for (int i = 0; i < count; i++) {
+                final ItemGroup itemGroup = this.fatherItemGroupList.get(i);
+                int slot = start + i * 2;
+                chestMenu.addItem(slot, ItemStackUtil.getCleanItem(itemGroup.getItem(player)));
+                chestMenu.addMenuClickHandler(slot, (p, s, item, action) -> {
+                    if (itemGroup instanceof FlexItemGroup flexItemGroup) {
+                        flexItemGroup.open(player, playerProfile, slimefunGuideMode);
+                    }
+                    return false;
+                });
+            }
+            return chestMenu;
+        }
+
         for (int i = this.page * MAIN_CONTENT.length - MAIN_CONTENT.length; i < this.page * MAIN_CONTENT.length; i++) {
             if (i < this.fatherItemGroupList.size() && i < this.sonItemGroupList.size()) {
                 chestMenu.addItem(
@@ -186,6 +211,14 @@ public class MainItemGroup extends FlexItemGroup {
         }
 
         return chestMenu;
+    }
+
+    /**
+     * The flat layout is used when no category has sub-categories and they all fit in one row.
+     */
+    private boolean isFlatLayout() {
+        return this.fatherItemGroupList.size() <= FLAT_MAX
+            && this.sonItemGroupList.stream().allMatch(List::isEmpty);
     }
 
     @NotNull
