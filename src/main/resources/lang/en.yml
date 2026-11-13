@@ -1969,6 +1969,133 @@ items:
       - "<warning> 13) If you cannot see the complete item name or item explanation due to small screen size, etc., please ask the server owner or player to solve it themselves. The Networks Expansion Development Team is not responsible for this."
       - "<warning> 14) Networks Expansion allows anyone to use, copy, modify, merge, publish, distribute, exhibit, and distribute this declaration for non-profit purposes, but no one may use this declaration for commercial purposes. And it is forbidden to conduct any publicity in the name of Networks Expansion or the Networks Expansion Development Team."
       - "<warning> 15) The right to interpret all declarations of this addon belongs to the Networks Expansion developers."
+  NTW_EXPANSION_ANNOUNCE_1:
+    name: "<color_random_string>Definition"
+    lore:
+      - "<warning> 1) Declaration refers to all declarations herein."
+      - "<warning> 2) Network refers to a Slimefun Addon, not internet/IoT network or other traditional networks."
+      - "<warning> 3) NetworksExpansion (hereinafter \"NetworksExpansion\", \"This Addon\", or \"This Project\") refers to a Slimefun addon developed by the Networks Expansion Team based on Networks, strictly adhering to the GPLv3 license, with appropriate modifications, based on Paper 1.20.1 and localized Slimefun, and is not fully compatible with Paper 1.20.5 and above."
+      - "<warning> 4) Networks Expansion Developers (hereinafter \"Networks Expansion Team\", \"Networks Expansion Creators\") refers to the group developing Networks Expansion, not owned by any company or organization."
+
+  NTW_EXPANSION_ANNOUNCE_2:
+    name: "<color_random_string>Networks Expansion Works Declaration"
+    lore:
+      - "<warning> Before reading this declaration, please read the Definition first."
+      - "<warning> 1) Networks Expansion is completely free, shared, and open-source on GitHub for supporters, maintainers, and creators to learn and use."
+      - "<warning> 2) GPLv3 License is the open-source license for Networks Expansion. Anyone is free to use, modify, and distribute it, but any modification or distribution must comply with the GPLv3 license."
+      - "<warning> 3) Among them, \"Networks Expansion\" is merely the title of this file and contains no ambiguity or profit implications."
+      - "<warning> 4) Networks Expansion Developers act only as the creators of this addon and do not provide any commercial support for it, nor do they actively maintain this addon anymore. Furthermore, Networks Expansion Developers never participate in any direct or indirect business activities related to any server."
+      - "<warning> 5) It is strictly forbidden to use the above plugin and this addon to promote any form of negative or violent information; strictly forbidden to use the above files for illegal or infringing activities; strictly forbidden to involve any political or vulgar content."
+      - "<warning> 6) Reselling is strictly prohibited, including but not limited to disguised trading, and privately tampering with the above files for any profit-making behavior."
+      - "<warning> 7) We strongly condemn the aforementioned prohibited items and encourage the public to supervise each other and actively report illegal activities."
+      - "<warning> 8) You are responsible for all consequences caused by improper use by you or your group. It is strictly forbidden to shift responsibility to the maintainers and creators of the above plugins and configuration files in any form."
+      - "<warning> 9) Infringers shall bear civil liabilities such as stopping the infringement, eliminating the impact, making an apology, and compensating for losses according to the circumstances; if public interests are harmed, the copyright administration department may order the cessation of the infringing act, confiscate illegal gains, confiscate and destroy infringing copies, and impose fines; if the circumstances are serious enough to constitute a crime, criminal responsibility shall be investigated according to law."
+      - "<warning> 10) When the Networks Expansion developers do not pursue the infringer's infringing behavior, it does not represent the Networks Expansion developers' approval of the infringing behavior. Nor does it mean that the infringer does not need to bear any responsibility."
+      - "<warning> Please strictly abide by the above declaration."
+
+  NTW_EXPANSION_ANNOUNCE_3:
+    name: "<color_random_string>Networks Expansion Usage Declaration"
+    lore:
+      - "<warning> Before reading this declaration, please read the Networks Expansion Works Declaration first."
+      - "<warning> GuizhanLibPlugin is a dependency for this addon, please ensure it is correctly installed."
+      - "<warning> The localized development version of Slimefun is a dependency for this addon, please also ensure it is correctly installed."
+      - "<warning> You must comply with laws and regulations when using Networks Expansion or its content, and you must not use Networks Expansion or its content to engage in illegal activities, including but not limited to the following:"
+      - "<warning> 1. Violating the basic principles established by the Constitution;"
+      - "<warning> 1) Endangering national security, leaking state secrets, subverting state power, undermining national unity;"
+      - "<warning> 2) Harming national honor and interests;"
+      - "<warning> 3) Distorting, defaming, desecrating, or denying the deeds and spirit of heroes and martyrs, infringing upon the names, portraits, reputation, and honor of heroes and martyrs by insult, slander, or other means;"
+      - "<warning> 4) Promoting terrorism, extremism, or inciting terrorist or extremist activities;"
+      - "<warning> 5) Inciting ethnic hatred, ethnic discrimination, undermining ethnic unity;"
+      - "<warning> 6) Undermining national religious policies, promoting cults and feudal superstitions;"
+      - "<warning> 7) Spreading rumors, disturbing social order and stability;"
+      - "<warning> 8) Spreading obscenity, pornography, gambling, violence, murder, terror, or abetting crime;"
+      - "<warning> 9) Insulting or slandering others, infringing upon the reputation, privacy, and other legitimate rights and interests of others;"
+      - "<warning> 10) Violating social morality;"
+      - "<warning> 11) Other contents prohibited by laws, administrative regulations, and state provisions."
+      - "<warning> 2. You may not use Networks Expansion or its content to produce, reproduce, or publish bad information containing the following content:"
+      - "<warning> 1) Using exaggerated titles that differ significantly from the content;"
+      - "<warning> 2) Hyping scandals, bad records, etc.;"
+      - "<warning> 3) Improperly commenting on natural disasters, major accidents, and other disasters;"
+      - "<warning> 4) Containing sexual suggestions, sexual provocation, etc., that easily cause sexual associations;"
+      - "<warning> 5) Showing bloody, thrilling, cruel, etc., causing physical and mental discomfort;"
+      - "<warning> 6) Inciting crowd discrimination, regional discrimination, etc.;"
+      - "<warning> 7) Promoting vulgar, low-taste, and kitsch content;"
+      - "<warning> 8) Possibly inducing minors to imitate unsafe behaviors and behaviors violating social morality, inducing bad habits in minors, etc.;"
+      - "<warning> 9) Other content that has a negative impact on the internet ecosystem."
+
+  NTW_EXPANSION_ANNOUNCE_4:
+    name: "<color_random_string>Networks Expansion Author Declaration"
+    lore:
+      - "<warning> Before reading this declaration, please read the Networks Expansion Usage Declaration first."
+      - "<warning> 1) The members of the Networks Expansion Development Team are all citizens of the People's Republic of China, and sincerely recognize the theory of socialism with Chinese characteristics and adhere to the leadership of the Communist Party of China."
+      - "<warning> 2) The Networks Expansion Development Team opposes decadent and backward thoughts such as capitalism, imperialism, hegemonism, and feudalism."
+      - "<warning> 3) The Networks Expansion Development Team consciously abides by the Constitution and laws and opposes cyber violence."
+      - "<warning> 4) The Networks Expansion Development Team consciously abides by community norms, does not use abusive language, and communicates in a civilized manner."
+      - "<warning> 5) Behaviors such as insulting and attacking the Networks Expansion Development Team or its members will be dealt with according to law. If cyber violence such as 'doxing' is found, it will be reported to the police."
+      - "<warning> 6) This declaration only represents the position of the Networks Expansion Development Team, not others, any game, organization, company, country, social group, nor does it represent the player group of any game."
+      - "<warning> 7) This declaration subjectively does not favor any party, only focuses on the matter itself, not the person."
+      - "<passive> This addon was written by Sefiraat, localized by ybw0014, and added, deleted, modified, and subsequently maintained by yitoudaidai and tinalness."
+      - "<passive> Thanks to the machines of LogiTech for providing the author's skull hash."
+      - "<passive> Thanks to all server owners who trust and install Networks Expansion."
+      - "<passive> This addon is inspired by the players."
+      - "<passive> Special thanks to players like Utoboy, TouRuya, haiman233, matl114 for their suggestions."
+      - "<passive> Thanks to testers like Utoboy, TouRuya, haiman233, yitoudaidai, tinalness, matl114, lengshang for testing."
+
+  NTW_EXPANSION_ANNOUNCE_5:
+    name: "<color_random_string>Networks Expansion Related Links"
+    lore:
+      - "<warning> Before reading this declaration, please read the Networks Expansion Author Declaration first."
+      - "<passive> The following are links related to Networks Expansion: (Please look for the official links)"
+      - "<passive> Networks Expansion Build Site: <click_info>https://builds.guizhanss.com/ytdd9527/NetworksExpansion/master/builds"
+      - "<passive> Networks Expansion Stable GitHub Repo: <click_info>https://github.com/ytdd9527/NetworksExpansion"
+      - "<passive> Networks Expansion Stable GitHub Issues: <click_info>https://github.com/ytdd9527/NetworksExpansion/issues"
+      - "<passive> Networks Expansion Stable GitHub PRs: <click_info>https://github.com/ytdd9527/NetworksExpansion/pulls"
+      - "<passive> Networks Expansion Dev GitHub Repo: <click_info>https://github.com/balugaq/NetworksExpansion"
+      - "<warning> Networks Expansion Dev version does not accept GitHub Issues"
+      - "<warning> Networks Expansion Dev version does not accept GitHub PRs"
+      - "<passive> Networks Expansion Author GitHub Page: <click_info>https://github.com/ytdd9527"
+      - "<passive> Networks Expansion Author GitHub Page: <click_info>https://github.com/balugaq"
+
+  NTW_EXPANSION_ANNOUNCE_6:
+    name: "<color_random_string>Purpose of Networks Expansion"
+    lore:
+      - "<warning> Before reading this declaration, please read the Networks Expansion Related Links first."
+      - "<passive> The purpose of Networks Expansion is to provide more convenience and ease based on Networks, enhancing the transportation function of the network."
+      - "<passive> It is also to minimize latency issues caused by the network and reduce bugs and errors caused by the network."
+
+  NTW_EXPANSION_ANNOUNCE_7:
+    name: "<color_random_string>Networks Expansion FAQ"
+    lore:
+      - "<warning> Before reading this declaration, please read the Purpose of Networks Expansion first."
+      - "<warning> 1) Why does Networks Expansion change frequently, and sometimes strange problems occur?"
+      - "<passive> - This is normal. The Networks Expansion Development Team cannot guarantee that every version runs perfectly. If possible, please use the stable version from the build site."
+      - "<warning> 2) Why are some good features not added to Networks Expansion?"
+      - "<passive> - Due to the nature of Networks Expansion, some features may not be suitable for use in the network because the network is a transportation system."
+      - "<warning> 3) Why were some implemented features that were convenient for players removed in later versions?"
+      - "<passive> - Removing existing features is a decision made by the Networks Expansion Development Team after long-term consideration, not arbitrarily."
+      - "<passive> - Generally speaking, some features are removed because they cause high latency and create more vulnerabilities."
+      - "<passive> - Of course, there are also cases of removal due to verbal attacks or malicious behavior towards members of the Networks Expansion Development Team."
+
+  NTW_EXPANSION_ANNOUNCE_8:
+    name: "<color_random_string>Networks Expansion Supplementary Explanation"
+    lore:
+      - "<warning> Before reading this declaration, please read the Networks Expansion FAQ first."
+      - "<warning> 1) The Networks Expansion developers are under no obligation to maintain this addon. For sudden errors, vulnerabilities, or problems in the stable version of Networks Expansion, please submit an Issue to the stable GitHub repository of this addon in time."
+      - "<passive> 2) We cannot guarantee to fix all problems in time, but we will try our best."
+      - "<passive> 3) When communicating with developers, you should be polite and do not maliciously attack or insult. This is the effective way to communicate and solve your problem."
+      - "<warning> 4) When you use, play, or modify Networks Expansion, you agree to abide by these declarations by default."
+      - "<passive> 5) The Networks Expansion developers reserve the right to modify or terminate this declaration at any time."
+      - "<warning> 6) When this declaration is updated, you should consciously check for any objections. Generally speaking, after a version update, the Networks Expansion Development Team assumes you agree to abide by these declarations by default."
+      - "<passive> 7) You should avoid involving \"Networks Expansion\" or \"Networks Expansion Development Team\" or \"Networks Expansion Development Team Members\" in political and public events due to the use of Networks Expansion. <warning>Otherwise, the Networks Expansion Development Team has the right to suspend or terminate the maintenance of Networks Expansion."
+      - "<passive> 8) If this declaration is published in other languages by the Networks Expansion developers, the Chinese version shall prevail."
+      - "<passive> 9) The effectiveness, performance, interpretation, and dispute resolution of this declaration shall be governed by the laws of the mainland of the People's Republic of China (excluding conflict of laws)."
+      - "<passive> 10) All headings in this declaration are for reading convenience only and have no actual meaning themselves, and cannot be used as a basis for interpreting the meaning of this declaration."
+      - "<warning> 11) If any part of this declaration is invalid for any reason, the remaining terms shall remain valid and binding on all parties."
+      - "<warning> 12) If you cannot view the complete declaration content due to small screen size, etc., please adjust it yourself. The Networks Expansion Development Team is not responsible for this."
+      - "<warning> 13) If you cannot see the complete item name or item explanation due to small screen size, etc., please ask the server owner or player to solve it themselves. The Networks Expansion Development Team is not responsible for this."
+      - "<warning> 14) Networks Expansion allows anyone to use, copy, modify, merge, publish, distribute, exhibit, and distribute this declaration for non-profit purposes, but no one may use this declaration for commercial purposes. And it is forbidden to conduct any publicity in the name of Networks Expansion or the Networks Expansion Development Team."
+      - "<warning> 15) The right to interpret all declarations of this addon belongs to the Networks Expansion developers."
+
   NTW_EXPANSION_ANNOUNCE_9:
     name: "<color_random_string>Networks Expansion Version Info"
     lore:
