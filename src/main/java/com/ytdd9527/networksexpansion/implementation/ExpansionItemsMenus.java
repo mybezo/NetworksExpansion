@@ -71,10 +71,6 @@ public final class ExpansionItemsMenus {
         "NTW_EXPANSION_MAIN_MENU_CARGO_SYSTEM",
         Material.FURNACE_MINECART,
         Lang.getString("groups.expansion.custom.main_menu_cargo_system"));
-    public static final SubFlexItemGroup MAIN_MENU_STORAGE = GroupConfigUtil.getSubFlexItemGroup(
-        "NTW_EXPANSION_MAIN_MENU_STORAGE",
-        Material.CHEST,
-        Lang.getString("groups.expansion.custom.main_menu_storage"));
     public static final SubFlexItemGroup SUB_MENU_ADVANCED_STORAGE = GroupConfigUtil.getSubFlexItemGroup(
         "NTW_EXPANSION_SUB_MENU_ADVANCED_STORAGE",
         Material.BOOKSHELF,
