@@ -9,6 +9,7 @@ import com.ytdd9527.networksexpansion.api.filter.FillerPdc;
 import com.ytdd9527.networksexpansion.core.items.SpecialSlimefunItem;
 import com.ytdd9527.networksexpansion.api.drive.DriveOwnership;
 import com.ytdd9527.networksexpansion.api.drive.WhitelistStore;
+import com.ytdd9527.networksexpansion.core.managers.TickIntervalManager;
 import com.ytdd9527.networksexpansion.utils.ItemKey;
 import com.ytdd9527.networksexpansion.utils.NetworkUtil;
 import com.ytdd9527.networksexpansion.api.cell.CellnetText;
@@ -120,6 +121,9 @@ public class ContainerFiller extends SpecialSlimefunItem {
 
             @Override
             public void tick(@NotNull Block b, SlimefunItem item, @NotNull SlimefunBlockData data) {
+                if (TickIntervalManager.shouldSkip(item)) {
+                    return;
+                }
                 long now = System.currentTimeMillis();
                 Location loc = b.getLocation();
                 FillerState s = state(loc);

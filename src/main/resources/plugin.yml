@@ -27,7 +27,7 @@ softdepend:
 #  - JustEnoughGuide # Don't add this line, see https://github.com/balugaq/JustEnoughGuide/blob/master/src/main/java/com/balugaq/jeg/implementation/ThirdPartyWarnings.java
 commands:
   networks:
-    aliases: networksexpansion
+    aliases: [networksexpansion, ntw]
     description: NetworksExpansion base command
     usage: The NetworksExpansion version you have installed does not seem to be compatible with your server setup. Check your console for more detailed info.
 
@@ -58,6 +58,9 @@ permissions:
     default: op
   networks.commands.setcontainerid:
     description: Allows you to use the /networks setcontainerid command
+    default: op
+  networks.commands.tick:
+    description: Allows you to use the /networks tick command
     default: op
   networks.commands.celltoquantum:
     description: Allows you to use the /networks celltoquantum command

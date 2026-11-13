@@ -10,6 +10,7 @@ import com.balugaq.netex.utils.Debug;
 import com.xzavier0722.mc.plugin.slimefun4.storage.controller.SlimefunBlockData;
 import com.xzavier0722.mc.plugin.slimefun4.storage.util.StorageCacheUtils;
 import com.ytdd9527.networksexpansion.core.managers.ConfigManager;
+import com.ytdd9527.networksexpansion.core.managers.TickIntervalManager;
 import com.ytdd9527.networksexpansion.core.services.LocalizationService;
 import com.ytdd9527.networksexpansion.implementation.machines.drive.CellDrive;
 import com.ytdd9527.networksexpansion.api.storage.CellStorageDatabase;
@@ -133,6 +134,7 @@ public class Networks extends JavaPlugin implements SlimefunAddon {
 
         getLogger().info("Loading language");
         this.configManager = new ConfigManager();
+        TickIntervalManager.load();
         this.localizationService = new LocalizationService(this);
         String language = configManager.getLanguage();
         try {

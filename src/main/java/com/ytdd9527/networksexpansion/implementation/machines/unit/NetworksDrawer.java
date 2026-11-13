@@ -14,6 +14,7 @@ import com.jeff_media.morepersistentdatatypes.DataType;
 import com.xzavier0722.mc.plugin.slimefun4.storage.controller.SlimefunBlockData;
 import com.xzavier0722.mc.plugin.slimefun4.storage.util.StorageCacheUtils;
 import com.ytdd9527.networksexpansion.core.items.SpecialSlimefunItem;
+import com.ytdd9527.networksexpansion.core.managers.TickIntervalManager;
 import com.ytdd9527.networksexpansion.implementation.tools.ItemMover;
 import com.ytdd9527.networksexpansion.utils.DisplayGroupGenerators;
 import com.ytdd9527.networksexpansion.utils.TextUtil;
@@ -935,6 +936,9 @@ public class NetworksDrawer extends SpecialSlimefunItem implements DistinctiveIt
 
             @Override
             public void tick(@NotNull Block block, SlimefunItem item, SlimefunBlockData blockData) {
+                if (TickIntervalManager.shouldSkip(item)) {
+                    return;
+                }
                 onTick(block);
             }
         });

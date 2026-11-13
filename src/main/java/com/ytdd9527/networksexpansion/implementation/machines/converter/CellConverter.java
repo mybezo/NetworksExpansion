@@ -12,6 +12,7 @@ import com.ytdd9527.networksexpansion.api.cell.CellTransferLogic;
 import com.ytdd9527.networksexpansion.api.cell.CellnetText;
 import com.ytdd9527.networksexpansion.api.cell.StorageCell;
 import com.ytdd9527.networksexpansion.core.machines.AbstractCellBrowser;
+import com.ytdd9527.networksexpansion.core.managers.TickIntervalManager;
 import com.ytdd9527.networksexpansion.utils.ChatInput;
 import com.ytdd9527.networksexpansion.utils.GhostItems;
 import com.ytdd9527.networksexpansion.utils.ItemKey;
@@ -268,6 +269,9 @@ public class CellConverter extends AbstractCellBrowser {
 
                 @Override
                 public void tick(@NotNull Block b, SlimefunItem item, SlimefunBlockData data) {
+                    if (TickIntervalManager.shouldSkip(item)) {
+                        return;
+                    }
                     // Async tick must not touch inventories; the refresh goes back to the main thread
                     BlockMenu blockMenu = data.getBlockMenu();
                     if (blockMenu == null || !blockMenu.hasViewer()) {

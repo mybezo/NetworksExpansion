@@ -9,6 +9,7 @@ import com.balugaq.netex.utils.RootWriteLock;
 import com.xzavier0722.mc.plugin.slimefun4.storage.controller.SlimefunBlockData;
 import com.xzavier0722.mc.plugin.slimefun4.storage.util.StorageCacheUtils;
 import com.ytdd9527.networksexpansion.core.items.SpecialSlimefunItem;
+import com.ytdd9527.networksexpansion.core.managers.TickIntervalManager;
 import com.ytdd9527.networksexpansion.utils.itemstacks.ItemStackUtil;
 import io.github.sefiraat.networks.NetworkStorage;
 import io.github.sefiraat.networks.Networks;
@@ -312,6 +313,9 @@ public class NetworkQuantumStorage extends SpecialSlimefunItem implements Distin
 
                 @Override
                 public void tick(@NotNull Block b, SlimefunItem item, SlimefunBlockData data) {
+                    if (TickIntervalManager.shouldSkip(item)) {
+                        return;
+                    }
                     onTick(b);
                 }
             },

@@ -7,6 +7,7 @@ import com.balugaq.netex.api.keybind.Keybindable;
 import com.balugaq.netex.api.keybind.Keybinds;
 import com.xzavier0722.mc.plugin.slimefun4.storage.controller.SlimefunBlockData;
 import com.ytdd9527.networksexpansion.core.machines.AbstractGridNewStyle;
+import com.ytdd9527.networksexpansion.core.managers.TickIntervalManager;
 import io.github.sefiraat.networks.NetworkStorage;
 import io.github.sefiraat.networks.Networks;
 import io.github.sefiraat.networks.network.NodeType;
@@ -100,6 +101,9 @@ public class VisualGrid extends AbstractGridNewStyle implements Keybindable {
 
             @Override
             public void tick(Block block, SlimefunItem item, SlimefunBlockData data) {
+                if (TickIntervalManager.shouldSkip(item)) {
+                    return;
+                }
                 if (true) return; // todo
                 if (tick > 1) return;
                 addToRegistry(block);

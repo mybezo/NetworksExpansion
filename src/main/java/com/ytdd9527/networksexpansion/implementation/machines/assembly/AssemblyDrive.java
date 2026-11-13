@@ -11,6 +11,7 @@ import com.ytdd9527.networksexpansion.api.assembly.CachedSnapshot;
 import com.ytdd9527.networksexpansion.api.assembly.DriveRuntimeState;
 import com.ytdd9527.networksexpansion.api.assembly.MachineState;
 import com.ytdd9527.networksexpansion.core.items.assembly.core.GearCore;
+import com.ytdd9527.networksexpansion.core.managers.TickIntervalManager;
 import com.ytdd9527.networksexpansion.implementation.items.assembly.core.SmartCore;
 import com.ytdd9527.networksexpansion.api.drive.DriveOwnership;
 import com.ytdd9527.networksexpansion.utils.Limits;
@@ -95,6 +96,9 @@ public class AssemblyDrive extends SpecialSlimefunItem {
 
             @Override
             public void tick(@NotNull Block b, SlimefunItem item, SlimefunBlockData data) {
+                if (TickIntervalManager.shouldSkip(item)) {
+                    return;
+                }
                 tickBody(b);
             }
 

@@ -4,6 +4,7 @@ import com.balugaq.netex.api.enums.FeedbackType;
 import com.xzavier0722.mc.plugin.slimefun4.storage.controller.SlimefunBlockData;
 import com.xzavier0722.mc.plugin.slimefun4.storage.util.StorageCacheUtils;
 import com.ytdd9527.networksexpansion.core.items.SpecialSlimefunItem;
+import com.ytdd9527.networksexpansion.core.managers.TickIntervalManager;
 import io.github.sefiraat.networks.NetworkStorage;
 import io.github.sefiraat.networks.network.NetworkRoot;
 import io.github.sefiraat.networks.network.NodeDefinition;
@@ -81,6 +82,9 @@ public class SmartGrabber extends SpecialSlimefunItem implements AdminDebuggable
                 @Override
                 public void tick(
                     @NotNull Block block, SlimefunItem slimefunItem, SlimefunBlockData slimefunBlockData) {
+                    if (TickIntervalManager.shouldSkip(slimefunItem)) {
+                        return;
+                    }
                     final Location location = block.getLocation();
                     final BlockFace cachedFace = getDirection(location);
                     if (cachedFace != null && VALID_FACES.contains(cachedFace)) {

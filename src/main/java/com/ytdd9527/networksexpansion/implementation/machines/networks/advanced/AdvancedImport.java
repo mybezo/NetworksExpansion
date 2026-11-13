@@ -3,6 +3,7 @@ package com.ytdd9527.networksexpansion.implementation.machines.networks.advanced
 import com.balugaq.netex.api.enums.FeedbackType;
 import com.balugaq.netex.utils.Lang;
 import com.xzavier0722.mc.plugin.slimefun4.storage.controller.SlimefunBlockData;
+import com.ytdd9527.networksexpansion.core.managers.TickIntervalManager;
 import com.ytdd9527.networksexpansion.implementation.ExpansionItems;
 import io.github.sefiraat.networks.NetworkStorage;
 import io.github.sefiraat.networks.network.NetworkRoot;
@@ -67,6 +68,9 @@ public class AdvancedImport extends NetworkObject implements RecipeDisplayItem {
 
             @Override
             public void tick(@NotNull Block block, SlimefunItem item, @NotNull SlimefunBlockData data) {
+                if (TickIntervalManager.shouldSkip(item)) {
+                    return;
+                }
                 if (tick <= 1) {
                     final BlockMenu blockMenu = data.getBlockMenu();
                     if (blockMenu == null) {

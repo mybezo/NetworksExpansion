@@ -10,9 +10,11 @@ import com.balugaq.netex.utils.MapUtil;
 import com.xzavier0722.mc.plugin.slimefun4.storage.controller.SlimefunBlockData;
 import com.xzavier0722.mc.plugin.slimefun4.storage.util.StorageCacheUtils;
 import com.ytdd9527.networksexpansion.core.items.Blueprint;
+import com.ytdd9527.networksexpansion.core.managers.TickIntervalManager;
 import com.ytdd9527.networksexpansion.core.services.CollectService;
 import com.ytdd9527.networksexpansion.implementation.machines.converter.CellQuantumConverter;
 import com.ytdd9527.networksexpansion.implementation.machines.unit.NetworksDrawer;
+import io.github.sefiraat.networks.Networks;
 import io.github.sefiraat.networks.network.NetworkRoot;
 import io.github.sefiraat.networks.network.stackcaches.BlueprintInstance;
 import io.github.sefiraat.networks.network.stackcaches.ItemRequest;
@@ -348,6 +350,71 @@ public class NetworksMain implements TabExecutor {
         }
     }
 
+    /**
+     * {@code /networks tick <id> [ticks|reset]} and {@code /networks tick list}.
+     */
+    public static void tick(@NotNull CommandSender sender, @NotNull String @NotNull [] args) {
+        if (args.length < 2) {
+            help(sender, "tick");
+            return;
+        }
+
+        if (args[1].equalsIgnoreCase("list")) {
+            Map<String, Integer> intervals = TickIntervalManager.getIntervals();
+            if (intervals.isEmpty()) {
+                sender.sendMessage(Lang.getString("messages.commands.tick.list-empty"));
+                return;
+            }
+            sender.sendMessage(Lang.getString("messages.commands.tick.list-header"));
+            intervals.forEach((id, interval) -> sender.sendMessage(
+                String.format(Lang.getString("messages.commands.tick.list-entry"), id, interval)));
+            return;
+        }
+
+        String id = args[1].toUpperCase(Locale.ROOT);
+        SlimefunItem item = SlimefunItem.getById(id);
+        if (item == null || item.getAddon() != Networks.getInstance()) {
+            sender.sendMessage(String.format(Lang.getString("messages.commands.tick.invalid-id"), args[1]));
+            return;
+        }
+        if (item.getBlockTicker() == null) {
+            sender.sendMessage(String.format(Lang.getString("messages.commands.tick.no-ticker"), id));
+            return;
+        }
+
+        if (args.length < 3) {
+            sender.sendMessage(String.format(
+                Lang.getString("messages.commands.tick.current"),
+                item.getItemName(), id, TickIntervalManager.getInterval(id)));
+            return;
+        }
+
+        int interval;
+        if (args[2].equalsIgnoreCase("reset")) {
+            interval = TickIntervalManager.MIN_INTERVAL;
+        } else {
+            try {
+                interval = Integer.parseInt(args[2]);
+            } catch (NumberFormatException e) {
+                interval = -1;
+            }
+            if (interval < TickIntervalManager.MIN_INTERVAL || interval > TickIntervalManager.MAX_INTERVAL) {
+                sender.sendMessage(String.format(
+                    Lang.getString("messages.commands.tick.invalid-ticks"),
+                    TickIntervalManager.MIN_INTERVAL, TickIntervalManager.MAX_INTERVAL));
+                return;
+            }
+        }
+
+        TickIntervalManager.setInterval(id, interval);
+        if (interval == TickIntervalManager.MIN_INTERVAL) {
+            sender.sendMessage(String.format(Lang.getString("messages.commands.tick.reset"), item.getItemName(), id));
+        } else {
+            sender.sendMessage(String.format(
+                Lang.getString("messages.commands.tick.set"), item.getItemName(), id, interval));
+        }
+    }
+
     public static void help(@NotNull CommandSender sender, @Nullable String mainCommand) {
         if (mainCommand == null) {
             for (String message : Lang.getStringList("messages.commands.help")) {
@@ -358,6 +425,11 @@ public class NetworksMain implements TabExecutor {
         switch (mainCommand.toLowerCase(Locale.ROOT)) {
             case "help" -> {
                 for (String message : Lang.getStringList("messages.commands.example.help")) {
+                    sender.sendMessage(message);
+                }
+            }
+            case "tick" -> {
+                for (String message : Lang.getStringList("messages.commands.example.tick")) {
                     sender.sendMessage(message);
                 }
             }
@@ -453,6 +525,15 @@ public class NetworksMain implements TabExecutor {
         }
 
         // Player or console
+        if (args[0].toLowerCase(Locale.ROOT).equals("tick")) {
+            if (!sender.hasPermission("networks.admin") && !sender.hasPermission("networks.commands.tick")) {
+                sender.sendMessage(getErrorMessage(ErrorType.NO_PERMISSION));
+                return true;
+            }
+            tick(sender, args);
+            return true;
+        }
+
         if (args[0].toLowerCase(Locale.ROOT).equals("help")) {
             if (sender.isOp()) {
                 if (args.length >= 2) {
@@ -871,6 +952,7 @@ public class NetworksMain implements TabExecutor {
                     "reduceStorageItem",
                     "setContainerId",
                     "setQuantum",
+                    "tick",
                     "updateItem",
                     "viewLog",
                     "worldedit");
@@ -882,6 +964,15 @@ public class NetworksMain implements TabExecutor {
                     case "fillquantum", "addstorageitem", "reducestorageitem", "setquantum" -> List.of("<amount>");
                     case "fixblueprint" -> List.of("<keyInMeta>");
                     case "setcontainerid" -> List.of("<containerId>");
+                    case "tick" -> {
+                        List<String> ids = new ArrayList<>();
+                        ids.add("list");
+                        Slimefun.getRegistry().getAllSlimefunItems().stream()
+                            .filter(item -> item.getAddon() == Networks.getInstance() && item.getBlockTicker() != null)
+                            .map(SlimefunItem::getId)
+                            .forEach(ids::add);
+                        yield ids;
+                    }
                     case "worldedit" -> List.of(
                         "pos1",
                         "pos2",
@@ -896,6 +987,9 @@ public class NetworksMain implements TabExecutor {
                 };
             }
             case 3 -> {
+                if (args[0].equalsIgnoreCase("tick") && !args[1].equalsIgnoreCase("list")) {
+                    return List.of("1", "2", "4", "10", "20", "reset");
+                }
                 if (args[0].equalsIgnoreCase("worldedit")) {
                     return switch (args[1]) {
                         // case "pos1", "pos2" -> List.of();

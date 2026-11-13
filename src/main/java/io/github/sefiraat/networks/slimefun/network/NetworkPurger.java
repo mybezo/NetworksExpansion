@@ -6,6 +6,7 @@ import com.balugaq.netex.api.helpers.Icon;
 import com.balugaq.netex.utils.NetworksVersionedParticle;
 import com.xzavier0722.mc.plugin.slimefun4.storage.controller.SlimefunBlockData;
 import com.xzavier0722.mc.plugin.slimefun4.storage.util.StorageCacheUtils;
+import com.ytdd9527.networksexpansion.core.managers.TickIntervalManager;
 import io.github.sefiraat.networks.NetworkStorage;
 import io.github.sefiraat.networks.network.NodeDefinition;
 import io.github.sefiraat.networks.network.NodeType;
@@ -70,6 +71,9 @@ public class NetworkPurger extends NetworkObject {
 
                 @Override
                 public void tick(@NotNull Block block, SlimefunItem item, @NotNull SlimefunBlockData data) {
+                    if (TickIntervalManager.shouldSkip(item)) {
+                        return;
+                    }
                     if (tick <= 1) {
                         BlockMenu blockMenu = data.getBlockMenu();
                         if (blockMenu == null) {

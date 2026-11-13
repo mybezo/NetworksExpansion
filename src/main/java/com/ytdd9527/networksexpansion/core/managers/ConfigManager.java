@@ -7,6 +7,7 @@ import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 import java.io.File;
@@ -14,6 +15,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.util.HashMap;
+import java.util.Locale;
+import java.util.Map;
 
 public class ConfigManager {
 
@@ -161,6 +165,28 @@ public class ConfigManager {
 
     public void set(@NotNull String path, @NotNull Object value) {
         Networks.getInstance().getConfig().set(path, value);
+    }
+
+    /**
+     * Per-item tick intervals ({@code tick-intervals} section), keyed by upper-case Slimefun item ID.
+     */
+    public @NotNull Map<String, Integer> getTickIntervals() {
+        Map<String, Integer> result = new HashMap<>();
+        ConfigurationSection section = Networks.getInstance().getConfig().getConfigurationSection("tick-intervals");
+        if (section != null) {
+            for (String key : section.getKeys(false)) {
+                result.put(key.toUpperCase(Locale.ROOT), section.getInt(key, 1));
+            }
+        }
+        return result;
+    }
+
+    /**
+     * Stores the tick interval of an item and saves config.yml; {@code null} removes the entry.
+     */
+    public void setTickInterval(@NotNull String id, @Nullable Integer interval) {
+        Networks.getInstance().getConfig().set("tick-intervals." + id, interval);
+        Networks.getInstance().saveConfig();
     }
 
     public void saveAll() {

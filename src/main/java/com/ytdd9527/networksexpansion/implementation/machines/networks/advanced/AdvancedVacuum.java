@@ -7,6 +7,7 @@ import com.balugaq.netex.api.helpers.Icon;
 import com.balugaq.netex.utils.Lang;
 import com.xzavier0722.mc.plugin.slimefun4.storage.controller.SlimefunBlockData;
 import com.xzavier0722.mc.plugin.slimefun4.storage.util.StorageCacheUtils;
+import com.ytdd9527.networksexpansion.core.managers.TickIntervalManager;
 import dev.sefiraat.sefilib.misc.ParticleUtils;
 import io.github.sefiraat.networks.NetworkStorage;
 import io.github.sefiraat.networks.Networks;
@@ -106,6 +107,9 @@ public class AdvancedVacuum extends NetworkObject {
 
             @Override
             public void tick(@NotNull Block block, SlimefunItem item, @NotNull SlimefunBlockData data) {
+                if (TickIntervalManager.shouldSkip(item)) {
+                    return;
+                }
                 if (tick <= 1) {
                     final BlockMenu blockMenu = data.getBlockMenu();
                     if (blockMenu == null) {

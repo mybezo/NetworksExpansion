@@ -6,6 +6,7 @@ import com.balugaq.netex.utils.Lang;
 import com.xzavier0722.mc.plugin.slimefun4.storage.controller.SlimefunBlockData;
 import com.xzavier0722.mc.plugin.slimefun4.storage.util.StorageCacheUtils;
 import com.ytdd9527.networksexpansion.core.items.SpecialSlimefunItem;
+import com.ytdd9527.networksexpansion.core.managers.TickIntervalManager;
 import com.ytdd9527.networksexpansion.implementation.ExpansionItems;
 import com.ytdd9527.networksexpansion.api.assembly.AssemblyCardRecipes;
 import com.ytdd9527.networksexpansion.implementation.items.assembly.core.AssemblyCard;
@@ -97,6 +98,9 @@ public class AssemblyWorkshop extends SpecialSlimefunItem {
 
             @Override
             public void tick(@NotNull Block b, SlimefunItem item, @NotNull SlimefunBlockData data) {
+                if (TickIntervalManager.shouldSkip(item)) {
+                    return;
+                }
                 ensureNetworkNode(b.getLocation());
             }
         });

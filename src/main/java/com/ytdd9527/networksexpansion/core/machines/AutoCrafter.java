@@ -8,6 +8,7 @@ import com.balugaq.netex.api.interfaces.SoftCellBannable;
 import com.balugaq.netex.utils.BlockMenuUtil;
 import com.xzavier0722.mc.plugin.slimefun4.storage.controller.SlimefunBlockData;
 import com.ytdd9527.networksexpansion.core.items.Blueprint;
+import com.ytdd9527.networksexpansion.core.managers.TickIntervalManager;
 import io.github.sefiraat.networks.NetworkStorage;
 import io.github.sefiraat.networks.network.NetworkRoot;
 import io.github.sefiraat.networks.network.NodeDefinition;
@@ -90,6 +91,9 @@ public class AutoCrafter extends NetworkObject implements SoftCellBannable, Craf
 
             @Override
             public void tick(@NotNull Block block, SlimefunItem slimefunItem, @NotNull SlimefunBlockData data) {
+                if (TickIntervalManager.shouldSkip(slimefunItem)) {
+                    return;
+                }
                 BlockMenu blockMenu = data.getBlockMenu();
                 if (blockMenu != null) {
                     addToRegistry(block);

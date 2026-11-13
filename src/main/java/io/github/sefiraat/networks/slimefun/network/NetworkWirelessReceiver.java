@@ -3,6 +3,7 @@ package io.github.sefiraat.networks.slimefun.network;
 import com.balugaq.netex.api.enums.FeedbackType;
 import com.balugaq.netex.api.helpers.Icon;
 import com.xzavier0722.mc.plugin.slimefun4.storage.controller.SlimefunBlockData;
+import com.ytdd9527.networksexpansion.core.managers.TickIntervalManager;
 import io.github.sefiraat.networks.NetworkStorage;
 import io.github.sefiraat.networks.network.NodeDefinition;
 import io.github.sefiraat.networks.network.NodeType;
@@ -48,6 +49,9 @@ public class NetworkWirelessReceiver extends NetworkObject {
 
             @Override
             public void tick(@NotNull Block block, SlimefunItem slimefunItem, @NotNull SlimefunBlockData data) {
+                if (TickIntervalManager.shouldSkip(slimefunItem)) {
+                    return;
+                }
                 BlockMenu blockMenu = data.getBlockMenu();
                 if (blockMenu != null) {
                     addToRegistry(block);

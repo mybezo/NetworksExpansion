@@ -161,6 +161,16 @@ messages:
       empty: "<warning>This cell is empty"
       converted: "<success>Converted the cell contents into a Quantum Storage of the matching tier"
       none-converted: "<warning>There are no convertible items in the cell"
+    tick:
+      invalid-id: "<error>Unknown Networks item ID: %s"
+      no-ticker: "<error>%s does not tick, so its tick rate cannot be changed"
+      invalid-ticks: "<error>Ticks must be a whole number from %s to %s, or reset"
+      current: "&a%s &7(%s) &aworks every &e%s &aSlimefun tick(s)"
+      set: "&aSet %s &7(%s) &ato work every &e%s &aSlimefun tick(s)"
+      reset: "&aReset %s &7(%s) &ato normal speed"
+      list-header: "&6Custom tick intervals:"
+      list-entry: "&7- &f%s&7: every &e%s &7Slimefun tick(s)"
+      list-empty: "&7No custom tick intervals set"
     help:
       - "&6Network Command Help:"
       - "&6/networks help - Show this help message."
@@ -174,7 +184,12 @@ messages:
       - "&6/networks updateItem - Update the held item."
       - "&6/networks getstorageitem <slot> - Get item from specific slot of the looked-at Network Drawer."
       - "&6/networks viewLog - Output logs of the pointed AdminDebuggable."
+      - "&6/networks tick <id> [ticks|reset] - Make a Networks machine work every N Slimefun ticks."
     example:
+      tick:
+        - "&6/networks tick <id> [ticks|reset] - Make a Networks machine work every N Slimefun ticks (1 = normal)."
+        - "&6/networks tick <id> - Show the current setting. /networks tick list - Show all custom settings."
+        - "&6ex: /networks tick NTW_EXPANSION_LINE_TRANSFER_PUSHER 4"
       help:
         - "&6/networks help - Show this help message."
         - "&6ex: /networks help"

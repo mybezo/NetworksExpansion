@@ -3,6 +3,7 @@ package com.ytdd9527.networksexpansion.api.cell;
 import com.balugaq.netex.api.enums.FeedbackType;
 import com.xzavier0722.mc.plugin.slimefun4.storage.controller.SlimefunBlockData;
 import com.ytdd9527.networksexpansion.core.machines.AbstractChainMachine;
+import com.ytdd9527.networksexpansion.core.managers.TickIntervalManager;
 import io.github.sefiraat.networks.Networks;
 import io.github.sefiraat.networks.network.NetworkRoot;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
@@ -27,6 +28,9 @@ public class WorkTicker extends BlockTicker {
 
     @Override
     public void tick(@NotNull Block block, SlimefunItem item, @NotNull SlimefunBlockData data) {
+        if (TickIntervalManager.shouldSkip(item)) {
+            return;
+        }
         abstractChainMachine.addToRegistry(block);
         BlockMenu menu = data.getBlockMenu();
         if (menu == null) {

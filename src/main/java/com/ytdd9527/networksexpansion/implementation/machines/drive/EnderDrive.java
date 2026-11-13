@@ -10,6 +10,7 @@ import com.ytdd9527.networksexpansion.api.cell.CellLedger;
 import com.ytdd9527.networksexpansion.api.drive.CellUniqueness;
 import com.ytdd9527.networksexpansion.api.drive.DriveCellSlots;
 import com.ytdd9527.networksexpansion.api.drive.DriveOwnership;
+import com.ytdd9527.networksexpansion.core.managers.TickIntervalManager;
 import com.ytdd9527.networksexpansion.implementation.items.drive.EnderChannelController;
 import com.ytdd9527.networksexpansion.api.drive.DriveWhitelistMenu;
 import com.ytdd9527.networksexpansion.utils.ItemHashMap;
@@ -235,6 +236,9 @@ public class EnderDrive extends CellDrive {
 
             @Override
             public void tick(@NotNull Block b, SlimefunItem item, SlimefunBlockData data) {
+                if (TickIntervalManager.shouldSkip(item)) {
+                    return;
+                }
                 final Location location = b.getLocation();
                 final long now = System.currentTimeMillis();
                 EnderDriveState state = state(location);

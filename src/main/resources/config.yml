@@ -25,6 +25,12 @@ fast-interact-quantum: true
 # Show the Slimefun item ID as the first lore line in the Networks Expansion guide menus.
 guide-show-item-id: false
 
+# Per-item tick intervals, managed with /networks tick <id> <ticks>.
+# A listed machine only works every N Slimefun ticks (1 = normal speed).
+# Example:
+#   NTW_EXPANSION_LINE_TRANSFER_PUSHER: 4
+tick-intervals: {}
+
 # Pinyin search toggle: when disabled, item search only matches the original name, without pinyin / pinyin-initial matching (saves the runtime cost of the pinyin library).
 enable-pinyin-search: true
 

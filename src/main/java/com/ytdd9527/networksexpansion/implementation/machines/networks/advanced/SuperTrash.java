@@ -2,6 +2,7 @@ package com.ytdd9527.networksexpansion.implementation.machines.networks.advanced
 
 import com.xzavier0722.mc.plugin.slimefun4.storage.controller.SlimefunBlockData;
 import com.xzavier0722.mc.plugin.slimefun4.storage.util.StorageCacheUtils;
+import com.ytdd9527.networksexpansion.core.managers.TickIntervalManager;
 import com.ytdd9527.networksexpansion.implementation.ExpansionItems;
 import com.ytdd9527.networksexpansion.utils.ReflectionUtil;
 import io.github.sefiraat.networks.network.NodeType;
@@ -73,6 +74,9 @@ public class SuperTrash extends NetworkObject implements RecipeDisplayItem {
 
             @Override
             public void tick(@NotNull Block block, SlimefunItem item, @NotNull SlimefunBlockData data) {
+                if (TickIntervalManager.shouldSkip(item)) {
+                    return;
+                }
                 if (tick <= 1) {
                     final BlockMenu blockMenu = data.getBlockMenu();
                     if (blockMenu == null) {

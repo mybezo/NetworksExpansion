@@ -7,6 +7,7 @@ import com.balugaq.netex.utils.NetworksVersionedEnchantment;
 import com.balugaq.netex.utils.NetworksVersionedParticle;
 import com.xzavier0722.mc.plugin.slimefun4.storage.controller.SlimefunBlockData;
 import com.xzavier0722.mc.plugin.slimefun4.storage.util.StorageCacheUtils;
+import com.ytdd9527.networksexpansion.core.managers.TickIntervalManager;
 import com.ytdd9527.networksexpansion.utils.GhostItems;
 import com.ytdd9527.networksexpansion.utils.TextUtil;
 import com.ytdd9527.networksexpansion.utils.itemstacks.ItemStackUtil;
@@ -107,6 +108,9 @@ public abstract class NetworkDirectional extends NetworkObject {
 
             @Override
             public void tick(@NotNull Block block, SlimefunItem slimefunItem, @NotNull SlimefunBlockData data) {
+                if (TickIntervalManager.shouldSkip(slimefunItem)) {
+                    return;
+                }
                 if (tick <= 1) {
                     onTick(data.getBlockMenu(), block);
                 }

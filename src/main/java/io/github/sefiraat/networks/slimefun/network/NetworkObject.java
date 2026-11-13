@@ -5,6 +5,7 @@ import com.balugaq.netex.utils.Lang;
 import com.xzavier0722.mc.plugin.slimefun4.storage.controller.SlimefunBlockData;
 import com.xzavier0722.mc.plugin.slimefun4.storage.util.StorageCacheUtils;
 import com.ytdd9527.networksexpansion.core.items.SpecialSlimefunItem;
+import com.ytdd9527.networksexpansion.core.managers.TickIntervalManager;
 import io.github.sefiraat.networks.NetworkStorage;
 import io.github.sefiraat.networks.Networks;
 import io.github.sefiraat.networks.network.NetworkRoot;
@@ -107,6 +108,9 @@ public abstract class NetworkObject extends SpecialSlimefunItem implements Admin
 
                 @Override
                 public void tick(Block b, SlimefunItem item, SlimefunBlockData data) {
+                    if (TickIntervalManager.shouldSkip(item)) {
+                        return;
+                    }
                     if (!firstTickLocations.contains(b.getLocation())) {
                         // Netex - Hanging patch start
                         Bukkit.getScheduler().runTask(Networks.getInstance(), () -> {

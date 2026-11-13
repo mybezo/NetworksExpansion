@@ -9,6 +9,7 @@ import com.github.houbb.pinyin.constant.enums.PinyinStyleEnum;
 import com.github.houbb.pinyin.util.PinyinHelper;
 import com.xzavier0722.mc.plugin.slimefun4.storage.controller.SlimefunBlockData;
 import com.xzavier0722.mc.plugin.slimefun4.storage.util.StorageCacheUtils;
+import com.ytdd9527.networksexpansion.core.managers.TickIntervalManager;
 import com.ytdd9527.networksexpansion.utils.TextUtil;
 import io.github.sefiraat.networks.NetworkStorage;
 import io.github.sefiraat.networks.Networks;
@@ -95,6 +96,9 @@ public abstract class AbstractGrid extends NetworkObject {
 
             @Override
             public void tick(Block block, SlimefunItem item, SlimefunBlockData data) {
+                if (TickIntervalManager.shouldSkip(item)) {
+                    return;
+                }
                 if (tick <= 1) {
                     final BlockMenu blockMenu = data.getBlockMenu();
                     if (blockMenu == null) {
