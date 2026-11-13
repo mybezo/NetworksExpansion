@@ -1,5 +1,6 @@
 package io.github.sefiraat.networks.slimefun;
 
+import com.balugaq.netex.api.enums.CraftType;
 import com.ytdd9527.networksexpansion.core.machines.AutoCrafter;
 import com.ytdd9527.networksexpansion.core.machines.BlueprintEncoder;
 import com.ytdd9527.networksexpansion.core.items.Blueprint;
@@ -842,7 +843,8 @@ public class NetworkSlimefunItems {
                 SlimefunItems.BASIC_CIRCUIT_BOARD,
                 SlimefunItems.CARGO_MOTOR,
                 SlimefunItems.BASIC_CIRCUIT_BOARD
-            });
+            },
+            CraftType.CRAFTING);
 
         NETWORK_AUTO_CRAFTER = new AutoCrafter(
             NetworksItemGroups.NETWORK_ITEMS,
@@ -854,7 +856,8 @@ public class NetworkSlimefunItems {
                 OPTIC_GLASS.getItem(), SlimefunItems.ENHANCED_AUTO_CRAFTER, OPTIC_GLASS.getItem(),
             },
             64,
-            false);
+            false,
+            CraftType.CRAFTING);
 
         NETWORK_AUTO_CRAFTER_WITHHOLDING = new AutoCrafter(
             NetworksItemGroups.NETWORK_ITEMS,
@@ -866,7 +869,8 @@ public class NetworkSlimefunItems {
                 OPTIC_GLASS.getItem(), NETWORK_AUTO_CRAFTER.getItem(), OPTIC_GLASS.getItem(),
             },
             128,
-            true);
+            true,
+            CraftType.CRAFTING);
 
         CRAFTING_BLUEPRINT = new Blueprint(
             NetworksItemGroups.TOOLS,

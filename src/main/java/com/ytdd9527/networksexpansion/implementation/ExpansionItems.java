@@ -650,7 +650,8 @@ public class ExpansionItems {
         ExpansionWorkbench.TYPE,
         ExpansionRecipes.ADVANCED_AUTO_CRAFTING_TABLE,
         640,
-        false);
+        false,
+        CraftType.CRAFTING);
 
     public static final AdvancedAutoCrafter ADVANCED_AUTO_CRAFTING_TABLE_WITHHOLDING =
         new AdvancedAutoCrafter(
@@ -659,7 +660,8 @@ public class ExpansionItems {
             ExpansionWorkbench.TYPE,
             ExpansionRecipes.ADVANCED_AUTO_CRAFTING_TABLE_WITHHOLDING,
             1280,
-            true);
+            true,
+            CraftType.CRAFTING);
 
     public static final AdvancedAutoCrafter ADVANCED_AUTO_COMPRESSOR = new AdvancedAutoCrafter(
         ExpansionItemsMenus.MENU_FUNCTIONAL_MACHINE,
