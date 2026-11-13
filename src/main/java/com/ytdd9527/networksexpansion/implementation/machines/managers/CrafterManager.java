@@ -758,6 +758,10 @@ public class CrafterManager extends NetworkObject {
 
     @Contract(pure = true)
     public static boolean suitable(CrafterMetaData crafter, ItemStack blueprint) {
+        // Ask the crafter itself: generic crafters accept every blueprint type, typed ones only their own
+        if (StorageCacheUtils.getSfItem(crafter.location()) instanceof AutoCrafter autoCrafter) {
+            return autoCrafter.isValidBlueprint(SlimefunItem.getByItem(blueprint));
+        }
         if (SlimefunItem.getByItem(blueprint) instanceof CraftTyped craftTyped) {
             return craftTyped.craftType() == crafter.craftType();
         }
