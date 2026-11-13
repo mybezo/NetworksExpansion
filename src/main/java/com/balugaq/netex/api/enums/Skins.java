@@ -41,6 +41,7 @@ public enum Skins {
     AUTHOR_SEFIRAAT("bb2725924e09d6b0bdf5ab864e63f80eb880bfa6fe1fa17f9fdb61bc1ae110db"),
     AUTHOR_YBW0014("82a5c8de37d1a48f41053b8cc2abaec79ffbf0fc11464b290b057dd1d1d3837e"),
     AUTHOR_TINALNESS("73112785f64d814103931505ace00048c087337785550c99a67449c392b39772"),
+    AUTHOR_MYBEZO("82600941fab88efc41bb132d873d3b5c5f35f7720ebd9375476c1a18955bb03e"),
 
     @Deprecated
     // https://minecraft-heads.com/custom-heads/head/62847-rainbow-crate
